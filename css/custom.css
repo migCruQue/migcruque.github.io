@@ -1,0 +1,108 @@
+
+
+
+
+.jumbotron {
+  padding: 25rem 2rem;
+  background-image: url('../img/fontanacut.png');
+  background-size: cover;
+
+}
+
+.jumbotron h1{
+    position: absolute;
+    top: 380px;
+}
+
+.jumbotron a{
+    position: absolute;
+    top: 480px;
+    right:100;
+
+}
+
+
+
+
+.skills h3 {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.skills .head-experience {
+  font-size: 18px;
+  color: #383737;
+}
+
+.skills p {
+  color: #757474;
+  font-size: 16px;
+}
+
+.skills span.iniciales {
+  border-bottom: 1px solid #22A39F;
+}
+
+.skills span.tecnologies {
+  color: #383737;
+}
+
+.skills a {
+  color: #22A39F;
+}
+
+.skills {
+  background: #b7d3df;
+  padding: 9rem 2rem;
+}
+
+.skills .icons {
+  text-align: center;
+  border-top: 2px solid #fff;
+  padding: 19px 0 20px 0;
+  color: #404242;
+}
+
+.skills .description {
+  text-align: left;
+}
+
+
+
+
+.contact {
+  /*  Sections-Contact*/
+  background: #434242;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.contact .center-line {
+  float: left;
+}
+
+.contact h2 {
+  color: #FFFFFF;
+}
+
+.contact .no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact .no-bullets a {
+  color: #FFFFFF;
+  display: inline-block;
+  line-height: 32px;
+  margin: 0 0 10px 18px;
+  opacity: 0.6;
+}
+
+
+.projects {
+  padding: 10rem 2rem;
+  background-image: url('../img/workInProgress.png');
+  background-size: contain;
+
+}
