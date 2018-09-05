@@ -2,19 +2,19 @@
 
 
 
-.jumbotron {
+.intro {
   padding: 25rem 2rem;
   background-image: url('../img/fontanacut.png');
   background-size: cover;
 
 }
 
-.jumbotron h1{
+.intro h1{
     position: absolute;
     top: 380px;
 }
 
-.jumbotron a{
+.intro a{
     position: absolute;
     top: 480px;
     right:100;
