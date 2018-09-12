@@ -38,7 +38,7 @@ row-end: 4;
 }
 
 .intro h1 {
-    color: black;
+    color: #a53bba;
     position: absolute;
     top: 380px;
     border-radius: 30px 500px 150px 30px;
@@ -113,9 +113,19 @@ padding-bottom: 200px;
   padding: 17rem 2rem;
   background-image: url('../img/typewriter2.jpg');
   background-size: cover;
+
 }
 
 
+
+
+.contactMe h1 {
+font-size: 85px;
+color:#a53bba;
+
+
+
+}
 
 
 .contact {
