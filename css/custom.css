@@ -67,8 +67,10 @@ row-end: 4;
   text-align: left;
 }
 
-.education-grid{
-display: grid;
+
+#education {
+
+padding-top: 40px;
 
 }
 
@@ -80,7 +82,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 grid-template-rows: 1fr;
 grid-column-gap: 100px;
-/* grid-column-gap: 200px; */
+padding-bottom: 200px;
 }
 
 
