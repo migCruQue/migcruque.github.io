@@ -2,7 +2,7 @@
 
 
 
-
+/*
 
 .grid-main{
 height: 100vh;
@@ -27,7 +27,7 @@ row-end: 3;
 
 row-start: 3;
 row-end: 4;
-}
+} */
 
 
 .intro {
@@ -43,6 +43,55 @@ row-end: 4;
     top: 380px;
     border-radius: 30px 500px 150px 30px;
 }
+
+
+
+.grid-aboutMe{
+height: 100vh;
+display: grid;
+grid-template-rows: 1fr 7fr 3fr;
+grid-row-gap: 20px;
+}
+
+
+.grid-aboutMe nav {
+
+row-start: 1;
+row-end: 2;
+}
+.grid-aboutMe main {
+
+row-start: 2;
+row-end: 3;
+}
+
+.grid-aboutMe footer {
+
+row-start: 3;
+row-end: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
