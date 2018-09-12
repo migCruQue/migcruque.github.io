@@ -110,7 +110,7 @@ padding-bottom: 200px;
 
 
 .contactMe {
-  padding: 15rem 2rem;
+  padding: 17rem 2rem;
   background-image: url('../img/typewriter2.jpg');
   background-size: cover;
 }
@@ -122,7 +122,7 @@ padding-bottom: 200px;
   /*  Sections-Contact*/
   background: #434242;
   padding-top: 20px;
-  padding-bottom: 44rem;
+  padding-bottom: 10rem;
 }
 
 .contact .center-line {
