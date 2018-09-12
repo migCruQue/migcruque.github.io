@@ -108,6 +108,16 @@ padding-bottom: 200px;
  border-style:  outset;
 }
 
+
+.contactMe {
+  padding: 15rem 2rem;
+  background-image: url('../img/typewriter2.jpg');
+  background-size: cover;
+}
+
+
+
+
 .contact {
   /*  Sections-Contact*/
   background: #434242;
