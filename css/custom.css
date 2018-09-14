@@ -2,32 +2,7 @@
 
 
 
-/*
 
-.grid-main{
-height: 100vh;
-display: grid;
-grid-template-rows: 1fr 7fr 3fr;
-grid-row-gap: 20px;
-}
-
-
-.grid-main nav {
-
-row-start: 1;
-row-end: 2;
-}
-.grid-main main {
-
-row-start: 2;
-row-end: 3;
-}
-
-.grid-main footer {
-
-row-start: 3;
-row-end: 4;
-} */
 
 
 .intro {
@@ -37,29 +12,53 @@ row-end: 4;
 
 }
 
-.intro h1 {
+main .container {
+	margin: 45px auto;
+	padding: 10px;
+	background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  justify-content: space-around;
+  align-items: center;
+}
+main .item {
+	padding: 15px;
+	color: #fff;
+	border-radius: 3px;
+	background: #3db5da;
+}
+
+
+
+
+/* .intro h1 {
     color: #a53bba;
     position: absolute;
     top: 380px;
     border-radius: 30px 500px 150px 30px;
-}
-
-
-
-
-.aboutMe p {
-  font-family: serif;
-  font-size: 25px;
-  font-weight: 700;
-}
+} */
 
 
 .aboutMe {
   background-image: url('../img/amarillo.jpg');
   background-size: cover;
   padding: 13rem 2rem;
-  font-family: "Lucida Console";
+  font-family: 'Gochi Hand', cursive;
 }
+.aboutMe h1 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+
+.aboutMe p {
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+
 
 
 
@@ -73,7 +72,11 @@ row-end: 4;
 padding-top: 40px;
 
 }
+.education-main {
 
+font-family: 'Space Mono', monospace;
+
+}
 
 .education {
 
