@@ -22,12 +22,19 @@ main .container {
   align-items: center;
 }
 main .item {
-	padding: 15px;
+  font-size: 50px;
+  font-family: 'Lemonada', cursive;
+  padding: 15px;
 	color: #fff;
 	border-radius: 3px;
 	background: #3db5da;
 }
 
+footer, nav {
+
+
+  font-family: 'Nova Round', cursive;
+}
 
 
 
@@ -123,6 +130,7 @@ padding-bottom: 200px;
 
 
 .contactMe h1 {
+font-family: 'Glass Antiqua', cursive;
 font-size: 85px;
 color:#a53bba;
 
