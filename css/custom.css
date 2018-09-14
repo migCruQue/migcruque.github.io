@@ -13,16 +13,20 @@
 }
 
 main .container {
-	margin: 45px auto;
-	padding: 10px;
+	margin-top: 200px;
+  margin-left: 25px;
+	padding: 5px;
 	background: #fff;
   border-radius: 5px;
   box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
   justify-content: space-around;
   align-items: center;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
 }
+
 main .item {
-  font-size: 50px;
+  font-size: 38px;
   font-family: 'Lemonada', cursive;
   padding: 15px;
 	color: #fff;
@@ -37,13 +41,6 @@ footer, nav {
 }
 
 
-
-/* .intro h1 {
-    color: #a53bba;
-    position: absolute;
-    top: 380px;
-    border-radius: 30px 500px 150px 30px;
-} */
 
 
 .aboutMe {
@@ -120,7 +117,7 @@ padding-bottom: 200px;
 
 
 .contactMe {
-  padding: 17rem 2rem;
+  padding: 12rem 2rem;
   background-image: url('../img/typewriter2.jpg');
   background-size: cover;
 
@@ -129,14 +126,6 @@ padding-bottom: 200px;
 
 
 
-.contactMe h1 {
-font-family: 'Glass Antiqua', cursive;
-font-size: 85px;
-color:#a53bba;
-
-
-
-}
 
 
 .contact {
