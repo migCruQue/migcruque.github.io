@@ -130,17 +130,19 @@ padding-bottom: 200px;
 
 .contact {
   /*  Sections-Contact*/
-  background: #434242;
+  background: #993399;
   padding-top: 20px;
   padding-bottom: 10rem;
+  font-family: 'Space Mono', monospace;
 }
 
 .contact .center-line {
   float: left;
 }
 
-.contact h2 {
+.contact h1 {
   color: #FFFFFF;
+  font-size: 35px
 }
 
 .contact .no-bullets {
