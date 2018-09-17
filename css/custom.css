@@ -27,11 +27,11 @@ main .container {
 
 main .item {
   font-size: 38px;
-  font-family: 'Lemonada', cursive;
+font-family: 'Nova Round', cursive;
   padding: 15px;
-	color: #fff;
+	color: #ff1a1a;
 	border-radius: 3px;
-	background: #3db5da;
+	background: black;
 }
 
 footer, nav {
