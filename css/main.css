@@ -27,7 +27,7 @@ main .container {
 
 main .item {
   font-size: 38px;
-font-family: 'Nova Round', cursive;
+  font-family: 'Nova Round', cursive;
   padding: 15px;
 	color: #ff1a1a;
 	border-radius: 3px;
@@ -176,7 +176,7 @@ text-align: center;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
 
   .intro {
     padding: 26rem 2rem;
@@ -184,10 +184,16 @@ text-align: center;
     }
 
 
-  footer .row{
+main .container {
 
-      display: none;
+      
     }
+main .item {
+
+  font-size: 1em;
+    padding: 0;
+
+}
 
 
 
