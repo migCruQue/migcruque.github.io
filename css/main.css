@@ -6,7 +6,7 @@
 
 
 .intro {
-  height: 90vh;
+  height: 100vh;
   padding: 20rem 2rem;
   background-image: url('../img/fontanaPhone.jpg');
   background-size: cover;
@@ -175,6 +175,11 @@ text-align: center;
 
 @media (max-width: 576px) {
 
+  .footer-copyright-index{
+
+    /* height: 120%; */
+  }
+
   .upper-footer {
 
     display: none;
@@ -249,16 +254,18 @@ main .item {
   .intro {
     padding: 8rem 2rem;
 
-    background-size: 100% 100%;
+
     }
 
   main .container {
+    margin-top: 400px;
+    margin-left: 25px;
+    width: 30%;
+    }
 
-
-
-
-
-  }
+  main .item {
+      font-size: 38px;
+    }
 
 
 
