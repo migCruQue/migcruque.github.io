@@ -6,16 +6,18 @@
 
 
 .intro {
-  padding: 26rem 2rem;
-  background-image: url('../img/fontanacutBW.jpg');
+  height: 90vh;
+  padding: 20rem 2rem;
+  background-image: url('../img/fontanaPhone.jpg');
   background-size: cover;
 
 }
 
 main .container {
-	margin-top: 200px;
-  margin-left: 25px;
-	padding: 5px;
+  width: 90%;
+	margin-top: 80px;
+  margin-left: 10px;
+	padding: 2px;
 	background: #fff;
   border-radius: 5px;
   box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
@@ -26,9 +28,9 @@ main .container {
 }
 
 main .item {
-  font-size: 38px;
+  font-size: 15px;
   font-family: 'Nova Round', cursive;
-  padding: 15px;
+  padding: 5px;
 	color: #ff1a1a;
 	border-radius: 3px;
 	background: black;
@@ -171,30 +173,136 @@ text-align: center;
 
 }
 
-
-
-
-
-
 @media (max-width: 576px) {
 
+  .upper-footer {
+
+    display: none;
+  }
+
+
+
+
+}
+
+
+
+
+@media (min-width: 576px) {
+
   .intro {
-    padding: 26rem 2rem;
-    background-image: url('../img/fontanaPhone.jpg');
+    background-image: url('../img/fontanacutBW.jpg');
+    background-size: cover;
     }
 
 
 main .container {
+  width: 45%;
+  margin-top: 150px;
+  margin-left: 25px;
+  padding: 3px;
 
-      
+
     }
 main .item {
-
-  font-size: 1em;
-    padding: 0;
+  font-size: 20px;
 
 }
 
 
 
+
+
+
+
 }
+
+
+
+@media (min-width: 992px) {
+
+
+  .intro {
+    padding: 18rem 2rem;
+    background-image: url('../img/fontanacutBW.jpg');
+    background-size: cover;
+    }
+
+    main .container {
+
+
+      width: 30%;
+
+
+    }
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+
+  .intro {
+    padding: 8rem 2rem;
+
+    background-size: 100% 100%;
+    }
+
+  main .container {
+
+
+
+
+
+  }
+
+
+
+}
+
+
+/* @media (max-width: 1444px) {
+
+
+  .intro {
+    padding: 13rem 2rem;
+    background-image: url('../img/fontanaPhone.jpg');
+    background-size: cover;
+    }
+
+  main .container {
+
+    width: 50%;
+
+
+
+  }
+
+
+
+}
+
+@media (max-width: 2560px) {
+
+
+  .intro {
+    padding: 13rem 2rem;
+    background-image: url('../img/fontanaPhone.jpg');
+    background-size: cover;
+    }
+
+  main .container {
+
+    width: 55%;
+
+
+
+  }
+
+
+
+} */
