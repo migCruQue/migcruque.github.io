@@ -45,34 +45,6 @@ footer, nav {
 
 
 
-/* .aboutMe {
-  background-image: url('../img/bridge.jpg');
-  background-size: 110% 110%;
-  padding: 13rem 2rem;
-  font-family: 'Gochi Hand', cursive;
-}
-.aboutMe h1 {
-  font-size: 55px;
-  font-weight: 700;
-}
-
-
-.aboutMe p {
-  letter-spacing: 1.5px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-
-
-
-
-
-.aboutMe .description {
-  text-align: left;
-} */
-
-
 #education {
 
 padding-top: 40px;
@@ -103,7 +75,7 @@ padding-bottom: 200px;
 
 
 .projects {
-  padding: 20rem 2rem;
+  padding: 30rem 2rem;
   background-image: url('../img/key.jpg');
   background-size: contain;
 }
@@ -112,17 +84,24 @@ padding-bottom: 200px;
 .projects h1 {
 
   color: #ffff00;
-  font-size: 85px;
+  font-size: 30px;
   font-weight: 600;
- border-style:  outset;
+  background-color: orange;
+  border-style:  outset;
+  border-color: firebrick;
+
 }
 
 
 .contactMe {
-  padding: 12rem 2rem;
+  /* width: 100vh; */
+  padding:15rem 2em;
   background-image: url('../img/typewriter2.jpg');
   background-size: cover;
 
+
+
+
 }
 
 
@@ -130,30 +109,36 @@ padding-bottom: 200px;
 
 
 
-.contact {
+.contact-small {
   /*  Sections-Contact*/
+  width: 100%;
+  padding: 10rem 0em;
+  padding-left: 10px;
   background: #993399;
   padding-top: 20px;
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
   font-family: 'Space Mono', monospace;
+
 }
 
-.contact .center-line {
+
+
+.contact-small {
   float: left;
 }
 
-.contact h1 {
+.contact-small h1 {
   color: #FFFFFF;
-  font-size: 55px
+  font-size: 35px
 }
 
-.contact .no-bullets {
+.contact-small .no-bullets {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
 
-.contact .no-bullets a {
+.contact-small .no-bullets a {
   color: #FFFFFF;
   display: inline-block;
   line-height: 32px;
@@ -161,8 +146,16 @@ padding-bottom: 200px;
   opacity: 0.6;
 }
 
+.links {
+
+margin-top: 50px;
+
+}
+
+
 
 footer {
+
 position: fixed;
 left: 0;
 bottom: 0;
@@ -175,17 +168,21 @@ text-align: center;
 
 @media (max-width: 576px) {
 
-  .footer-copyright-index{
-
-    /* height: 120%; */
-  }
+/* UPPER FOOTER DOES NOT DISPLAY IN XS SCREEN */
 
   .upper-footer {
 
     display: none;
   }
 
+/* CONTACT */
 
+
+.contact-big {
+
+display: none;
+
+}
 
 
 }
@@ -194,6 +191,8 @@ text-align: center;
 
 
 @media (min-width: 576px) {
+
+  /* INDEX */
 
   .intro {
     background-image: url('../img/fontanacutBW.jpg');
@@ -214,8 +213,27 @@ main .item {
 
 }
 
+  /* INDEX */
 
 
+
+/* PROJECTS  */
+
+
+.projects h1 {
+
+  font-size: 50px;
+
+
+}
+
+/* PROJECTS  */
+
+
+/* CONTACT */
+.contact-small{
+  display: none;
+}
 
 
 
@@ -225,6 +243,8 @@ main .item {
 
 
 @media (min-width: 992px) {
+
+  /* INDEX */
 
 
   .intro {
@@ -241,6 +261,20 @@ main .item {
 
     }
 
+  /* INDEX */
+
+
+  /* PROJECTS  */
+
+
+  .projects h1 {
+
+    font-size: 70px;
+
+
+  }
+
+  /* PROJECTS  */
 
 
 }
