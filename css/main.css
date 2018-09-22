@@ -107,7 +107,7 @@ padding-bottom: 200px;
 .contact-big {
 
 
-  padding: 10rem 0em;
+  padding: 15rem 0em;
   padding-left: 10px;
   background: #993399;
   padding-top: 20px;
@@ -330,7 +330,12 @@ main .item {
       font-size: 38px;
     }
 
+    .contact-big {
 
+
+      padding: 20rem 0em;
+
+    }
 
 }
 
