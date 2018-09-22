@@ -94,7 +94,7 @@ padding-bottom: 200px;
 
 
 .contactMe {
-  /* width: 100vh; */
+
   padding:15rem 2em;
   background-image: url('../img/typewriter2.jpg');
   background-size: cover;
@@ -116,7 +116,7 @@ padding-bottom: 200px;
 
 }
 
-}
+
 
 
 
@@ -260,7 +260,7 @@ main .item {
 
 
 /* CONTACT */
-.contact-small{
+.contact-small {
   display: none;
 }
 
