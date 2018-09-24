@@ -1,9 +1,24 @@
 
+footer, nav {
 
 
+  font-family: 'Nova Round', cursive;
+}
 
 
+footer {
 
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #007bff;
+text-align: center;
+
+
+}
+
+/* INDEX CSS */
 
 .intro {
   height: 100vh;
@@ -36,14 +51,9 @@ main .item {
 	background: black;
 }
 
-footer, nav {
+/* /INDEX CSS */
 
-
-  font-family: 'Nova Round', cursive;
-}
-
-
-
+/* EDUCATION */
 
 #education {
 
@@ -67,11 +77,11 @@ padding-bottom: 200px;
 }
 
 
+/* /EDUCATION */
 
 
 
-
-
+/* PROJECTS */
 
 
 .projects {
@@ -93,6 +103,12 @@ padding-bottom: 200px;
 }
 
 
+/* /PROJECTS */
+
+
+/* CONTACT ME */
+
+
 .contactMe {
 
   padding:15rem 2em;
@@ -111,47 +127,30 @@ padding-bottom: 200px;
   padding-left: 10px;
   background: #993399;
   padding-top: 20px;
-  /* padding-bottom: 10rem; */
+
   font-family: 'Space Mono', monospace;
 
 }
 
-
-
-
+/* CONTACT SMALL SCREEN */
 
 .contact-small{
-  /*  Sections-Contact*/
   width: 100%;
   padding: 10rem 0em;
   padding-left: 10px;
   background: #993399;
   padding-top: 20px;
-  /* padding-bottom: 10rem; */
   font-family: 'Space Mono', monospace;
 
 }
-
-
 
 .contact-small{
   float: left;
 }
 
-.contact-big {
-  color: #FFFFFF;
-  font-size: 15px
-}
-
 .contact-small {
   color: #FFFFFF;
   font-size: 35px
-}
-
-.no-bullets {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 .contact-small .no-bullets a {
@@ -162,6 +161,16 @@ padding-bottom: 200px;
   opacity: 0.6;
 }
 
+/* /CONTACT SMALL SCREEN */
+
+
+/* CONTACT BIG SCREEN */
+.contact-big {
+  color: #FFFFFF;
+  font-size: 15px
+}
+
+
 .contact-big .no-bullets a {
   color: #FFFFFF;
   display: inline-block;
@@ -169,11 +178,13 @@ padding-bottom: 200px;
   margin: 0 0 10px 18px;
   opacity: 0.6;
 }
+/* /CONTACT BIG SCREEN */
 
-
-
-
-
+.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
 
 .links {
 
@@ -182,19 +193,9 @@ margin-top: 50px;
 }
 
 
+/* /CONTACT ME */
 
-footer {
-
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #007bff;
-text-align: center;
-
-
-}
-
+/* MEDIA QUERY FOR SMALL SCREEN */
 @media (max-width: 576px) {
 
 /* UPPER FOOTER DOES NOT DISPLAY IN XS SCREEN */
@@ -204,9 +205,7 @@ text-align: center;
     display: none;
   }
 
-/* CONTACT */
-
-
+/* contact-big does dislay in small screens*/
 .contact-big {
 
 display: none;
@@ -217,16 +216,16 @@ display: none;
 }
 
 
-
+/* MEDIA QUERY FOR SCREEN BIGGER THAN 576px */
 
 @media (min-width: 576px) {
 
   /* INDEX */
 
-  .intro {
-    background-image: url('../img/fontanacutBW.jpg');
-    background-size: cover;
-    }
+.intro {
+  background-image: url('../img/fontanacutBW.jpg');
+  background-size: cover;
+  }
 
 
 main .container {
@@ -242,7 +241,7 @@ main .item {
 
 }
 
-  /* INDEX */
+  /* /INDEX */
 
 
 
@@ -256,10 +255,10 @@ main .item {
 
 }
 
-/* PROJECTS  */
+/* /PROJECTS  */
 
 
-/* CONTACT */
+/* contact-small does display in screens bigger than 576px */
 .contact-small {
   display: none;
 }
@@ -269,8 +268,7 @@ main .item {
 
 }
 
-
-
+/* MEDIA QUERY FOR SCREEN BIGGER THAN 992px */
 @media (min-width: 992px) {
 
   /* INDEX */
@@ -310,7 +308,7 @@ main .item {
 
 
 
-
+/* MEDIA QUERY FOR SCREEN BIGGER THAN 1024px */
 @media (min-width: 1024px) {
 
 
@@ -331,53 +329,3 @@ main .item {
     }
 
     .contact-big {
-
-
-      padding: 20rem 0em;
-
-    }
-
-}
-
-
-/* @media (max-width: 1444px) {
-
-
-  .intro {
-    padding: 13rem 2rem;
-    background-image: url('../img/fontanaPhone.jpg');
-    background-size: cover;
-    }
-
-  main .container {
-
-    width: 50%;
-
-
-
-  }
-
-
-
-}
-
-@media (max-width: 2560px) {
-
-
-  .intro {
-    padding: 13rem 2rem;
-    background-image: url('../img/fontanaPhone.jpg');
-    background-size: cover;
-    }
-
-  main .container {
-
-    width: 55%;
-
-
-
-  }
-
-
-
-} */
