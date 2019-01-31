@@ -68,7 +68,8 @@ font-family: 'Space Mono', monospace;
 
 .education {
 
-max-width: 1800px;
+max-width: 500px;
+max-height: 500px;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 grid-template-rows: 1fr;
@@ -81,29 +82,7 @@ padding-bottom: 200px;
 
 
 
-/* PROJECTS */
 
-
-.projects {
-  padding: 30rem 2rem;
-  background-image: url('../img/key.jpg');
-  background-size: contain;
-}
-
-
-.projects h1 {
-
-  color: #ffff00;
-  font-size: 30px;
-  font-weight: 600;
-  background-color: orange;
-  border-style:  outset;
-  border-color: firebrick;
-
-}
-
-
-/* /PROJECTS */
 
 
 /* CONTACT ME */

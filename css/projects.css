@@ -1,0 +1,83 @@
+
+
+
+footer, nav {
+
+
+  font-family: 'Nova Round', cursive;
+}
+
+
+footer {
+
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #007bff;
+text-align: center;
+
+
+}
+
+
+@media (max-width: 576px) {
+
+/* UPPER FOOTER DOES NOT DISPLAY IN XS SCREEN */
+
+  .upper-footer {
+
+    display: none;
+  }
+
+}
+
+
+/* PROJECTS */
+
+
+.projects {
+  padding: 30rem 2rem;
+}
+
+
+.main-header h1 {
+  margin-bottom: 0;
+  font-family: 'Aladin', cursive;
+  font-size: 70px;
+  text-align: center;
+  padding: 200px;
+  height: 350px;
+  background:
+    linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
+    linear-gradient(0deg, #fff, transparent);
+
+
+}
+
+
+/* /PROJECTS */
+
+
+/* >>>>>>>>>>>>> CARD <<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+#education {
+
+padding-top: 40px;
+
+}
+.education-main {
+
+font-family: 'Space Mono', monospace;
+
+}
+
+.education {
+
+max-width: 500px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-rows: 1fr;
+grid-column-gap: 100px;
+padding-bottom: 200px;
+}
