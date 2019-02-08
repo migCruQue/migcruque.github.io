@@ -38,6 +38,9 @@ text-align: center;
   padding: 20rem 2rem;
   background-image: url('../img/fontanaPhone.jpg');
   background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -131,6 +134,11 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 grid-template-rows: 1fr;
 grid-column-gap: 100px;
 padding-bottom: 200px;
+}
+
+.card-img-overlay {
+
+  cursor: e-resize;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -259,14 +267,6 @@ main .item {
 
 }
 
-/* /PROJECTS  */
-
-
-/* contact-small does display in screens bigger than 576px */
-/* .contact-small {
-  display: none;
-} */
-
 
 
 
@@ -327,7 +327,7 @@ main .item {
 @media (min-width: 1024px) {
 
 
-  .intro {
+ .intro {
     padding: 8rem 2rem;
 
 
@@ -343,7 +343,6 @@ main .item {
       font-size: 38px;
     }
 
-    .contact-big {
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
