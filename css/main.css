@@ -115,9 +115,9 @@ padding-bottom: 200px;
 #projects-main-header {
   margin-bottom: 0;
   font-family: 'Aladin', cursive;
-  font-size: 70px;
+  font-size: 30px;
   text-align: center;
-  padding: 200px;
+  /* padding: 200px; */
   height: 350px;
   background:
     linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
@@ -126,20 +126,35 @@ padding-bottom: 200px;
 
 }
 
-.projects {
+.main-projects {
 
-max-width: 500px;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-grid-template-rows: 1fr;
-grid-column-gap: 100px;
-padding-bottom: 200px;
+  height: 100vh;
+  padding: 20rem 2rem;
+  width: 90%;
+
+
+
+
+
 }
 
-.card-img-overlay {
 
-  cursor: e-resize;
+
+.gridflex {
+  margin: 17rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+
 }
+
+.entry {
+  max-width: 35rem;
+  max-height: 35rem;
+
+}
+
+
 
 .onbottom {
     padding-top: 0.5rem;
@@ -265,22 +280,6 @@ main .item {
 
   /* /INDEX */
 
-
-
-/* PROJECTS  */
-
-
-.projects h1 {
-
-  font-size: 50px;
-
-
-}
-
-
-
-
-}
 
 
 
