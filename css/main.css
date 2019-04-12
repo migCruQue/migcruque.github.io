@@ -117,7 +117,7 @@ padding-bottom: 200px;
   font-family: 'Aladin', cursive;
   font-size: 30px;
   text-align: center;
-    padding: 5rem 2rem;
+  padding: 6rem 0;
   margin-top: 0;
   background:
     linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
@@ -138,26 +138,27 @@ padding-bottom: 200px;
 
 
 /* ENTRIES FORMAT */
-.projects-entry {
+.projects-entries {
 
   max-width: 1800px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
   grid-row-gap: 50px;
+  grid-column-gap: 50px;
   padding-bottom: 100px;
 
 }
 
  /* RIBBON/TITLE ON THE ENTRIES */
 
- .projects-entry h5 {
+ .projects-entries h5 {
 
-     position: absolute;
-     top: 0;
-     left: 0;
+     margin-top: 0;
+
      z-index: 1;
-     /* padding: 3px 6px; */
+     padding: 3px 6px;
+     background-color: grey;
      color: #fff;
      font-size: 30px;
      text-transform: uppercase;
@@ -165,19 +166,18 @@ padding-bottom: 200px;
      font-weight: normal;
  }
 
- /* .gridflex {
+/* .gridflex {
   margin: 17rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 100px;
 
-}
-
-.entry {
-  max-width: 35rem;
-  max-height: 35rem;
-
 } */
+
+.card-img {
+      padding: 7rem;
+      height: 100px;
+}
 
 
 
