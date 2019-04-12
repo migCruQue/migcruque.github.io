@@ -113,12 +113,12 @@ padding-bottom: 200px;
 
 
 #projects-main-header {
-  margin-bottom: 0;
+
   font-family: 'Aladin', cursive;
   font-size: 30px;
   text-align: center;
-  /* padding: 200px; */
-  height: 350px;
+    padding: 5rem 2rem;
+  margin-top: 0;
   background:
     linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
     linear-gradient(0deg, #fff, transparent);
@@ -127,20 +127,45 @@ padding-bottom: 200px;
 }
 
 .main-projects {
-
+  margin: auto;
+  padding: 40px 0;
   height: 100vh;
-  padding: 20rem 2rem;
-  width: 90%;
-
-
-
 
 
 }
 
 
 
-.gridflex {
+
+/* ENTRIES FORMAT */
+.projects-entry {
+
+  max-width: 1800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-row-gap: 50px;
+  padding-bottom: 100px;
+
+}
+
+ /* RIBBON/TITLE ON THE ENTRIES */
+
+ .projects-entry h5 {
+
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     /* padding: 3px 6px; */
+     color: #fff;
+     font-size: 30px;
+     text-transform: uppercase;
+     width: auto;
+     font-weight: normal;
+ }
+
+ /* .gridflex {
   margin: 17rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,7 +177,7 @@ padding-bottom: 200px;
   max-width: 35rem;
   max-height: 35rem;
 
-}
+} */
 
 
 
