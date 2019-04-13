@@ -117,7 +117,7 @@ padding-bottom: 200px;
   font-family: 'Aladin', cursive;
   font-size: 30px;
   text-align: center;
-  padding: 6rem 0;
+  padding: 10rem 0;
   margin-top: 0;
   background:
     linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
@@ -127,8 +127,9 @@ padding-bottom: 200px;
 }
 
 .main-projects {
-  margin: auto;
-  padding: 40px 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding:  0;
   height: 100vh;
 
 
@@ -155,7 +156,6 @@ padding-bottom: 200px;
  .projects-entries h5 {
 
      margin-top: 0;
-
      z-index: 1;
      padding: 3px 6px;
      background-color: grey;
@@ -166,17 +166,22 @@ padding-bottom: 200px;
      font-weight: normal;
  }
 
-/* .gridflex {
-  margin: 17rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
+.hotchpotch {
+  background-image: url('../img/luvre_pyramid.jpeg');
 
-} */
+}
 
-.card-img {
-      padding: 7rem;
-      height: 100px;
+.londonQuiz {
+  background-image: url('../img/london_pic.jpg');
+
+}
+
+.card {
+
+  height: 40vh;
+  background-size: cover;
+  display: block;
+  margin: 5px;
 }
 
 
