@@ -111,11 +111,11 @@ padding-bottom: 200px;
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
+/* Header */
 #projects-main-header {
 
-  font-family: 'Aladin', cursive;
-  font-size: 30px;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 35px;
   text-align: center;
   padding: 10rem 0;
   margin-top: 0;
@@ -126,14 +126,6 @@ padding-bottom: 200px;
 
 }
 
-.main-projects {
-  margin-right: 0;
-  margin-left: 0;
-  padding:  0;
-  height: 100vh;
-
-
-}
 
 
 
@@ -311,7 +303,15 @@ main .item {
   /* /INDEX */
 
 
+/* PROJECTS */
 
+#projects-main-header {
+
+  font-size: 50px;
+
+}
+
+/* /PROJECTS */
 
 
 
@@ -342,7 +342,19 @@ main .item {
 
     }
 
-  /* INDEX */
+  /* /INDEX */
+
+
+  /* PROJECTS */
+
+  #projects-main-header {
+
+    font-size: 77px;
+
+  }
+
+  /* /PROJECTS */
+
 
 
 
