@@ -133,12 +133,12 @@ padding-bottom: 200px;
 /* ENTRIES FORMAT */
 .projects-entries {
 
-  max-width: 1800px;
+  max-width: 900px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
   grid-row-gap: 50px;
-  grid-column-gap: 50px;
+  grid-column-gap: 150px;
   padding-bottom: 100px;
   font-family: 'Ubuntu', sans-serif;
 
@@ -169,8 +169,24 @@ padding-bottom: 200px;
 
 }
 
-.project-card {
 
+.card-body-projects {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;]
+
+
+}
+
+.project-card {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
   height: 40vh;
   background-size: cover;
   display: block;
