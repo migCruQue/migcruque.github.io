@@ -175,7 +175,7 @@ padding-bottom: 200px;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;]
+  left: 0;
 
 
 }
@@ -203,6 +203,9 @@ padding-bottom: 200px;
     right: 0;
     left: 0;
 }
+
+
+
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -327,6 +330,12 @@ main .item {
 
   font-size: 50px;
 
+}
+
+/* KEEP THE CONTAINER WIDTH 100% OVERIDING THE BOOTSTRAP RULE @media (min-width: 576px) */
+.container-projects{
+
+  max-width: 2560px
 }
 
 /* /PROJECTS */
