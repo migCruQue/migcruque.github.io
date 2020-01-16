@@ -9,6 +9,12 @@ nav {
   background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+nav a {
+  font-size: 20px;
+  color: #8db0bb;
+  margin-left: 20px;
+}
+
 
 nav img {
   max-width: 100px;
@@ -31,10 +37,15 @@ nav img {
   margin-top: 8px;
 }
 
-
 .navbar-nav{
   margin: 10px 0;
 }
+
+/* Override the navbar-dark color from bootstrap */
+.navbar-toggler {
+   color: #8db0bb;
+   border-color: #8db0bb;
+ }
 
 
 /* Narrow menu CSS style */
@@ -63,8 +74,6 @@ div.narrow{
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .intro {
-  height: 100vh;
-  padding: 20rem 2rem;
   background-image: url('../img/fontanaPhone.jpg');
   background-size: cover;
   display: block;
@@ -488,8 +497,15 @@ main .item {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-@media (min-width: 2000px) {
+@media (min-width: 1440px) {
 
+/* NAV */
+
+nav a {
+  font-size: 30px;
+}
+
+/* NAV */
 
 
   /* PROJECTS */

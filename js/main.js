@@ -1,18 +1,6 @@
 
 
-// let nav = document.getElementById('nav');
-//
-// width: 50%;
-//
-//
-// margin: 10px;
-// text-align: center;
-// display: flex;
-// flex-direction: column;
-//
-// to select the button, nav and container using Jquery and to change the CSS using jquery css method.
-
-//
+// CUSTOMIZE THE MENU WHEN IT IS EXPANDED THROUGH THE TOOGLER BUTTON.
 $('button.navbar-toggler').on('click', function(){
   if ($('button.navbar-toggler').attr('aria-expanded') == 'false') {
       $('nav').addClass('narrow');
@@ -28,3 +16,8 @@ $('button.navbar-toggler').on('click', function(){
   }
 
 });
+
+
+// TRYING TO FIX THE SIZE OF THE MAIN DIV
+// set the main div height to the window inner height.
+$('main').height(Math.floor(window.innerHeight * 0.87));
