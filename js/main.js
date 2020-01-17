@@ -20,4 +20,6 @@ $('button.navbar-toggler').on('click', function(){
 
 // TRYING TO FIX THE SIZE OF THE MAIN DIV
 // set the main div height to the window inner height.
-$('main').height(Math.floor(window.innerHeight * 0.87));
+// $('main').height(Math.floor(window.innerHeight * 0.87));
+
+$('#box').offset({top: Math.floor($(window).height() * 0.7)});
