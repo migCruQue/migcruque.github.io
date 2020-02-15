@@ -15,6 +15,10 @@ nav a {
   margin-left: 20px;
 }
 
+nav a.currentTab{
+  background-color: indigo;
+  border-radius: 10%;
+ }
 
 nav img {
   max-width: 100px;
@@ -26,6 +30,7 @@ nav img {
   border-color: yellow;
   margin: 7px 0;
 }
+
 
  /* Overwrite padding top and bottom from the navbar-brand class in bootstrap */
 .navbar-brand {
