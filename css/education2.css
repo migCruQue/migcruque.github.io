@@ -1,0 +1,167 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> EDUCATION.HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+.education-main {
+
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+/* Header */
+#education-header {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  margin-top: 0;
+  background:
+    linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
+    linear-gradient(0deg, #fff, transparent);
+
+
+}
+
+
+
+/* ENTRIES FORMAT */
+.education-entries {
+
+  max-width: 650px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  grid-row-gap: 50px;
+  grid-column-gap: 150px;
+  padding-bottom: 50px;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+.education a{
+  margin: 0 0.8rem;
+}
+
+ /* RIBBON/TITLE ON THE ENTRIES */
+
+ .education h5 {
+
+     margin-top: 0;
+     z-index: 1;
+     padding: 1.2rem 0;
+     background-color: #3F0C90;
+     color: #fff;
+     font-family: 'Bungee Inline', cursive;
+     font-size: 27px;
+     text-transform: uppercase;
+     width: auto;
+     font-weight: normal;
+ }
+
+ .education-entries p {
+   padding: 1rem;
+   font-size: 1.3rem;
+   line-height: 2rem;
+ }
+
+ .education-card {
+   width: 100%;
+   float: left;
+   border-radius: 3px;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+   background-size: cover;
+   display: block;
+   border-width: 3px;
+  border-style: solid;
+  border-image:
+    linear-gradient(
+      to top,
+      red,
+      #3F0C90
+    ) 1 100%;
+ }
+
+
+
+
+
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 576PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+@media (min-width: 576px) {
+
+#education-header {
+
+  font-size: 50px;
+
+}
+
+/* KEEP THE CONTAINER WIDTH 100% OVERIDING THE BOOTSTRAP RULE @media (min-width: 576px) */
+.education-main{
+
+  max-width: 2560px
+  }
+
+
+.education-entries{
+    grid-row-gap: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 120px;
+  }
+
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 992PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 992px) {
+
+
+  #education-header {
+
+    font-size: 77px;
+
+  }
+
+
+  .education-entries  {
+    max-width: 1000px;
+    grid-column-gap: 70px;
+    margin-top: 75px;
+  }
+
+
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 1440px) {
+
+
+  .education-entries {
+
+    max-width: 1350px;
+    grid-column-gap: 175px;
+
+  }
+
+
+}
