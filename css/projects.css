@@ -2,6 +2,12 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
+
+.container-projects {
+  background-color: darkslategrey;
+}
+
 /* Header */
 #projects-main-header {
 
@@ -11,20 +17,24 @@
   padding-top: 8rem;
   padding-bottom: 4rem;
   margin-top: 0;
-  background:
-    linear-gradient(#007bff 10%,  #00cccc, transparent 90%),
-    linear-gradient(0deg, #fff, transparent);
-
-
+  color: coral;
 }
 
 
+ul {
+  list-style-type: none;
+}
 
+li {
+  margin: 0 0.8rem;
+}
 
 
 /* ENTRIES FORMAT */
+
 .projects-entries {
 
+  padding-left: 0;   /*CORRECTING padding-left: 40px NOT SURE WHERE IT COMES FROM  */
   max-width: 650px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -36,31 +46,28 @@
 
 }
 
-.projects-entries a{
-  margin: 0 0.8rem;
-}
 
  /* RIBBON/TITLE ON THE ENTRIES */
 
- .projects-entries h5 {
+h2, h3, p{
+  color: #d39e00;
+}
+
+ .projects-entries h2 {
 
      margin-top: 0;
      z-index: 1;
      padding: 1.2rem 0;
-     background-color: greenyellow;
-     color: #fff;
+     background-color: purple ;
+     color: #d39e00;
      font-family: 'Bungee Inline', cursive;
      font-size: 27px;
-     text-transform: uppercase;
      width: auto;
      font-weight: normal;
  }
 
  .projects-entries p {
-   display: none;
-   padding: 1rem;
-   font-size: 1.3rem;
-   line-height: 2rem;
+   font-size: 16px;
  }
 
 
@@ -77,42 +84,40 @@
   height: 40vh;
   background-size: cover;
   display: block;
-  border-width: 3px;
- border-style: solid;
- border-image:
-   linear-gradient(
-     to top,
-     red,
-     #3F0C90
-   ) 1 100%;
 }
 
 
-/* CHANGING THE APPEARENCE OF PROJECT-CARD  TO DESCRIBE WHAT MY PROJECT IS ABOUT WHEN THE MOUSE MOVES ON THE DIV */
 
-.description{
-  background-color: #3F0C90;
+/* PROJECT IMAGE STYLES */
+
+.projects-list-item-image{
+  flex-basis: 100%;
+  margin-bottom: 2.5vh;
+  position: relative;
 }
 
-.description h5, p{
-  color: #d39e00;
+.media-wrapper {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
 }
 
-.description p{
-  display: block;
+.media-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.description h5{
-  margin-top: 1rem;
-}
+/*  / PROJECT IMAGE STYLES */
+
 
 
 /* ENTRIES'S BACKGROUND */
 
-#hotchpotch {
-  background-image: url('../img/projects/hotchpotch-tvseries.png');
-
-}
 
 #londonQuiz {
   background-image: url('../img/projects/london_pic.jpg');
