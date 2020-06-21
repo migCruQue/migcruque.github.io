@@ -3,96 +3,98 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-
+/* MAIN CONTAINER */
 .container-projects {
-  background-color: darkslategrey;
+  background-color: #2A9AC6;
+  padding-bottom: 1rem;
 }
+/* / MAIN CONTAINER */
 
-/* Header */
+/* HEADER */
 #projects-main-header {
 
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Bungee Shade', cursive;
   font-size: 35px;
+  font-weight: bolder;
   text-align: center;
   padding-top: 8rem;
   padding-bottom: 4rem;
   margin-top: 0;
-  color: coral;
+  color: black;
 }
+/* /  HEADER */
 
 
+/* UNORDERED LIST */
 ul {
-  list-style-type: none;
-}
-
-li {
-  margin: 0 0.8rem;
-}
-
-
-/* ENTRIES FORMAT */
-
-.projects-entries {
-
-  padding-left: 0;   /*CORRECTING padding-left: 40px NOT SURE WHERE IT COMES FROM  */
-  max-width: 650px;
+  list-style-type: none; /* Remove bullet point style */
+  margin-top: 30px;
+  padding-left: 0;   /*CORRECTING padding-left: 40px causes by the heading and the wrapper container  */
+  max-width: 300px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr;
-  grid-row-gap: 50px;
-  grid-column-gap: 150px;
+  grid-row-gap: 80px;
   padding-bottom: 50px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+/* / UNORDERED LIST */
 
+
+ul > li {
+  border-style: outset; /* list element border style */
+  border-radius: 0 3% 3% 0;
+  border-top: none;
 }
 
-
- /* RIBBON/TITLE ON THE ENTRIES */
-
-h2, h3, p{
-  color: #d39e00;
+li#my_hotchpotch {
+  border-color: chocolate;
+  background-color:  #703810;
 }
 
- .projects-entries h2 {
+li#london_quiz {
+  border-color: royalblue;
+  background-color:  #11286e;
+}
+li#currency_app {
+  border-color:goldenrod;
+  background-color: #856514;
+}
 
-     margin-top: 0;
-     z-index: 1;
-     padding: 1.2rem 0;
-     background-color: purple ;
-     color: #d39e00;
-     font-family: 'Bungee Inline', cursive;
+ h2 {
+     padding: 10px;
+     display:block;
+     color: black;
      font-size: 27px;
-     width: auto;
      font-weight: normal;
+     text-align: center;
+     width: auto;
  }
 
- .projects-entries p {
-   font-size: 16px;
+ #my_hotchpotch h2 {
+   background-color: chocolate;
  }
 
-
-
-
-.project-card {
-  width: 100%;
-  float: left;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  height: 40vh;
-  background-size: cover;
-  display: block;
+ #london_quiz h2 {
+  background-color: royalblue;
 }
 
+#currency_app h2 {
+  background-color: goldenrod;
+}
 
+p {
+  color: white;
+   font-size: 19px;
+   padding: 8px;
+   margin-top: 25px;
+ }
 
 /* PROJECT IMAGE STYLES */
 
 .projects-list-item-image{
+  margin-top: 35px;
   flex-basis: 100%;
-  margin-bottom: 2.5vh;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -116,18 +118,17 @@ h2, h3, p{
 
 
 
-/* ENTRIES'S BACKGROUND */
+/* USED TECHNOLOGY LIST */
 
-
-#londonQuiz {
-  background-image: url('../img/projects/london_pic.jpg');
-
+.technology {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
-#currencyApp {
-  background-image: url('../img/projects/poundnotes.jpg');
+/* / USED TECHNOLOGY LIST */
 
-}
 
 
 
