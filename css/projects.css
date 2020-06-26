@@ -1,5 +1,5 @@
  /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -11,7 +11,7 @@
 }
 /* / MAIN CONTAINER */
 
-/* HEADER */
+/* MAIN HEADER */
 #projects-main-header {
   font-family: 'Bungee Shade', cursive;
   font-size: 35px;
@@ -22,7 +22,7 @@
   margin-top: 0;
   color: black;
 }
-/* /  HEADER */
+/* / MAIN HEADER */
 
 
 /* UNORDERED LIST */
@@ -38,27 +38,31 @@ ul.projects-entries {
 }
 /* / UNORDERED LIST */
 
-
-ul.projects-entries > li {
+/* LIST ELEMENT PROJECT */
+ul.projects-entries li {
   margin-bottom: 150px;
 }
+  /* / LIST ELEMENT PROJECT */
 
+/* PROJECT HEADER H2 */
 .entry_header h2  {
      font-size: 35px;
      margin-bottom: 30px;
      color: white;
      text-align: center;
  }
+ /* PROJECT HEADER H2 */
 
-.description p {
-  color: white;
-   font-size: 19px;
-   padding: 8px;
-   margin-top: 25px;
- }
+ /* USED TECHNOLOGY LIST */
+.technology {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+ /* / USED TECHNOLOGY LIST */
 
-/* PROJECT IMAGE STYLES */
-
+ /* PROJECT IMAGE*/
 .projects-list-item-image{
   margin-top: 35px;
   flex-basis: 100%;
@@ -83,127 +87,157 @@ ul.projects-entries > li {
   left: 0;
 }
 
-.project-list-item-thumb>img {
+.project-list-item-thumb img {
   display: block;
   width: 100%;
   height: auto;
 }
+/*  / PROJECT IMAGE  */
 
-/*  / PROJECT IMAGE STYLES */
+ /* DESCRIPTION PARAGRAPH */
+.description p {
+  color: white;
+   font-size: 19px;
+   padding: 8px;
+   margin-top: 25px;
+ }
+/* / DESCRIPTION PARAGRAPH */
 
-
-
-/* USED TECHNOLOGY LIST */
-
-.technology {
-  margin-left: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
+/* GITHUB LINK */
 .github_button {
+  max-width: 100px;
   position: relative;
-  display: block;
-  max-width: 250px;
-  overflow: hidden;
   margin: 1rem auto;
+  padding: 0.5rem;
+  text-align: center;
   text-transform: uppercase;
   border: 1px solid white;
+  border-radius: 3%;
+}
+.github_button a{
+  display: flex;
+  flex-direction: column;
+}
+
+.github_button p {
+  font-size: 16px;
+  margin: 0;
+  display: inline;
   color: white;
 }
 
 
-/* / USED TECHNOLOGY LIST */
+.github_button img {
+  border-radius: 3%;
+  width: 80px;
+  height: 60px;
+}
+/* / GITHUB LINK */
 
-
-
-
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 370PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
-@media (min-width: 370px) and (min-height: 800px) {
-  /* HEADER */
+@media (min-width: 375px) and (min-height: 812px) {
+  /* MAIN HEADER */
   #projects-main-header{
     font-size: 45px;
   }
+  /* / MAIN HEADER */
 
+  /* LIST ELEMENT PROJECT */
   ul.projects-entries > li {
     margin-bottom: 120px;
   }
+  /* /LIST ELEMENT PROJECT */
 
 
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY  MIN-WIDTH: 370PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY  MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 760PX AND MIN-HEIGHT: 1024PX   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX   <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-@media (min-width: 760px) and (min-height: 1020px){
-
+@media (min-width: 768px) and (min-height: 1024px){
+  /* MAIN HEADER */
   #projects-main-header {
     font-size: 75px;
   }
+  /* MAIN HEADER */
 
-
-
-.projects-entries{
-    margin-top: 100px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 120px;
-  }
-
+  /* UNORDERED LIST */
   ul.projects-entries > li {
     margin-bottom: 170px;
   }
+  /* / UNORDERED LIST */
 
+  /* PROJECT HEADER H2 */
   .entry_header h2 {
     padding: 15px;
     font-size: 55px;
-
   }
+  /* PROJECT HEADER H2 */
 
+  /* TECNOLOGY LIST */
+  .technology {
+    margin-top: 50px;
+  }
+  /* TECNOLOGY LIST */
+
+  /* SVG TECNOLOGY */
   svg{
     width: 50px;
     height: 50px;
   }
+  /* / SVG TECNOLOGY */
 
+   /* PROJECT IMAGE STYLES */
+  .projects-list-item-image {
+    margin: 35px 15px;
+  }
+   /* / PROJECT IMAGE STYLES */
+  
+  /* DESCRIPTION PARAGRAPH */
   .description p {
     font-size: 30px;
     padding: 25px;
     margin-top: 50px;
   }
+  /* / DESCRIPTION PARAGRAPH */
 
-  .technology {
-    margin-top: 50px;
+  /* GITHUB LINK */
+  .github_button {
+    max-width: 140px;
   }
 
+  .github_button p {
+    font-size: 25px;
+  }
+
+  .github_button img {
+      width: 120px;
+      height: 80px;
+    }
+  /* / GITHUB LINK */
 
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 760PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1200PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 1200px) and (min-height: 800px){
+@media (min-width: 1280px) and (min-height: 800px){
 
     /* MAIN HEADER */
       #projects-main-header {
@@ -213,76 +247,87 @@ ul.projects-entries > li {
       }
     /* / MAIN HEADER */
 
+    /* LIST ELEMENT PROJECT */
     ul.projects-entries > li {
       display: grid;          
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;          /* set up the link display to grid 2 rows 7 columns */
-      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(20, 40px);          /* set up the link display to grid 2 rows 7 columns */
+      grid-template-columns: 500px 500px;
       column-gap: 40px;
       align-items: center;
       margin-bottom: 120px;
       max-width: 1000px;  
     }
+    /* LIST ELEMENT PROJECT */
 
-
-
-    /* IMAGE */
-    .projects-list-item-image{
-      grid-column: 1 / 2;
-      grid-row: 1 / 8;
+     /* PROJECT IMAGE*/
+    a.entry_link{
+      grid-column: 2 / 3;
+      grid-row: 4 / 13;
       margin-top: 0;
       margin-bottom: 0;
     }
-    /* / IMAGE */
+     /* / PROJECT IMAGE*/
 
-    /* ENTRY HEADER */
-    .entry_header h2 {
+    /* / PROJECT HEADER H2 */
+    .entry_header {
       line-height: inherit;
       align-self: stretch;
       font-size: 55px;
-      grid-column: 2 / 3;
-      grid-row: 1 / 3;
+      grid-column: 1 / 2;
+      grid-row: 2 / 4;
     }
-    /* / ENTRY HEADER */
+    /* / PROJECT HEADER H2 */
 
-    /* DIV TECHNOLOGY */
+     /* USED TECHNOLOGY LIST */
     .technology {
       grid-column: 2 / 3;
-      grid-row: 4 / 5;
+      grid-row: 2 / 4;
     }
 
     svg{
       width: 50px;
       height: 50px;
     }
-    /* / DIV TECHNOLOGY */
+     /* USED TECHNOLOGY LIST */
 
     /* PARAGRAPH DESCRIPTION */
-    .description p {
+    .description {
       font-size: 25px;
-      grid-column: 2 / 3;
-      grid-row: 5 / 8;
+      grid-column: 1 / 2;
+      grid-row: 5 / 10;
     }
     /* / PARAGRAPH DESCRIPTION */
+
+    .github_button {
+      grid-column: 1 / 2;
+      grid-row: 12 / 15;
+    }
 
 
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1200PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<><<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-@media (min-width: 1440px) {
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX AND MIN-HEIGHT: 900PX<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+@media (min-width: 1440px) and (min-height: 900px){
 
-
-  .projects-entries {
+  /* UNORDERED LIST */
+  ul.projects-entries {
 
     max-width: 1350px;
     grid-column-gap: 175px;
 
   }
+  /* UNORDERED LIST */
 
 
 }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 1440PX AND MIN-HEIGHT: 900PX<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
