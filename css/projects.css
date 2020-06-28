@@ -63,6 +63,10 @@ ul.projects-entries li {
  /* / USED TECHNOLOGY LIST */
 
  /* PROJECT IMAGE*/
+
+ .entry_link:hover {
+  filter: invert(80%)
+ }
 .projects-list-item-image{
   margin-top: 35px;
   flex-basis: 100%;
@@ -114,11 +118,22 @@ ul.projects-entries li {
   text-align: center;
   text-transform: uppercase;
 }
+
+a{
+  text-decoration: none;  /* REMOVE TEXT DECORATION LINKS */
+}
+
 .link_buttons a{
   display: flex;
   flex-direction: column;
   border: 1px solid white;
   border-radius: 3%;
+}
+
+.link_buttons a:hover {
+  text-decoration: none;
+  filter: hue-rotate(90deg);
+  background-color: goldenrod;
 }
 
 .link_buttons p {
@@ -260,10 +275,10 @@ ul.projects-entries li {
       display: grid;          
       grid-template-rows: repeat(13, 40px);          /* set up the link display to grid 2 rows 7 columns */
       grid-template-columns: 400px 600px;
-      column-gap: 40px;
+      column-gap: 80px;
       align-items: center;
       margin-bottom: 120px;
-      max-width: 1000px;  
+      max-width: 1400px;  
     }
     /* LIST ELEMENT PROJECT */
 
@@ -307,19 +322,21 @@ ul.projects-entries li {
 
     /* PARAGRAPH DESCRIPTION */
     .description {
-      font-size: 25px;
       grid-column: 1 / 2;
-      grid-row: 6 / 8;
+      grid-row: 5 / 8;
     }
+    .description p {
+       font-size: 30px;
+     }
     /* / PARAGRAPH DESCRIPTION */
 
-    /* LINK BUTTONS */
-    .link_buttons {
-      width: 225;
-      grid-column: 1 / 2;
-      grid-row: 9/ 12;
-    }
-    /* / LINK BUTTONS */
+  /* LINK BUTTONS */
+  .link_buttons {
+    width: 300px;
+    grid-column: 1 / 2;
+    grid-row: 10/ 12;
+  }
+  /* / LINK BUTTONS */
 
 
 }
@@ -336,7 +353,7 @@ ul.projects-entries li {
   /* UNORDERED LIST */
   ul.projects-entries {
 
-    max-width: 1350px;
+    max-width: 1400px;
     grid-column-gap: 175px;
 
   }
@@ -344,7 +361,7 @@ ul.projects-entries li {
 
       /* LIST ELEMENT PROJECT */
       ul.projects-entries > li {
-        column-gap: 80px;
+        column-gap: 120px;
       }
       /* LIST ELEMENT PROJECT */
 
@@ -355,3 +372,33 @@ ul.projects-entries li {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 1440PX AND MIN-HEIGHT: 900PX<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1920PX AND MIN-HEIGHT: 1080PX<<<<<<<<<<<( IMAC 21' SCREEN SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+@media (min-width: 1920px) and (min-height: 1080px){
+
+  /* UNORDERED LIST */
+  ul.projects-entries {
+
+    max-width: 2200px;
+
+  }
+  /* UNORDERED LIST */
+
+  /* LIST ELEMENT PROJECT */
+  ul.projects-entries > li {
+    column-gap: 100px;
+  }
+  /* LIST ELEMENT PROJECT */
+
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 1920PX AND MIN-HEIGHT: 1080PX<<<<<<<<<<<( IMAC SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
