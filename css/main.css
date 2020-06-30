@@ -3,21 +3,31 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 nav {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
   font-family: 'Crushed', cursive;
-  background: #cc2b5e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 30px 50px;
+
 }
 
 nav a {
-  font-size: 20px;
-  color: #8db0bb;
+  display: none;
+  text-decoration: none;
+  
+}
+
+nav.visible a{
+  display: block;
+  font-size: 50px;
+  color: black;
   margin-left: 20px;
+  background-color: lavenderblush;
+  opacity: 0.75;
 }
 
 nav a.currentTab{
-  background-color: indigo;
-  border-radius: 10%;
+  display: none;
  }
 
 nav img {
@@ -83,7 +93,7 @@ div.narrow{
 /* NAV */
 
 nav a {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 /* NAV */

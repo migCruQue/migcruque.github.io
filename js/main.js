@@ -2,20 +2,26 @@
 
 // CUSTOMIZE THE MENU WHEN IT IS EXPANDED THROUGH THE TOOGLER BUTTON.
 
-$('button.navbar-toggler').on('click', function(){
-  if ($('button.navbar-toggler').attr('aria-expanded') == 'false') {
-      $('nav').addClass('narrow');
-      $('#nav-container').addClass('narrow');
-      $('a').addClass('mx-auto');
-      }
+// $('button.navbar-toggler').on('click', function(){
+//   if ($('button.navbar-toggler').attr('aria-expanded') == 'false') {
+//       $('nav').addClass('narrow');
+//       $('#nav-container').addClass('narrow');
+//       $('a').addClass('mx-auto');
+//       }
 
-  else {
+//   else {
 
-    $('nav').removeClass('narrow');
-    $('#nav-container').removeClass('narrow');
-    $('a').removeClass('mx-auto');
-  }
+//     $('nav').removeClass('narrow');
+//     $('#nav-container').removeClass('narrow');
+//     $('a').removeClass('mx-auto');
+//   }
 
+// });
+
+$(nav).mouseover(function(){
+  $(this).addClass('visible')
+}).mouseout(function(){
+  $(this).removeClass('visible')
 });
 
 // CUSTOMIZE THE MENU WHEN IT IS EXPANDED THROUGH THE TOOGLER BUTTON.
