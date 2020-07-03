@@ -2,29 +2,28 @@
 
 // CUSTOMIZE THE MENU WHEN IT IS EXPANDED THROUGH THE TOOGLER BUTTON.
 
-// $('button.navbar-toggler').on('click', function(){
-//   if ($('button.navbar-toggler').attr('aria-expanded') == 'false') {
-//       $('nav').addClass('narrow');
-//       $('#nav-container').addClass('narrow');
-//       $('a').addClass('mx-auto');
-//       }
 
-//   else {
 
-//     $('nav').removeClass('narrow');
-//     $('#nav-container').removeClass('narrow');
-//     $('a').removeClass('mx-auto');
-//   }
-
+// $(nav).mouseover(function(){
+//   $(this).addClass('visible')
+// }).mouseout(function(){
+//   $(this).removeClass('visible')
 // });
 
-$(nav).mouseover(function(){
-  $(this).addClass('visible')
-}).mouseout(function(){
-  $(this).removeClass('visible')
-});
-
 // CUSTOMIZE THE MENU WHEN IT IS EXPANDED THROUGH THE TOOGLER BUTTON.
+
+
+
+
+
+            // CODE TO REVIEW
+
+// ?????????????????????????????????????????????????????????
+// ?????????????????????????????????????????????????????????
+// ?????????????????????????????????????????????????????????
+
+
+
 
 
 // TRYING TO FIX THE SIZE OF THE MAIN DIV
@@ -41,24 +40,24 @@ $(nav).mouseover(function(){
 
 // POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
 
-$('#box').offset({top: Math.floor($(window).height() * 0.7)});
+// $('#box').offset({top: Math.floor($(window).height() * 0.7)});
 
 // POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
 
-$('#contact-me-box').offset({top: Math.floor($(window).height() * 0.25)});
+// $('#contact-me-box').offset({top: Math.floor($(window).height() * 0.25)});
 
 
 // EVENT HANDLER TRIGGERS EVERY TIME THE WINDOWS IS RESIZE.
-$( window ).resize(function() {
+// $( window ).resize(function() {
 
-    if($("a[href='index.html']").hasClass('currentTab')){
-      $('#box').offset({top: Math.floor($(window).height() * 0.7)});
+//     if($("a[href='index.html']").hasClass('currentTab')){
+//       $('#box').offset({top: Math.floor($(window).height() * 0.7)});
 
-    }
+//     }
 
-    if($("a[href='contactMe.html']").hasClass('currentTab')){
-      $('#contact-me-box').offset({top: Math.floor($(window).height() * 0.25)});
+//     if($("a[href='contactMe.html']").hasClass('currentTab')){
+//       $('#contact-me-box').offset({top: Math.floor($(window).height() * 0.25)});
 
-    }
+//     }
 
-});
+// });
