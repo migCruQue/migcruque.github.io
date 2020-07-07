@@ -3,34 +3,48 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 nav {
+  position: absolute;
+  top: 4rem;
+  left: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-family: 'Crushed', cursive;
-  margin-left: 5px;
-  width: 120px;
   align-items: center;
 
 }
 
-.links_nav{
-  margin-top: 8px;
+nav.expanded{
+  background-color: black;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  margin: 0;
+  justify-content: space-evenly;
+  z-index: 4;
+  opacity: 0.9;
+}
+
+nav > .links_visible{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+nav > .links_hidden {
+  display: none;
 }
 
 nav a {
   text-align: center;
-  width: 90px;
   text-decoration: none;
   font-size: 20px;
   color: black;
   background-color: lavenderblush;
-  opacity: 0.75;
-  margin-bottom:15px;
+  margin-bottom: 1.8rem;
   border-radius: 3%;
+  padding: .2rem .3rem;
 }
 
 nav a.currentTab{
@@ -56,9 +70,6 @@ nav img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5px;
-  width: 100px;
-  height: 100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -69,12 +80,10 @@ nav img {
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
 }
 
 .circle {
-  position: absolute;
   width: 80px;
   height: 80px;
   border-style: solid;
@@ -132,7 +141,6 @@ _3 {
 }
 
 
-/* THIS ANIMATION MAKES THE OPTIONS BUTTONS TO APPEAR GRADUALLY */
 .circle, .square  {
   animation-name: spinLogo;
   animation-duration: 3.5s;
@@ -167,7 +175,7 @@ div._3  {
     transform: rotate(0deg);
   }
   20% {
-    transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.2, 0.2, 1);
    
   }
   40% {
