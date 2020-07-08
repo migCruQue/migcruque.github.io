@@ -21,17 +21,3 @@
 //     }
 
 // });
-
-
-
-// PHONE VIEW NAV LINKS APPEARING AND DISAPPEARING
-
-$('.iconblock').click(function(){
-    if($('nav').hasClass('expanded')) {
-        $('nav').removeClass('expanded');
-        $('#nav_links').removeClass('links_visible').addClass('links_hidden');
-    } else {
-        $('nav').addClass('expanded');
-        $('#nav_links').removeClass('links_hidden').addClass('links_visible');
-    }
-});
