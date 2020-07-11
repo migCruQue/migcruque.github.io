@@ -44,6 +44,23 @@ main .container {
 
 }
 
+
+.expanded > .nav_heading {
+  display: none;
+}
+
+.nav_heading{
+  margin-left: 2rem;
+}
+
+.nav_heading h1{
+  vertical-align: middle;
+  color: #fff;
+  background: goldenrod;
+  padding: 0 0.5rem;
+  border-radius: 2%;
+}
+
 #contact-me h1{
   font-family: 'Lobster', cursive;
   font-size: 32px;

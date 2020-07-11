@@ -1,20 +1,23 @@
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   MAIN STYLES FOR ELEMENTS THAT INCLUDES ALL THE TABS LIKE THE NAVITAGION MENU<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
+/* NAVIGATION MENU */
 nav {
   position: absolute;
   top: 4rem;
   left: 2.5rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
   font-family: 'Crushed', cursive;
-  align-items: center;
-
 }
+/* / NAVIGATION MENU */
 
+/* NAVIGATION MENU WITH THE CLASS="EXPANDED" WHICH FOR PHONE VIEWS OVERLAP THE MAIN CONTENT */
 nav.expanded{
+  flex-direction: column;
   background-color: black;
   top: 5%;
   bottom: 5%;
@@ -25,17 +28,23 @@ nav.expanded{
   z-index: 4;
   opacity: 0.9;
 }
+/*  / NAVIGATION .EXPANDED */
 
-nav > .links_visible{
+/* #NAV_LINKS DIV WHEN THE NAV HAS THE CLASS .EXPANDED */
+.expanded > #nav_links{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* .EXPANDED #NAV_LINKS */
 
-nav > .links_hidden {
+/* DEFAULT #NAV_LINKS DIV*/
+nav > #nav_links {
   display: none;
 }
+/* NAV  #NAV_LINKS */
 
+/* NAV LINK */
 nav a {
   text-align: center;
   text-decoration: none;
@@ -46,25 +55,12 @@ nav a {
   border-radius: 3%;
   padding: .2rem .3rem;
 }
-
-nav a.currentTab{
-  display: none;
- }
-
-nav img {
-  max-width: 100px;
-  max-height: 60px;
-  padding-bottom: 0;
-  padding-top: 0;
-  border-style: groove;
-  border-radius:10% 10%;
-  border-color: yellow;
-  margin: 7px 0;
-}
-
-/* IMAGE LOGO ROTATING */
+/* / NAV LINK */
 
 
+                                                    /* IMAGE LOGO ROTATING */
+
+/* MAIN DIV FOR THE LOGO BUTTON LINK */
 .iconblock {
   display: -webkit-box;
   display: -webkit-flex;
@@ -82,7 +78,9 @@ nav img {
   -webkit-box-align: center;
   -ms-flex-align: center;
 }
+/* / MAIN DIV FOR THE LOGO BUTTON LINK */
 
+/* CIRCLE DIV */
 .circle {
   width: 80px;
   height: 80px;
@@ -91,39 +89,39 @@ nav img {
   border-color: #fff;
   border-radius: 50%;
 }
+/* / CIRCLE DIV */
 
-
-.circle.square {
-  border-width: 2px;
-  border-radius: 0%;
-}
-
-
+/* CIRCLE DIV WITH THE GRADIENT CLASS */
 .circle.gradient {
-  width: 12vh;
-  height: 12vh;
+  width: 8vh;
+  height: 8vh;
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* / CIRCLE DIV WITH THE GRADIENT CLASS */
 
+/* SQUARE CLASS */
 .square {
   position: absolute;
-  width: 10vh;
-  height: 10vh;
+  width: 8vh;
+  height: 8vh;
   border-style: solid;
-  border-width: 1px;
-  
+  border-width: 1px; 
 }
+/*/ SQUARE CLASS */
 
+/* DIV WITH _1 CLASS */
 ._1{
   border-color: #1f201f;
   -webkit-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
   transform: rotate(15deg);
 }
+/*  / DIV WITH _1 CLASS */
 
+/* DIV WITH _2 CLASS */
 ._2 {
   border-color: #c429b2b6;
   background-color: rgb(250, 255, 192);
@@ -132,29 +130,35 @@ nav img {
   -ms-transform: rotate(25deg);
   transform: rotate(25deg);
 }
+/*  / DIV WITH _2 CLASS */
 
+/* DIV WITH _3 CLASS */
 _3 {
   border-color: #b0db14;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+/*  / DIV WITH _3 CLASS */
 
-
+/* ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
 .circle, .square  {
   animation-name: spinLogo;
   animation-duration: 3.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+/* / ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
 
+/* ANIMATION SPINLOGO FOR DIVS _2 _3 */
 ._2, ._3{
   animation-name: spinScaleLogo;
   animation-duration: 3s;
   animation-timing-function: ease-out;
 }
+/* ANIMATION SPINLOGO FOR DIVS _2 _3 */
 
-
+/* DELAYS FOR DIVS 2 AND 3 */
 div._2  {
   animation-delay: 0.3s;
 }
@@ -162,13 +166,17 @@ div._2  {
 div._3  {
   animation-delay: 0.6s;
 }
+/* DELAYS FOR DIVS 2 AND 3 */
 
+/* KEYFRAMES ANIMATION SPINLOGO */
 @keyframes spinLogo {
   to {
     transform: rotate(360deg);
   }
 }
+/* / KEYFRAMES ANIMATION SPINLOGO */
 
+/* KEYFRAMES ANIMATION SPINSCALELOGO */
 @keyframes spinScaleLogo {
   0%, 100% {
     transform: scale3d(1, 1, 1);
@@ -186,12 +194,10 @@ div._3  {
     transform: scale3d(1.2, 1.2, 1);
   }
 }
+/* / KEYFRAMES ANIMATION SPINSCALELOGO */
 
 
-/* THIS ANIMATION MAKES THE OPTIONS BUTTONS TO APPEAR GRADUALLY */
-
-
-/* IMAGE LOGO ROTATING */
+                                                                                    /* IMAGE LOGO ROTATING */
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -204,18 +210,17 @@ div._3  {
 
 @media (min-width: 375px) and (min-height: 812px) {
 
+  /* MAIN DIV FOR THE LOGO BUTTON LINK */
   .iconblock{
     margin-top: 25px;
   }
+  /* / MAIN DIV FOR THE LOGO BUTTON LINK */
 
-  .links_nav{
-    margin-top: 25px;
-  }
-
+  /* NAV LINK */
   nav a {
-    width: 110px;
     font-size: 25px;
   }
+  /* / NAV LINK */
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY  MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<*/
@@ -228,16 +233,46 @@ div._3  {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-@media (min-width: 768px) and (min-height: 1024px){
+@media (min-width: 768px){
 
+  /* NAVIGATION MENU */
   nav {
-    width: 160px;
-  }  
-
-  nav a {
-    width: 150px;
-    font-size: 35px;
+    top: 3rem;
+    left: 4rem;
+    flex-direction: row;
   }
+/* / NAVIGATION MENU */
+
+  /* NAVIGATION MENU WITH THE CLASS="EXPANDED" WHICH FOR PHONE VIEWS OVERLAP THE MAIN CONTENT */
+nav.expanded{
+  flex-direction: row;
+  align-items: flex-end;
+  position: absolute;
+  bottom: auto;
+  right: auto;
+  margin: 0;
+  justify-content: space-evenly;
+  z-index: 4;
+  background-color: transparent;
+  opacity: 0.9;
+}
+/*  / NAVIGATION .EXPANDED */
+
+/* #NAV_LINKS DIV WHEN THE NAV HAS THE CLASS .EXPANDED */
+.expanded > #nav_links{
+  flex-direction: row;
+}
+/* .EXPANDED #NAV_LINKS */
+
+/* NAV LINK */
+  nav a {
+    font-size: 30px;
+    margin-left: 2rem;
+    opacity: 0.9;
+    border-radius: 3px;
+    border-color: rgb(250, 255, 192);
+  }
+/* NAV LINK */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -248,23 +283,54 @@ div._3  {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 1280px) and (min-height: 800px){
+@media (min-width: 1280px){
+ 
   
+        /* NAVIGATION MENU */
+    nav {
+      top: 3rem;
+      left: 4rem;
+      flex-direction: row;
+    }
+/* / NAVIGATION MENU */
+
+  /* NAVIGATION MENU WITH THE CLASS="EXPANDED" WHICH FOR PHONE VIEWS OVERLAP THE MAIN CONTENT */
+  nav.expanded{
+    align-items: center;
+  }
+  /*  / NAVIGATION .EXPANDED */
+
   .iconblock {
       margin-top: 20px;
       margin-bottom: 20px;
   }
 
-  nav {
-    flex-direction: row;
-    margin-left: 0;
-    width: unset;
-  }
+  /* CIRCLE DIV WITH THE GRADIENT CLASS */
+.circle.gradient {
+  width: 10vh;
+  height: 10vh;
+}
+/* / CIRCLE DIV WITH THE GRADIENT CLASS */
+
+/* SQUARE CLASS */
+.square {
+  width: 10vh;
+  height: 10vh;
+}
+/*/ SQUARE CLASS */
+
 
   .links_nav {
     flex-direction: row;
-    margin-top: 0;
+    margin-left: 4rem;
   }
+
+  /* NAV */
+  nav a {
+    font-size: 40px;
+    margin-left: 6rem;
+  }
+  /* NAV */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
