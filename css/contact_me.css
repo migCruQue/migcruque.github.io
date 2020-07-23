@@ -451,6 +451,8 @@ nav a {
   font-family: 'Space Mono', monospace;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
 
 }
 
@@ -460,13 +462,6 @@ nav a {
   font-size: 32px;
 }
 
-#contact-links{
-  justify-content: space-evenly;
-  margin-top: 2.5rem;
-  display: flex;
-  flex-direction: column;
-
-}
 
 #contact-links a {
   color: #FFFFFF;
@@ -480,10 +475,31 @@ nav a {
   margin: 0 0 10px 18px;
 }
 
-#contact-links i {
-  font-size: 40px;
+
+.link_image{
+  width: 8vh;
+  height: 8vh;
+  border-style: none;
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+#email_icon {
+  background-image: url('../img/contact_me/social_networks_icons/email_icon.png');
+}
+
+#github_icon {
+  background-image: url('../img/contact_me/social_networks_icons/github_icon.png');
+}
+
+#linkedin_icon {
+  background-image: url('../img/contact_me/social_networks_icons/linkedin_icon.png');
+}
+
+#twitter_icon {
+  background-image: url('../img/contact_me/social_networks_icons/twitter_icon.png');
+}
 
 
 
