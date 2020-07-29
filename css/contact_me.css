@@ -429,57 +429,43 @@ nav a {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTACT_ME.HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
-#contact_me {
+/* MAIN */
+main {
   background-image: url('../img/contact_me/typewriter2.jpg');
   background-size: cover;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 7rem 0;
 }
+/* / MAIN */
 
-
+/* #CONTACT_LINKS DIV */
 #contact_links {
-  position: absolute;
+  margin-top: 3rem;
   border-radius: 2%;
   color: #FFFFFF;
   font-size: 8px;
   font-family: 'Space Mono', monospace;
   display: grid;
-  top: 10rem;
-  left: 3rem;
-
+  grid-template-rows: repeat(4, 5rem);
+  row-gap: 1rem;
+  justify-items: center;
 }
+/* / #CONTACT_LINKS DIV */
 
-/* LINK_CONTACT CLASS */
-.link_contact{
+/* .DIV_LINK DIV  */
+.div_link{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 14rem;
-  padding: 0.5rem 0.5rem;
+  padding: 0.3rem 0.3rem;
   border-top-left-radius: 5%;
   background-color: transparent;    /* FALLBACK */
   background: linear-gradient(to top, transparent 0 60%,  grey );
 }
-/* LINK_CONTACT CLASS */
+/* / .DIV_LINK DIV  */
 
-/* LINK TEXT CLASS */
-.link_text {
-  margin-left: 1.5rem;
-  background-color: black;
-  padding: 0 0.5rem;
-  height: fit-content;
-}
-/* LINK TEXT CLASS */
-
-
- h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
-}
-
-
+/* .LINK_IMAGE DIV */
 .link_image{
   width: 8vh;
   height: 8vh;
@@ -489,39 +475,55 @@ nav a {
   background-repeat: no-repeat;
 }
 
+/* #EMAIL_ICON BACKGROUND IMAGE */
 #email_icon {
   background-image: url('../img/contact_me/social_networks_icons/email_icon.png');
 }
-
-#email_text {
-  color: #e0218a;
-}
-
+/* #GITHUB_ICON BACKGROUND IMAGE */
 #github_icon {
   background-image: url('../img/contact_me/social_networks_icons/github_icon.png');
 }
-
-#github_text {
-  color: #953fa2;
-}
-
+/* #LINKEDIN_ICON BACKGROUND IMAGE */
 #linkedin_icon {
   background-image: url('../img/contact_me/social_networks_icons/linkedin_icon.png');
 }
-
-#linkedin_text {
-  color: #0273af;
-}
-
+/* #TWITTER_ICON BACKGROUND IMAGE */
 #twitter_icon {
   background-image: url('../img/contact_me/social_networks_icons/twitter_icon.png');
 }
+/* / .LINK_IMAGE DIV */
 
+/* .LINK_TEXT DIV */
+.link_text {
+  margin-left: 1.5rem;
+  background-color: black;
+  padding: 0 0.5rem;
+  height: fit-content;
+}
+/* #EMAIL_TEXT COLOR */
+#email_text {
+  color: #e0218a;
+}
+/* #GITHUB_TEXT COLOR */
+#github_text {
+  color: #953fa2;
+}
+/* #LINKEDIN_TEXT COLOR */
+#linkedin_text {
+  color: #0273af;
+}
+/* #TWITTER_TEXT COLOR */
 #twitter_text {
   color: #3eb6ed;
 }
+/* / .LINK_TEXT DIV */
 
-
+/* HEADING 2 */
+ h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+}
+/*/  HEADING 2 */
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<<<<<*/
@@ -529,22 +531,19 @@ nav a {
 
 @media (min-width: 375px) and (min-height: 812px) {
 
+  /* #CONTACT_LINKS DIV */
   #contact_links {
-    top: 15rem;
-    left: 4rem;
+    margin-top: 8rem;
+    row-gap: 3rem;
   }
+  /* / #CONTACT_LINKS DIV */
 
-  .link_contact {
-    width: 16rem;
-  }
-
+  /* HEADING 2 */
   h2 {
     font-size: 34px;
   }
+  /* HEADING 2 */
 
-  #contact_links a {
-    margin-bottom: 2.5rem;
-  }
 
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -557,28 +556,38 @@ nav a {
 
 
 @media (min-width: 768px){
-
+  /* #CONTACT_LINKS DIV */
   #contact_links {
-    top: 19rem;
-    left: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    row-gap: 5rem;
   }
+  /* / #CONTACT_LINKS DIV */
 
-  .actual_link {
-    width: 25rem;
-    margin-bottom: 0.5rem;
+  /* <A> */
+  a {
+    width: 22rem;
   }
-  
+  /* <A> */
+
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (min-width: 1280px) and (min-height: 800px){
+  /* MAIN */
+  main {
+    padding: 9rem 0;
+  }
+  /* / MAIN 
 
+  /* #CONTACT_LINKS DIV */
   #contact_links {
     display: grid;
     grid-template-rows: 8rem 8rem;
@@ -587,38 +596,49 @@ nav a {
     column-gap: 3rem;
     justify-items: center;
   }
+  /* / #CONTACT_LINKS DIV */
 
+  /* #EMAIL_LINK LINK */
   #email_link {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
   }
+  /* / #EMAIL_LINK LINK  */
 
+  /* #GITHUB_LINK LINK  */
   #github_link {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
+  /* / #GITHUB_LINK LINK  */
 
+  /* #LINKEDIN_LINK LINK  */
   #linkedin_link {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
   }
+  /* / #LINKEDIN_LINK LINK  */
 
+  /* #TWITTER_LINK LINK  */
   #twitter_link {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
   }
+  /* / #TWITTER_LINK LINK  */
 
-  .actual_link {
+  /* <A> */
+  a {
     width: 18rem;
     justify-self: center;
     align-self: center;
   }
+  /* <A> */
 
-  /* LINK_CONTACT CLASS */
-.link_contact{
-  width: auto;
-}
-/* LINK_CONTACT CLASS */
+  /* .DIV_LINK DIV  */
+  .div_link{
+    width: auto;
+  }
+  /* / .DIV_LINK DIV  */
 
 
 }
