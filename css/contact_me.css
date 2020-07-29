@@ -445,18 +445,16 @@ nav a {
   color: #FFFFFF;
   font-size: 8px;
   font-family: 'Space Mono', monospace;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 10rem;
-  margin-left: 3rem;
+  display: grid;
+  top: 10rem;
+  left: 3rem;
 
 }
 
 /* LINK_CONTACT CLASS */
 .link_contact{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   width: 14rem;
   padding: 0.5rem 0.5rem;
@@ -479,16 +477,6 @@ nav a {
  h2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 25px;
-}
-
-
-#contact_links a {
-  color: #FFFFFF;
-  margin-bottom: 1.5rem;
-}
-
-#contact_links a:hover {
-  color: #ffcc00;
 }
 
 
@@ -542,8 +530,8 @@ nav a {
 @media (min-width: 375px) and (min-height: 812px) {
 
   #contact_links {
-    margin-top: 15rem;
-    margin-left: 4rem;
+    top: 15rem;
+    left: 4rem;
   }
 
   .link_contact {
@@ -571,11 +559,11 @@ nav a {
 @media (min-width: 768px){
 
   #contact_links {
-    margin-top: 19rem;
-    margin-left: 10rem;
+    top: 19rem;
+    left: 10rem;
   }
 
-  .link_contact {
+  .actual_link {
     width: 25rem;
     margin-bottom: 0.5rem;
   }
@@ -584,4 +572,57 @@ nav a {
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (min-width: 1280px) and (min-height: 800px){
+
+  #contact_links {
+    display: grid;
+    grid-template-rows: 8rem 8rem;
+    grid-template-columns: 22rem 22rem;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    justify-items: center;
+  }
+
+  #email_link {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  #github_link {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  #linkedin_link {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  #twitter_link {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .actual_link {
+    width: 18rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  /* LINK_CONTACT CLASS */
+.link_contact{
+  width: auto;
+}
+/* LINK_CONTACT CLASS */
+
+
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<><<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
