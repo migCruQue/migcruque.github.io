@@ -12,8 +12,30 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-family: 'Crushed', cursive;
+  z-index: 1;
 }
 /* / NAVIGATION MENU */
+
+/* NAV HEADING DIV */
+.expanded > .nav_heading {
+  display: none;
+}
+
+.nav_heading{
+  margin-left: 2rem;
+}
+
+/* NAV HEADING */
+.nav_heading h1{
+  font-size: 35px;
+  vertical-align: middle;
+  color: #fff;
+  background: goldenrod;
+  padding: 0 0.5rem;
+  border-radius: 2%;
+}
+
+/* NAV HEADING DIV */
 
 /* NAVIGATION MENU WITH THE CLASS="EXPANDED" WHICH FOR PHONE VIEWS OVERLAP THE MAIN CONTENT */
 nav.expanded{
@@ -209,6 +231,19 @@ div._3  {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (min-width: 375px) and (min-height: 812px) {
+  /* NAVIGATION MENU */
+  nav {
+    align-items: flex-end;
+    top: 3rem;
+    left: 3rem;
+  }
+  /* / NAVIGATION MENU */
+
+  /* NAV HEADING */
+  .nav_heading {
+    margin-left: 3rem;
+  }
+  /* /NAV HEADING */
 
   /* MAIN DIV FOR THE LOGO BUTTON LINK */
   .iconblock{
@@ -229,7 +264,7 @@ div._3  {
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX   <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX   <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -244,35 +279,56 @@ div._3  {
 /* / NAVIGATION MENU */
 
   /* NAVIGATION MENU WITH THE CLASS="EXPANDED" WHICH FOR PHONE VIEWS OVERLAP THE MAIN CONTENT */
-nav.expanded{
-  flex-direction: row;
-  align-items: flex-end;
-  position: absolute;
-  bottom: auto;
-  right: auto;
-  margin: 0;
-  justify-content: space-evenly;
-  z-index: 4;
-  background-color: transparent;
-  opacity: 0.9;
-}
-/*  / NAVIGATION .EXPANDED */
-
-/* #NAV_LINKS DIV WHEN THE NAV HAS THE CLASS .EXPANDED */
-.expanded > #nav_links{
-  flex-direction: row;
-}
-/* .EXPANDED #NAV_LINKS */
-
-/* NAV LINK */
-  nav a {
-    font-size: 30px;
-    margin-left: 2rem;
+  nav.expanded{
+    flex-direction: row;
+    align-items: flex-end;
+    position: absolute;
+    bottom: auto;
+    right: auto;
+    margin: 0;
+    justify-content: space-evenly;
+    z-index: 4;
+    background-color: transparent;
     opacity: 0.9;
-    border-radius: 3px;
-    border-color: rgb(250, 255, 192);
   }
-/* NAV LINK */
+  /*  / NAVIGATION .EXPANDED */
+
+  /* CIRCLE DIV WITH THE GRADIENT CLASS */
+  .circle.gradient {
+    width: 9vh;
+    height: 9vh;
+  }
+  /* / CIRCLE DIV WITH THE GRADIENT CLASS */
+  
+  /* SQUARE CLASS */
+  .square {
+    width: 9vh;
+    height: 9vh;
+  }
+  /*/ SQUARE CLASS */
+
+  .nav_heading{
+    margin-left: 6rem;
+  }
+  .nav_heading h1 {
+    font-size: 55px;
+  }
+
+  /* #NAV_LINKS DIV WHEN THE NAV HAS THE CLASS .EXPANDED */
+  .expanded > #nav_links{
+    flex-direction: row;
+  }
+  /* .EXPANDED #NAV_LINKS */
+
+  /* NAV LINK */
+    nav a {
+      font-size: 30px;
+      margin-left: 2rem;
+      opacity: 0.9;
+      border-radius: 3px;
+      border-color: rgb(250, 255, 192);
+    }
+  /* NAV LINK */
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -280,7 +336,7 @@ nav.expanded{
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (min-width: 1280px){
@@ -341,14 +397,25 @@ nav.expanded{
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 1440px) {
+  nav{
+    align-items: center;
+  }
+  
+  .nav_heading {
+    margin-left: 6rem;
+  }
+  
+  .nav_heading h1{
+    font-size: 60px;
+  }
 
-/* NAV */
+  /* NAV */
 
-nav a {
-  font-size: 50px;
-}
+  nav a {
+    font-size: 50px;
+  }
 
-/* NAV */
+  /* NAV */
 
 
 }
