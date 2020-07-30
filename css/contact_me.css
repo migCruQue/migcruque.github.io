@@ -12,6 +12,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-family: 'Crushed', cursive;
+  z-index: 1;
 }
 /* / NAVIGATION MENU */
 
@@ -431,17 +432,18 @@ nav a {
 
 /* MAIN */
 main {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
   background-image: url('../img/contact_me/typewriter2.jpg');
   background-size: cover;
-  display: flex;
+  display: flex;                    /*  HORIZONTALY CENTER THE #CONTACT_LINKS DIV */
   justify-content: center;
-  padding: 7rem 0;
 }
 /* / MAIN */
 
 /* #CONTACT_LINKS DIV */
 #contact_links {
-  margin-top: 3rem;
+  margin-top: 10rem;
   border-radius: 2%;
   color: #FFFFFF;
   font-size: 8px;
@@ -461,7 +463,22 @@ main {
   padding: 0.3rem 0.3rem;
   border-top-left-radius: 5%;
   background-color: transparent;    /* FALLBACK */
-  background: linear-gradient(to top, transparent 0 60%,  grey );
+}
+
+#email_div {
+  background: linear-gradient(to top, rgb(157, 11, 91) 0 60%, transparent );
+}
+
+#github_div {
+  background: linear-gradient(to top, #711080 0 60%, transparent );
+}
+
+#linkedin_div {
+  background: linear-gradient(to top, #064c72 0 60%, transparent );
+}
+
+#twitter_div {
+  background: linear-gradient(to top, #15709b 0 60%, transparent );
 }
 /* / .DIV_LINK DIV  */
 
@@ -496,8 +513,9 @@ main {
 /* .LINK_TEXT DIV */
 .link_text {
   margin-left: 1.5rem;
-  background-color: black;
-  padding: 0 0.5rem;
+  background-color:white;
+  padding: 0.3rem 0.5rem 0;
+  border-radius: 3%;
   height: fit-content;
 }
 /* #EMAIL_TEXT COLOR */
@@ -533,7 +551,7 @@ main {
 
   /* #CONTACT_LINKS DIV */
   #contact_links {
-    margin-top: 8rem;
+    margin-top: 15rem;
     row-gap: 3rem;
   }
   /* / #CONTACT_LINKS DIV */
@@ -558,15 +576,26 @@ main {
 @media (min-width: 768px){
   /* #CONTACT_LINKS DIV */
   #contact_links {
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    margin-top: 20rem;
     row-gap: 5rem;
   }
   /* / #CONTACT_LINKS DIV */
 
+  /* .DIV_LINK DIV  */
+.div_link{
+  justify-content: start;
+}
+/* / .DIV_LINK DIV  */
+
+  /* .LINK_IMAGE DIV */
+  .link_image{
+   margin-left: 1.3rem;
+  }
+  /* / .LINK_IMAGE DIV */
+
   /* <A> */
   a {
-    width: 22rem;
+    width: 20rem;
   }
   /* <A> */
 
@@ -581,12 +610,6 @@ main {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (min-width: 1280px) and (min-height: 800px){
-  /* MAIN */
-  main {
-    padding: 9rem 0;
-  }
-  /* / MAIN 
-
   /* #CONTACT_LINKS DIV */
   #contact_links {
     display: grid;
