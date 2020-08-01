@@ -1,27 +1,30 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ABOUT_ME.HTML      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-#about-me {
-  background: url('../img/about_me/bridge.jpg') no-repeat center center fixed;
+main {
+  background-image: url('../img/about_me/bridge.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
   padding: 7rem 1rem 1rem;
 }
 
 
-#about-me p {
+ p {
   max-width: 700px;
   line-height: 1.7rem;
   text-align: left;
   padding: 2rem 1rem;
+  margin: 3rem auto;
   font-size: 16px;
   font-weight: 700;
   hyphens: auto;
   font-family: 'Open Sans', sans-serif;
   color: #fff;
-  margin: 3rem auto;
   background: rgba(22,22,22, 0.5);
   border-radius: 5px;
 }
@@ -32,11 +35,11 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (min-width: 375px) and (min-height: 812px) {
-  #about-me {
+  main {
     padding: 10rem 1rem 1rem;
   }
 
-  #about-me p {
+  p {
     font-size: 18px;
   }
 
@@ -52,11 +55,11 @@
 
 @media (min-width: 768px){
 
-  #about-me {
+  main {
     padding: 13rem 1rem 1rem;
   }
 
-  #about-me p {
+  p {
       padding: 5rem 4rem;
       font-size: 22px;
       line-height: 2.4rem;
@@ -73,11 +76,11 @@
 
 @media (min-width: 1280px){
  
-  #about-me {
+  main {
       padding: 12rem 2rem 4rem;
   }
 
-  #about-me p {
+  p {
     line-height: 2.5rem;
     max-width: 900px;
   }

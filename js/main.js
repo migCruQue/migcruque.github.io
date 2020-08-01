@@ -9,8 +9,10 @@
 $('.iconblock').click(function(){
 if($('nav').hasClass('expanded')) {
     $('nav').removeClass('expanded');
+    $('html').removeClass('disable_scrolling');
 } else {
     $('nav').addClass('expanded');
+    $('html').addClass('disable_scrolling');           // DISABLE SCROLLING
     }
 });
 
