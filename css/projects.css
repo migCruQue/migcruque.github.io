@@ -6,7 +6,7 @@
 /* MAIN CONTAINER */
 .container-projects {
   background-color: #475CD1;
-  padding-bottom: 1rem;
+  padding: 12rem 1rem 1rem;
   max-width: 2560px
 }
 /* / MAIN CONTAINER */
@@ -17,7 +17,7 @@
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom: 4rem;
   margin-top: 0;
   color: black;
