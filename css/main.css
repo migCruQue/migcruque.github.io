@@ -96,6 +96,10 @@ nav a {
   border-radius: 3%;
   padding: .2rem .3rem;
 }
+
+nav a:hover {
+  text-decoration: none;
+}
 /* / NAV LINK */
 
 
@@ -304,11 +308,14 @@ div._3  {
     position: absolute;
     bottom: auto;
     right: auto;
+    padding: 0.7rem;
     margin: 0;
     justify-content: space-evenly;
     z-index: 4;
-    background-color: transparent;
-    opacity: 0.9;
+    background-color: plum;
+    background-image: none;
+    opacity: 0.8;
+    border-radius: 2%;
   }
   /*  / NAVIGATION .EXPANDED */
 
@@ -343,7 +350,6 @@ div._3  {
     nav a {
       font-size: 30px;
       margin-left: 2rem;
-      opacity: 0.9;
       border-radius: 3px;
       border-color: rgb(250, 255, 192);
     }

@@ -70,11 +70,8 @@ if($('nav').hasClass('expanded')) {
 
 // POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
 
-// $('#box').offset({top: Math.floor($(window).height() * 0.7)});
+$('#box').offset({top: Math.floor($(window).height() * 0.7)});
 
-// POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
-
-// $('#contact-me-box').offset({top: Math.floor($(window).height() * 0.25)});
 
 
 // EVENT HANDLER TRIGGERS EVERY TIME THE WINDOWS IS RESIZE.

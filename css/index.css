@@ -102,8 +102,6 @@ padding: 3px;
 
 @media (min-width: 768px) and (min-height: 1024px){
   main .container {
-    top: auto;
-    bottom: 125px;
     left: 180px;
     width: 55%;
   }
