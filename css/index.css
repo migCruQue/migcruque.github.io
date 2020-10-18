@@ -14,13 +14,15 @@
 
 .intro {
   height: 100vh;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 main .container {
-  width: 70%;
+  width: 85%;
 	padding: 2px;
 	background: #fff;
   border-radius: 5px;
@@ -30,20 +32,26 @@ main .container {
   opacity: 0.8;
   filter: alpha(opacity=50);
   position: absolute;
-  top: 480px;
-  left: 50px;
 }
 
 main .item {
-  font-size: 20px;
-  font-family: 'Crushed', cursive;
-  padding: 5px;
-	color: #ff1a1a;
 	border-radius: 3px;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0.3rem;
+}
 
+.item a{
+  font-size: 20px;
+  font-family: 'Crushed', cursive;
+  margin-left: 0.3rem;
+  text-decoration: none;
+  color: #ff1a1a;
+}
+
+.item a:hover{
+  cursor: default;
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / INDEX.HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
