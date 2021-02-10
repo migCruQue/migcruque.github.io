@@ -1,243 +1,282 @@
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CONTACT_ME.HTML <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/* MAIN */
-main {
-  position: absolute;
-  left: 0; top: 0; right: 0; bottom: 0;
+#contact_me {
   background-image: url('../img/contact_me/typewriter2.jpg');
-  background-size: cover;
-  display: flex;                    /*  HORIZONTALY CENTER THE #CONTACT_LINKS DIV */
-  justify-content: center;
-}
-/* / MAIN */
-
-/* #CONTACT_LINKS DIV */
-#contact_links {
-  margin-top: 10rem;
-  border-radius: 2%;
-  color: #FFFFFF;
-  font-size: 8px;
+  background-size: cover; 
+  flex-direction: column;
   font-family: 'Space Mono', monospace;
-  display: grid;
-  grid-template-rows: repeat(4, 5rem);
-  row-gap: 1rem;
-  justify-items: center;
+  height: 100vh;
 }
-/* / #CONTACT_LINKS DIV */
 
-/* .DIV_LINK DIV  */
-.div_link{
+#contact_me a {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 0.3rem 0.3rem;
-  border-top-left-radius: 5%;
-  background-color: transparent;    /* FALLBACK */
+  width: 65%;
+  height: 3.2rem;
+  margin-bottom: 2.5rem;
 }
 
-#email_div {
-  background: linear-gradient(to top, rgb(157, 11, 91) 0 60%, transparent );
+                          /* * LINKS' BACKGROUNDS  */
+#email_link  {
+  background: linear-gradient(to top, rgb(157, 11, 91) 0 75%, transparent );
 }
 
-#github_div {
-  background: linear-gradient(to top, #711080 0 60%, transparent );
+#github_link  {
+  background: linear-gradient(to top, #711080 0 75%, transparent );
 }
 
-#linkedin_div {
-  background: linear-gradient(to top, #064c72 0 60%, transparent );
+#linkedin_link {
+  background: linear-gradient(to top, #064c72 0 75%, transparent );
 }
 
-#twitter_div {
-  background: linear-gradient(to top, #15709b 0 60%, transparent );
+#twitter_link  {
+  background: linear-gradient(to top, #15709b 0 75%, transparent );
 }
-/* / .DIV_LINK DIV  */
 
-/* .LINK_IMAGE DIV */
-.link_image{
-  width: 8vh;
-  height: 8vh;
+
+.link_logo{
+  width: 6vh;
+  height: 6vh;
   border-style: none;
-  background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* #EMAIL_ICON BACKGROUND IMAGE */
-#email_icon {
+#email_link div {
   background-image: url('../img/contact_me/social_networks_icons/email_icon.png');
 }
-/* #GITHUB_ICON BACKGROUND IMAGE */
-#github_icon {
+
+#github_link div{
   background-image: url('../img/contact_me/social_networks_icons/github_icon.png');
 }
-/* #LINKEDIN_ICON BACKGROUND IMAGE */
-#linkedin_icon {
+
+#linkedin_link div{
   background-image: url('../img/contact_me/social_networks_icons/linkedin_icon.png');
 }
-/* #TWITTER_ICON BACKGROUND IMAGE */
-#twitter_icon {
+
+#twitter_link div {
   background-image: url('../img/contact_me/social_networks_icons/twitter_icon.png');
 }
-/* / .LINK_IMAGE DIV */
 
-/* .LINK_TEXT DIV */
-.link_text {
-  margin-left: 1.5rem;
+#contact_me h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
   background-color:white;
-  padding: 0.3rem 0.5rem 0;
+  padding: 0.3rem 0.5rem;
   border-radius: 3%;
-  height: fit-content;
 }
-/* #EMAIL_TEXT COLOR */
-#email_text {
+
+#email_link h2 {
   color: #e0218a;
 }
-/* #GITHUB_TEXT COLOR */
-#github_text {
+
+#github_link h2 {
   color: #953fa2;
 }
-/* #LINKEDIN_TEXT COLOR */
-#linkedin_text {
+
+#linkedin_link h2 {
   color: #0273af;
 }
-/* #TWITTER_TEXT COLOR */
-#twitter_text {
+
+#twitter_link h2 {
   color: #256988;
 }
-/* / .LINK_TEXT DIV */
-
-/* HEADING 2 */
- h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 25px;
-}
-/*/  HEADING 2 */
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 375px) and (min-height: 812px) {
-
-  /* #CONTACT_LINKS DIV */
-  #contact_links {
-    margin-top: 15rem;
-    row-gap: 3rem;
+@media (orientation: portrait) and (min-width: 375px){
+  #contact_me a {
+    margin-bottom: 4.5rem;
   }
-  /* / #CONTACT_LINKS DIV */
-
-  /* HEADING 2 */
-  h2 {
-    font-size: 34px;
-  }
-  /* HEADING 2 */
-
-
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY  MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX   <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-@media (min-width: 768px){
-  /* #CONTACT_LINKS DIV */
-  #contact_links {
-    margin-top: 20rem;
-    row-gap: 5rem;
-  }
-  /* / #CONTACT_LINKS DIV */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 768PX    <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-  /* .DIV_LINK DIV  */
-.div_link{
-  justify-content: start;
-}
-/* / .DIV_LINK DIV  */
 
-  /* .LINK_IMAGE DIV */
-  .link_image{
-   margin-left: 1.3rem;
-  }
-  /* / .LINK_IMAGE DIV */
-
-  /* <A> */
-  a {
+@media (orientation: portrait) and (min-width: 768px) {
+  #contact_me a {
     width: 20rem;
+    height: 5rem;
+    justify-content: start;
   }
-  /* <A> */
+
+  .link_logo {
+    margin-left: 0.5rem;
+  }
+
+  #contact_me h2 {
+    width: 11rem;
+    text-align: center;
+    margin-left: 1.3rem;
+    font-size: 1.8rem;
+    padding: 0.5rem 2rem;
+  }
 
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 768PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 1280px) and (min-height: 800px){
-  /* #CONTACT_LINKS DIV */
-  #contact_links {
+@media (orientation: landscape) {
+  #contact_me {
     display: grid;
-    grid-template-rows: 8rem 8rem;
-    grid-template-columns: 22rem 22rem;
-    row-gap: 2rem;
-    column-gap: 3rem;
-    justify-items: center;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
   }
-  /* / #CONTACT_LINKS DIV */
 
-  /* #EMAIL_LINK LINK */
+  #contact_me a {
+    width: 70%;
+    height: 3.5rem;
+    margin: auto;
+  }
+
   #email_link {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-  /* / #EMAIL_LINK LINK  */
+    grid-column: 1;
+    grid-row: 5 / 7;
 
-  /* #GITHUB_LINK LINK  */
+  }
+
   #github_link {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: 1;
+    grid-row: 8 / 9;
   }
-  /* / #GITHUB_LINK LINK  */
 
-  /* #LINKEDIN_LINK LINK  */
   #linkedin_link {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
+    grid-column: 2;
+    grid-row: 5 / 7;
   }
-  /* / #LINKEDIN_LINK LINK  */
 
-  /* #TWITTER_LINK LINK  */
   #twitter_link {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 2;
+    grid-row:  8 / 9;
   }
-  /* / #TWITTER_LINK LINK  */
-
-  /* <A> */
-  a {
-    width: 18rem;
-    justify-self: center;
-    align-self: center;
-  }
-  /* <A> */
-
-  /* .DIV_LINK DIV  */
-  .div_link{
-    width: auto;
-  }
-  /* / .DIV_LINK DIV  */
-
 
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<><<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 800px<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (orientation: landscape) and (min-width: 800px){
+  #contact_me a {
+    width: 65%;
+  }
+
+  #contact_me a:nth-child(1), #contact_me a:nth-child(2) {
+    margin-left: 6.5rem;
+  }
+
+  #contact_me a:nth-child(3), #contact_me a:nth-child(4) {
+    margin-right: 6.5rem;
+  }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>> /  MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 800px<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1000px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (orientation: landscape) and (min-width: 1000px){
+
+  #contact_me a {
+    height: 5rem;
+  }
+
+  #email_link {
+    grid-column: 1;
+    grid-row: 6 / 7;
+
+  }
+
+  #github_link {
+    grid-column: 1;
+    grid-row: 8 / 9;
+  }
+
+  #linkedin_link {
+    grid-column: 2;
+    grid-row: 6 / 7;
+  }
+
+  #twitter_link {
+    grid-column: 2;
+    grid-row:  8 / 9;
+  }
+
+  #contact_me a:nth-child(1), #contact_me a:nth-child(2) {
+    margin-left: 8rem;
+  }
+
+  #contact_me a:nth-child(3), #contact_me a:nth-child(4) {
+    margin-right: 8rem;
+  }
+
+  #contact_me h2 {
+    font-size: 2rem;
+  }
+  
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1000px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1200px   <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (orientation: landscape) and (min-width: 1200px) {
+
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1200px   <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1440PX  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
+@media (orientation: landscape) and (min-width: 1440px){
+
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1440PX  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 2560PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 2560px) {   
+  
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 2560PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

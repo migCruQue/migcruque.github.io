@@ -1,15 +1,9 @@
- /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROJECTS  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
-/* MAIN CONTAINER */
-.container-projects {
+#projects {
   background-color: #475CD1;
-  padding: 12rem 1rem 1rem;
-  max-width: 2560px
+  flex-direction: column;
 }
-/* / MAIN CONTAINER */
+
 
 /* MAIN HEADER */
 #projects-main-header {
@@ -24,381 +18,415 @@
 }
 /* / MAIN HEADER */
 
-
-/* UNORDERED LIST */
-ul.projects-entries {
-  list-style-type: none; /* Remove bullet point style */
-  margin-top: 30px;
-  padding-left: 0;   /*CORRECTING padding-left: 40px causes by the heading and the wrapper container  */
+.project-entry {
   display: flex;
   flex-direction: column;
+  width: 95%;
+  padding: 3rem 0.8rem;
+  border: 2px solid white;
+  border-radius: 1%;
+}
+
+#london_quiz {
+  background: rgb(30,12,203);
+  background: linear-gradient(to bottom, rgba(30,12,203,1) 43%, rgba(29,253,252,1) 55%);
+}
+
+#currency_app {
+  background: rgba(237,154,14,1);
+  background: linear-gradient(to bottom, rgba(237,154,14,1) 11%, rgba(235,9,144,1) 100%);
+}
+
+.project-entry:first-of-type{
+  margin: 20vh 0;
+}
+
+.project-entry:last-of-type {
+  margin-bottom: 15vh;
+}
+
+
+.project-entry > img {
+  width: 95%;
+  height: 40vh;
+  align-self: center;
+  margin-bottom: 2rem;;
+}
+
+ .technologies {
+  display: flex;
+  justify-content: space-around;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-/* / UNORDERED LIST */
 
-/* LIST ELEMENT PROJECT */
-ul.projects-entries li {
-  margin-bottom: 150px;
+.technology_icon {
+  width: 7vh;
+  height: 7vh;
+  border: 1px solid white;
+  border-radius: 3%;
+  background-position: center;
+  background-size: cover;
 }
-  /* / LIST ELEMENT PROJECT */
 
-/* PROJECT HEADER H2 */
-.entry_header h2  {
-     font-size: 35px;
-     margin-bottom: 30px;
+.technology h3 {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+#javascript_logo {
+  background-image: url("../img/projects/tecnologies_icons/javascript_logo.jpg");
+}
+ 
+#jquery_logo {
+  background-image: url("../img/projects/tecnologies_icons/jquery_logo.jpg");
+}
+
+#firebase_logo {
+  background-image: url("../img/projects/tecnologies_icons/firebase_logo.jpg");
+}
+
+#react_logo {
+  background-image: url("../img/projects/tecnologies_icons/react.jpg");
+}
+
+.project-entry h2{
+     font-size: 2.4rem;
      color: white;
      text-align: center;
+     margin-bottom: 3rem;
+     letter-spacing: 0.1rem;
  }
- /* PROJECT HEADER H2 */
 
- /* USED TECHNOLOGY LIST */
-.technology {
-  margin-left: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
- /* / USED TECHNOLOGY LIST */
-
- /* PROJECT IMAGE*/
-
- .entry_link:hover {
-  filter: invert(80%)
- }
-.projects-list-item-image{
-  margin-top: 35px;
-  flex-basis: 100%;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.media-wrapper {
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  border: outset 3px whitesmoke;
-  padding-bottom: 54%;
-}
-
-.media-inner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.project-list-item-thumb img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/*  / PROJECT IMAGE  */
-
- /* DESCRIPTION PARAGRAPH */
 .description p {
   color: white;
    font-size: 19px;
    padding: 8px;
    margin-top: 25px;
  }
-/* / DESCRIPTION PARAGRAPH */
 
-/* LINK BUTTONS */
-.link_buttons {
-  max-width: 210px;
+ a {
+  text-decoration: none;
+}
+
+.project_links {
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin: 1rem auto;
-  padding: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
+  justify-content: space-evenly;
 }
 
-a{
-  text-decoration: none;  /* REMOVE TEXT DECORATION LINKS */
-}
-
-.link_buttons a{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid white;
-  border-radius: 3%;
-}
-
-.link_buttons a:hover {
+.project_links a:hover {
   text-decoration: none;
   filter: hue-rotate(90deg);
   background-color: goldenrod;
 }
+.project_links h3 {
+  margin-top: 0.3rem;
+  align-self: flex-start;
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+}
 
-.link_buttons p {
-  font-size: 16px;
-  margin: 0;
-  display: inline;
+.project_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vh;
+  height: 12vh;
+  background-position: 50% 70%;
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+  border-radius: 4%;
+}
+
+.github {
+  background-image: url("../img/projects/links_icons/Octocat.png");
+  background-color: rgba(143, 5, 150, 0.858);
+  color:white;
+  border: 1px solid white;
+}
+
+.website {
+  background-image: url("../img/projects/links_icons/web.jpg");
+  background-color: black;
   color: white;
+  border: 1px solid white;
 }
 
-
-.link_buttons img {
-  border-radius: 3%;
-  width: 80px;
-  height: 60px;
-}
-/* / LINK BUTTONS */
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 375px) and (min-height: 812px) {
-  /* MAIN HEADER */
-  #projects-main-header{
-    font-size: 45px;
+@media (orientation: portrait) and (min-width: 375px){
+
+  .project-entry > img{
+    height: 35vh;
   }
-  /* / MAIN HEADER */
 
-  /* LIST ELEMENT PROJECT */
-  ul.projects-entries > li {
-    margin-bottom: 120px;
+  .project-entry h2 {
+    font-size: 2.7rem;
   }
-  /* /LIST ELEMENT PROJECT */
 
+  .project_links h3 {
+    font-size: 0.70rem;
+    margin-top: 0.4rem;
+  }
 
+  .project_link {
+    background-size: 60% 60%;
+  }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY  MIN-WIDTH: 375PX AND MIN-HEIGHT: 812PX <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX   <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 768PX    <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
-@media (min-width: 768px) and (min-height: 1024px){
-  /* MAIN HEADER */
-  #projects-main-header {
-    font-size: 75px;
+@media (orientation: portrait) and (min-width: 768px) {
+  .project-entry {
+    max-width: 95%;
   }
-  /* MAIN HEADER */
 
-  /* UNORDERED LIST */
-  ul.projects-entries > li {
-    margin-bottom: 170px;
+  .project-entry > img{
+    max-width: 80%;
   }
-  /* / UNORDERED LIST */
 
-  /* PROJECT HEADER H2 */
-  .entry_header h2 {
-    padding: 15px;
-    font-size: 55px;
+  .technology h3 {
+    font-size: 1rem;
   }
-  /* PROJECT HEADER H2 */
 
-  /* TECNOLOGY LIST */
-  .technology {
-    margin-top: 50px;
+  .project-entry h2 {
+    font-size: 4rem;
   }
-  /* TECNOLOGY LIST */
 
-  /* SVG TECNOLOGY */
-  svg{
-    width: 50px;
-    height: 50px;
+  .project_links h3 {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
   }
-  /* / SVG TECNOLOGY */
 
-   /* PROJECT IMAGE STYLES */
-  .projects-list-item-image {
-    margin: 35px 15px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 768PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (orientation: landscape) {
+
+  .project-entry:first-of-type {
+    margin: 30vh 0;
   }
-   /* / PROJECT IMAGE STYLES */
+
+  .project-entry {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    padding: 0 0 1rem 0;  
+  }
+
+  #london_quiz {
+    background: rgb(14,190,224);
+    background: linear-gradient(90deg, rgba(14,190,224,1) 50%, rgba(14,23,205,1) 100%);
+  }
   
-  /* DESCRIPTION PARAGRAPH */
-  .description p {
-    font-size: 30px;
-    padding: 25px;
-    margin-top: 50px;
-  }
-  /* / DESCRIPTION PARAGRAPH */
-
-/* LINK BUTTONS */
-  .link_buttons {
-    max-width: 335px;
+  #currency_app {
+    background: rgba(237,154,14,1);
+    background: linear-gradient(to right, rgba(237,154,14,1) 11%, rgba(235,9,144,1) 100%);
   }
 
-  .link_buttons p {
-    font-size: 25px;
+  .project-entry > img {
+    height: 50vh;
+    width: 90%;
+    grid-column: 2;
+    grid-row: 3 / 6;
+    margin: auto;
   }
 
-  .link_buttons img {
-      width: 120px;
-      height: 80px;
-    }
-  /* / LINK BUTTONS */
+  .technologies {
+    justify-content: space-evenly;
+    align-items: flex-end;
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .technology_icon {
+    width: 9vh;
+    height: 9vh;
+  }
+
+  .project-entry h2 {
+    font-size: 2.2rem;
+    grid-column: 1;
+    grid-row: 1 / 3;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .project_links {
+    grid-column: 1;
+    grid-row: 4 / 6;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .project_link {
+    width: 22vh;
+    height: 20vh;
+  }
 
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  MEDIA QUERY MIN-WIDTH: 768PX AND MIN-HEIGHT: 1024PX<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<( IPAD )<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 800px<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (min-width: 1280px) and (min-height: 800px){
+@media (orientation: landscape) and (min-width: 800px){
 
-    /* MAIN HEADER */
-      #projects-main-header {
-
-        font-size: 77px;
-
-      }
-    /* / MAIN HEADER */
-
-    /* UNORDERED LIST PROJECTS */
-    ul.projects-entries {
-      margin-top: 100px;
-    }
-    /* / UNORDERED LIST PROJECTS */
-
-    /* LIST ELEMENT PROJECT */
-    ul.projects-entries > li {
-      display: grid;          
-      grid-template-rows: repeat(13, 40px);          /* set up the link display to grid 2 rows 7 columns */
-      grid-template-columns: 400px 600px;
-      column-gap: 80px;
-      align-items: center;
-      margin-bottom: 120px;
-      max-width: 1400px;  
-    }
-    /* LIST ELEMENT PROJECT */
-
-     /* PROJECT IMAGE*/
-    a.entry_link{
-      grid-column: 2 / 3;
-      grid-row: 5 / 13;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-     /* / PROJECT IMAGE*/
-
-    /* / PROJECT HEADER H2 */
-    .entry_header {
-      line-height: inherit;
-      align-self: stretch;
-      grid-column: 1 / 2;
-      grid-row: 2 / 4;
-    }
-
-    .entry_header h2 {
-      line-height: inherit;
-    }
-
-    .entry_header h2 {
-      font-size: 60px;
-    }
-    /* / PROJECT HEADER H2 */
-
-     /* USED TECHNOLOGY LIST */
-    .technology {
-      grid-column: 2 / 3;
-      grid-row: 2 / 4;
-    }
-
-    svg{
-      width: 50px;
-      height: 50px;
-    }
-     /* USED TECHNOLOGY LIST */
-
-    /* PARAGRAPH DESCRIPTION */
-    .description {
-      grid-column: 1 / 2;
-      grid-row: 5 / 8;
-    }
-    .description p {
-       font-size: 30px;
-     }
-    /* / PARAGRAPH DESCRIPTION */
-
-  /* LINK BUTTONS */
-  .link_buttons {
-    width: 300px;
-    grid-column: 1 / 2;
-    grid-row: 10/ 12;
+  .project-entry h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
   }
-  /* / LINK BUTTONS */
 
+  .project_link {
+    width: 26vh;
+    height: 22vh;
+  }
 
 }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>> /  MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 800px<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUERY MIN-WIDTH: 1280PX AND MIN-HEIGHT: 800PX <<<<<<<<<<><<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1000px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (orientation: landscape) and (min-width: 1000px){
+
+  .project-entry:first-of-type {
+    margin: 25vh 0;
+  }
+
+  .project-entry {
+    max-width: 68%;
+  }
+
+  .project-entry > img {
+    height: 30vh;
+  }
+
+  .technology h3 {
+    font-size: 1rem;
+  }
+
+  .technology_icon {
+    width: 7vh;
+    height: 7vh;
+  }
+  
+  .project_links h3 {
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  #currency_app h2 {
+    font-size: 2.7rem;
+  }
+
+  .project-entry h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+  }
+
+  .project_link {
+    width: 15vh;
+    height: 14vh;
+  }
+
+  .technologies {
+    align-items: center;
+  }
+  
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1000px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1440PX AND MIN-HEIGHT: 900PX<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
-@media (min-width: 1440px) and (min-height: 900px){
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1200px   <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-  /* UNORDERED LIST */
-  ul.projects-entries {
-
-    max-width: 1400px;
-    grid-column-gap: 175px;
-
+@media (orientation: landscape) and (min-width: 1200px) {
+  
+  .project-entry > img {
+    height: 35vh;
   }
-  /* UNORDERED LIST */
 
-      /* LIST ELEMENT PROJECT */
-      ul.projects-entries > li {
-        column-gap: 120px;
-      }
-      /* LIST ELEMENT PROJECT */
+  .technology_icon {
+    width: 8vh;
+    height: 8vh;
+  }
 
 
+  .project-entry h2 {
+    font-size: 3.5rem;
+  }
+
+  .project_link {
+    width: 16vh;
+    height: 14vh;
+  }
 }
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 1440PX AND MIN-HEIGHT: 900PX<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1200px   <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 
 
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 1920PX AND MIN-HEIGHT: 1080PX<<<<<<<<<<<( IMAC 21' SCREEN SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1440PX  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
-@media (min-width: 1920px) and (min-height: 1080px){
 
-  /* UNORDERED LIST */
-  ul.projects-entries {
-
-    max-width: 2200px;
-
-  }
-  /* UNORDERED LIST */
-
-  /* LIST ELEMENT PROJECT */
-  ul.projects-entries > li {
-    column-gap: 100px;
-  }
-  /* LIST ELEMENT PROJECT */
-
+@media (orientation: landscape) and (min-width: 1440px){
 
 }
 
 
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 1920PX AND MIN-HEIGHT: 1080PX<<<<<<<<<<<( IMAC SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1440PX  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 2560PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 2560px) {   
+  
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 2560PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

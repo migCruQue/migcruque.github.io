@@ -70,7 +70,7 @@ if($('nav').hasClass('expanded')) {
 
 // POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
 
-$('#box').offset({top: Math.floor($(window).height() * 0.7)});
+// $('#box').offset({top: Math.floor($(window).height() * 0.7)});
 
 
 
