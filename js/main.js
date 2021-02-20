@@ -2,20 +2,43 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV FUNCTIONALITY >>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+// JQUERY CONSTANTS
 
-//Set up a click event handler in the iconblock element adding the class="expanded" to the nav element.
+const $nav = $('nav');
+const $nav_button = $('.nav_button');     //* colection of button with class="nav_button"
+const $div_tab = $('.div_tab');   // *collection of divs with class="div_tab
+const $hamburger = $('.hamburger') // ! collection of buttons with class="hamburger", should I leave a unique hamburger button
+const $exit_menu = $('#exit_menu') 
 
 
-$('.iconblock').click(function(){
-if($('nav').hasClass('expanded')) {
-    $('nav').removeClass('expanded');
-    $('html').removeClass('disable_scrolling');
-} else {
-    $('nav').addClass('expanded');
-    $('html').addClass('disable_scrolling');           // DISABLE SCROLLING
-    }
+
+$( window ).on('load', function() {          //on loading set the nav with the class hidden or grid depending on the window viewport width
+    if ($(window).width() >= 1000) {$nav.addClass('flex')} 
+    else  {$nav.addClass('hidden')}
 });
 
+$hamburger.click(function(){
+    $(this).addClass("hidden");
+    $('nav').removeClass('hidden').addClass('flex');
+
+});
+
+$exit_menu.click(function(){
+    $('.hamburger').removeClass('hidden');
+    $('nav').removeClass('flex').addClass('hidden');
+});
+
+
+$nav_button.not($exit_menu).click(function(){
+
+    if($(window).width() < 1000){$nav.addClass('hidden').removeClass('flex')}  // Check if the the viewport width is less than 1000 and set up the nav to display none.
+    $nav_button.removeClass('hidden');
+    $(`#${this.id}`).addClass('hidden');
+    const tab_id = this.id.replace('_button', '');
+    $div_tab.addClass('hidden').removeClass('flex');
+    $(`#${tab_id}`).removeClass('hidden').addClass('flex');
+    $hamburger.removeClass('hidden');
+});
 
 
 
@@ -70,7 +93,7 @@ if($('nav').hasClass('expanded')) {
 
 // POSITIONING THE BOX(WHERE I DISPLAY SOME MESSAGES) IN THE MAIN INDEX.
 
-$('#box').offset({top: Math.floor($(window).height() * 0.7)});
+// $('#box').offset({top: Math.floor($(window).height() * 0.7)});
 
 
 
