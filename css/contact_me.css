@@ -5,15 +5,52 @@
   flex-direction: column;
   font-family: 'Space Mono', monospace;
   height: 100vh;
+  align-items: center;
 }
+
+.contact_links {
+  flex-direction: column;
+  margin-top: 3rem;
+  height: 60vh;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact_me header {
+  background: rgb(58,200,206);
+  background: linear-gradient(to right, rgb(135,125,224) 56%, rgb(238,120,255)100%);;
+}
+
+#contact_me .circle {
+  background-image: url("../img/nav/mailbox.jpg");
+}
+
+
 
 #contact_me a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 65%;
+  width: 55%;
   height: 3.2rem;
-  margin-bottom: 2.5rem;
+}
+
+
+#contact_me a:visited {
+  background: #e1fe2a;
+}
+
+#contact_me a:focus {
+  background: #42790b;
+}
+
+#contact_me a:hover {
+  background: #edb72e;
+}
+
+#contact_me a:active {
+  background: #ba0909;
 }
 
                           /* * LINKS' BACKGROUNDS  */
@@ -87,9 +124,19 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 375px){
+  
+  #contact_me h1 {
+      font-size: 1.85rem;
+  }
+
   #contact_me a {
     margin-bottom: 4.5rem;
   }
+
+  .contact_links {
+    margin-top: 8rem;
+  }
+
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<><<<<<<<<<<<( IPHONE X )<<<<<<<<<*/
@@ -102,7 +149,13 @@
 
 
 @media (orientation: portrait) and (min-width: 768px) {
+
+  #contact_me h1 {
+    font-size: 3rem; 
+  }
+
   #contact_me a {
+    margin-bottom: 5rem;
     width: 20rem;
     height: 5rem;
     justify-content: start;
@@ -131,11 +184,17 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) {
-  #contact_me {
+
+  #contact_me h1 {
+    padding: 1rem;;
+  }
+
+  .contact_links {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
+    margin-top: 0;
   }
 
   #contact_me a {
@@ -146,23 +205,23 @@
 
   #email_link {
     grid-column: 1;
-    grid-row: 5 / 7;
+    grid-row: 3 / 5;
 
   }
 
   #github_link {
     grid-column: 1;
-    grid-row: 8 / 9;
+    grid-row: 7 / 9;
   }
 
   #linkedin_link {
     grid-column: 2;
-    grid-row: 5 / 7;
+    grid-row: 3 / 5;
   }
 
   #twitter_link {
     grid-column: 2;
-    grid-row:  8 / 9;
+    grid-row:  7 / 9;
   }
 
 }
@@ -176,6 +235,11 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 800px){
+
+  .contact_links {
+    margin-top: 2rem;;
+  }
+
   #contact_me a {
     width: 65%;
   }
@@ -199,29 +263,43 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 1000px){
 
+  #contact_me header{
+    margin: 0;
+  }
+
+  #contact_me h1 {
+    font-size: 4rem;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .contact_links {
+    margin-top: 4rem;;
+  }
+
   #contact_me a {
     height: 5rem;
   }
 
   #email_link {
     grid-column: 1;
-    grid-row: 6 / 7;
+    grid-row: 2 / 4;
 
   }
 
   #github_link {
     grid-column: 1;
-    grid-row: 8 / 9;
+    grid-row: 6 / 8;
   }
 
   #linkedin_link {
     grid-column: 2;
-    grid-row: 6 / 7;
+    grid-row: 2 / 4;
   }
 
   #twitter_link {
     grid-column: 2;
-    grid-row:  8 / 9;
+    grid-row: 6 / 8;
   }
 
   #contact_me a:nth-child(1), #contact_me a:nth-child(2) {
@@ -246,6 +324,10 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 1200px) {
+
+  .contact_links {
+    margin-top: 8rem;
+  }
 
 }
 

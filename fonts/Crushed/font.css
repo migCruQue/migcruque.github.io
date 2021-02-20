@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Crushed-Regular';
+  src: url('Crushed-Regular.eot');
+  src: url('Crushed-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Crushed-Regular.ttf') format('truetype'),
+       url('Crushed-Regular.woff') format('woff'),
+       url('Crushed-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

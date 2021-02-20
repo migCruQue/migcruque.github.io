@@ -1,5 +1,6 @@
 
 #about_me {
+  flex-direction: column;
   background-image: url('../img/about_me/bridge.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -9,22 +10,31 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   height: auto;
-  padding: 0;
+  padding-bottom: 2rem;
+}
+
+#about_me header{
+  background: rgb(55, 113, 238);
+  background: linear-gradient(to right, rgb(55, 113, 238) 50%, transparent 85%);
 }
 
 
+#about_me .circle {
+  background-image: url("../img/nav/littleme.jpg");
+}
+
  #about_me p {
-  max-width: 700px;
   line-height: 1.7rem;
   text-align: left;
   letter-spacing: 1px;
   word-spacing: 2px;
   padding: 2rem 1rem;
-  margin: 10rem 1rem 3rem 1rem;
+  margin: 4rem 1rem 3rem 1rem;
   font-size: 16px;
+  font-weight: 400;
   hyphens: auto;
   overflow: scroll;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   background: rgba(22,22,22, 0.6);
   border-radius: 5px;
@@ -40,10 +50,8 @@
 
 @media (orientation: portrait) and (min-width: 375px){
 
-
   #about_me p {
     font-size: 18px;
-    margin-top: 12rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -62,9 +70,10 @@
   }
 
   #about_me p {
-      margin-top: 10rem;;
+      max-width: 38rem;
+      margin: 7rem auto 0;
       padding: 3rem 3rem;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 2rem;
   }
 
@@ -81,7 +90,7 @@
 @media (orientation: landscape) {
 
   #about_me p {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }  
 
 }
@@ -108,15 +117,13 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 1000px){
 
-  #about_me {
-    height: 100vh;   /** DISPLAY ALL THE CONTENT IN THE VIEWPORT */
-  }
 
   #about_me p {
     font-size: 18px;
-    margin: 15rem 1rem 5rem 1rem;
+    margin: 5rem auto 0;
     line-height: 2.5rem;
-    max-width: 900px;
+    max-width: 37rem;
+    padding: 2rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -131,6 +138,10 @@
 
   #about_me p {
     margin-top: 6rem;;
+  }
+
+  #about_me p {
+    max-width: 60rem;
   }
 }
 

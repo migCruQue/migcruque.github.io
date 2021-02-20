@@ -3,8 +3,16 @@
   background-image: url('../img/index/fontanaPhone.jpg');
   background-size: cover;
   height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#index .hamburger {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  margin-left: 0;
+}
 
 #box {
   width: 85%;
@@ -34,7 +42,7 @@
   font-family: 'Crushed', cursive;
   margin-left: 0.3rem;
   text-decoration: none;
-  color: #ff1a1a;
+  color: #f41aff;
 }
 
 .item a:hover{
@@ -48,6 +56,12 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 375px){
+  
+  #index header {
+    position: absolute;
+    top: 1.5rem; left: 1.5rem;
+    padding: 0;
+  }
 
   .item a {
     font-size: 27px;
@@ -64,6 +78,11 @@
 
 
 @media (orientation: portrait) and (min-width: 768px) {
+
+  .hamburger {
+    width: 6vh;
+    height: 6vh;
+  }
 
   #box {
     width: 60%;
@@ -86,6 +105,11 @@
 
   #index {
     background-image: url('../img/index/fontanacutBW.jpg');
+  }
+
+  .hamburger {
+    width: 10vh;
+    height: 10vh;
   }
   
   #box {
@@ -121,7 +145,10 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 1000px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 1000px){
-
+  .hamburger {
+    width: 7vh;
+    height: 7vh;
+  }
 
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -134,6 +161,11 @@
 
 @media (orientation: landscape) and (min-width: 1200px) {
   
+  .hamburger {
+    width: 5vh;
+    height: 5vh;
+  }
+
   #box {
     width: 50%;
   }
