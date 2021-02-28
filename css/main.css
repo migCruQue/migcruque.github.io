@@ -160,11 +160,7 @@ nav {
 }
 
 #exit_menu {
-<<<<<<< HEAD
   background-image: url("../img/nav/exit_icon.png");
-=======
-  background-image: url("../img/nav/exit.svg");
->>>>>>> essential_improvements
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;
@@ -196,11 +192,7 @@ header h1 {
 }
 
 .hamburger {
-<<<<<<< HEAD
   background-image: url("../img/nav/hamburger_transparent.jpg");
-=======
-  background-image: url("../img/nav/hamburger.svg");
->>>>>>> essential_improvements
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;

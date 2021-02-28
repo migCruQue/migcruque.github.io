@@ -151,11 +151,7 @@
 }
 
 .github {
-<<<<<<< HEAD
   background-image: url("../img/projects/links_icons/Octocat.png");
-=======
-  background-image: url("../img/projects/links_icons/Octocat.jpg");
->>>>>>> essential_improvements
   background-color: rgba(143, 5, 150, 0.858);
   color:white;
   border: 1px solid white;

@@ -15,30 +15,6 @@ const $exit_menu = $('#exit_menu')
 $( window ).on('load', function() {          //on loading set the nav with the class hidden or grid depending on the window viewport width
     if ($(window).width() >= 1000) {$nav.addClass('flex')} 
     else  {$nav.addClass('hidden')}
-<<<<<<< HEAD
-=======
-});
-
-let currentWidth = $(window).width();  //initialize the variable currentWidth to use in the resize handler
-
-$( window ).on('resize', function() {   // when the window is resize check if the width is equal or greater than 1000 to remove class="hidden"
-    if ($(window).width() >= 1000) {$nav.removeClass('hidden')}
-    if ($(window).width() < 1000) {       // check if the window width was greater than 1000 if so it add the class="hidden" to the nav element.
-        if(currentWidth >= 1000){$nav.addClass('hidden')}
-    }
-    currentWidth = $(window).width();
-});
-
-$hamburger.click(function(){
-    $(this).addClass("hidden");
-    $('nav').removeClass('hidden').addClass('flex');
-
-});
-
-$exit_menu.click(function(){
-    $('.hamburger').removeClass('hidden');
-    $('nav').removeClass('flex').addClass('hidden');
->>>>>>> essential_improvements
 });
 
 $hamburger.click(function(){
