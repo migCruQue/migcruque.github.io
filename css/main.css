@@ -1,5 +1,4 @@
-
-                                /* * FONTS */
+                                 /* * FONTS */
 
 @font-face {
   font-family: 'Crushed';
@@ -160,7 +159,7 @@ nav {
 }
 
 #exit_menu {
-  background-image: url("../img/nav/exit_icon.png");
+  background-image: url("../img/nav/exit.svg");
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;
@@ -192,7 +191,7 @@ header h1 {
 }
 
 .hamburger {
-  background-image: url("../img/nav/hamburger_transparent.jpg");
+  background-image: url("../img/nav/hamburger.svg");
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;
@@ -460,4 +459,3 @@ header h1 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 2560PX <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
