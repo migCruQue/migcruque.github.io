@@ -1,11 +1,12 @@
 
 #index{
-  background-image: url('../img/index/fontanaPhone.jpg');
+  background-image: url('../img/index/fontana_phone.jpg');
   background-size: cover;
   height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: none;
 }
 
 #index .hamburger {
@@ -13,6 +14,7 @@
   top: 1rem; left: 1rem;
   margin-left: 0;
 }
+
 
 #box {
   width: 85%;
@@ -104,7 +106,8 @@
 @media (orientation: landscape) {
 
   #index {
-    background-image: url('../img/index/fontanacutBW.jpg');
+    /* background-image: url('../img/index/fontanacutBW.jpg'); */
+    background-image: url('../img/index/fontana_desktop.jpg');
   }
 
   .hamburger {
@@ -160,6 +163,31 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 1200px) {
+
+  #index .cursor_index {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: 3;
+    background: rgba(244, 26, 255, 0.7);        /*       BACKDROP FILTER FALLBACK FOR FIREFOX */
+  }
+  
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {         
+    #index .cursor_index {
+      width: 8rem;
+      height: 8rem;
+      border: 2px solid white;
+      background: transparent;
+      -webkit-backdrop-filter: invert();
+      backdrop-filter: invert();
+    }
+  }
   
   .hamburger {
     width: 5vh;
