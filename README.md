@@ -2,7 +2,7 @@
 
 it is a personal portfolio website divided in 5 tabs.
 
-- Presentaion.
+- Home.
 - About me.
 - Education.
 - Projects.
