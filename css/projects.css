@@ -1,9 +1,17 @@
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-MAIN TAB-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+
 #projects {
   background-color: #475cd1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-HEADER-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+=======
 
 #projects header {
   background: rgb(50, 148, 149);
@@ -22,7 +30,7 @@
   display: flex;
   flex-direction: column;
   width: 95%;
-  padding: 3rem 0.8rem;
+  padding: 2rem 0.8rem;
   border: 2px solid white;
   border-radius: 1%;
 }
@@ -43,19 +51,56 @@
   margin-bottom: 12vh;
 }
 
-.project-entry > img {
+
+.project-entry h2 {
+  /* * ENTRY HEADER */
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.project_entry_image {
+  /* * ENTRY IMAGE */
+
   width: 95%;
-  height: 40vh;
+  height: 37vh;
   align-self: center;
   margin-bottom: 2rem;
+  -webkit-box-shadow: 3px 3px 3px 4px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* *BOX SHADOW 3D EFFECT */
+  -moz-box-shadow: 3px 3px 3px 4px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 4px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_TECHNOLOGY USED  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+.technology_title {
+  color: white;
+  font-size: 1rem;
+  margin-top: 20px;
+  display: flex;
+  letter-spacing: 2px;
+}
+
+.technology_title:before,
+.technology_title:after {
+  color: white;
+  content: "";
+  flex: 1;
+  border-bottom: groove 2px;
+  margin: auto 0.25em;
+  box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+}
+
 
 .technologies {
   display: flex;
   justify-content: space-around;
 }
 
-.technology {
+.technology_logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,7 +116,7 @@
   background-size: cover;
 }
 
-.technology h3 {
+.technology_logo h4 {
   font-family: "Roboto", serif;
   font-size: 0.75rem;
   margin-top: 0.5rem;
@@ -94,6 +139,9 @@
 #react_logo {
   background-image: url("../img/projects/tecnologies_icons/react.jpg");
 }
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
 
 .project-entry h2 {
   font-family: "Montserrat", sans-serif;
@@ -126,7 +174,6 @@
 }
 
 .project_links {
-  display: flex;
   justify-content: space-evenly;
 }
 
@@ -163,6 +210,22 @@
   border: 1px solid white;
 }
 
+
+.moreInfo {
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 14px;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.lessInfo {
+  margin-top: 2rem;
+  background-image: url("../img/nav/exit.svg");
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -174,6 +237,10 @@
 
   .project-entry h2 {
     font-size: 2.7rem;
+  }
+
+  #currency_app h2 {
+    font-size: 2.4rem;
   }
 
   .project_links h3 {
@@ -202,12 +269,16 @@
     max-width: 80%;
   }
 
-  .technology h3 {
+  .technology_logo h4 {
     font-size: 1rem;
   }
 
   .project-entry h2 {
     font-size: 4rem;
+  }
+
+  #currency_app h2 {
+    font-size: 3.7rem;
   }
 
   .project_links h3 {
@@ -326,7 +397,7 @@
     height: 30vh;
   }
 
-  .technology h3 {
+  .technology_logo h4 {
     font-size: 1rem;
   }
 
