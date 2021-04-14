@@ -7,16 +7,7 @@
   height: 100vh;
   align-items: center;
 }
-
-.contact_links {
-  flex-direction: column;
-  margin-top: 3rem;
-  height: 60vh;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
+                                  /* HEADER */
 #contact_me header {
   background: rgb(58,200,206);
   background: linear-gradient(to right, rgb(135,125,224) 56%, rgb(238,120,255)100%);;
@@ -26,14 +17,35 @@
   background-image: url("../img/nav/mailbox.jpg");
 }
 
+                                /* / HEADER */
+
+.contact_links {    /* links' container */
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#contact_me .contact_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 3rem;;
+  border-radius: 30px;
+  opacity: 0.85;
+}
+
 
 
 #contact_me a {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
-  width: 55%;
-  height: 3.2rem;
+  width: 100%;
+  outline: none;  
+  text-decoration: none;
 }
 
 
@@ -45,9 +57,9 @@
   background: #42790b;
 }
 
-#contact_me a:hover {
+/* #contact_me a:hover {
   background: #edb72e;
-}
+} */
 
 #contact_me a:active {
   background: #ba0909;
@@ -55,68 +67,81 @@
 
                           /* * LINKS' BACKGROUNDS  */
 #email_link  {
-  background: linear-gradient(to top, rgb(157, 11, 91) 0 75%, transparent );
+  background:  rgba(157, 11, 91);
 }
 
 #github_link  {
-  background: linear-gradient(to top, #711080 0 75%, transparent );
+  background: rgba(113, 16, 128);
 }
 
 #linkedin_link {
-  background: linear-gradient(to top, #064c72 0 75%, transparent );
+  background: rgba(6, 76, 114);
 }
 
 #twitter_link  {
-  background: linear-gradient(to top, #15709b 0 75%, transparent );
+  background: rgba(21, 112, 155);
+}
+.contact_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
 }
 
-
-.link_logo{
-  width: 6vh;
-  height: 6vh;
-  border-style: none;
-  background-size: cover;
-  background-repeat: no-repeat;
+.circle_background {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-#email_link div {
-  background-image: url('../img/contact_me/social_networks_icons/email_icon.png');
+#email_link .circle_background{
+  background: linear-gradient(
+    to right,
+    rgba(237, 229, 9, 0.75),
+    rgba(221, 35, 3, 0.75)
+    );
 }
 
-#github_link div{
-  background-image: url('../img/contact_me/social_networks_icons/github_icon.png');
+#github_link .circle_background {
+  background: linear-gradient(
+    to right,
+    rgba(9, 233, 237, 0.75),
+    rgba(195, 228, 30, 0.75)
+    );
 }
 
-#linkedin_link div{
-  background-image: url('../img/contact_me/social_networks_icons/linkedin_icon.png');
+#linkedin_link .circle_background {
+  background: linear-gradient(
+    to right,
+    rgba(230, 138, 26, 0.75),
+    rgba(3, 221, 119, 0.75)
+    );
 }
 
-#twitter_link div {
-  background-image: url('../img/contact_me/social_networks_icons/twitter_icon.png');
+#twitter_link .circle_background {
+  background: linear-gradient(
+    to right,
+    rgba(87, 14, 191, 0.75),
+    rgba(221, 35, 3, 0.75)
+    );
 }
+
+.contact_logo img {
+  width: 1.75rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
 
 #contact_me h2 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.2rem;
-  background-color:white;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
   padding: 0.3rem 0.5rem;
-  border-radius: 3%;
-}
-
-#email_link h2 {
-  color: #e0218a;
-}
-
-#github_link h2 {
-  color: #953fa2;
-}
-
-#linkedin_link h2 {
-  color: #0273af;
-}
-
-#twitter_link h2 {
-  color: #256988;
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  transition: all 0.75s ease-out;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -129,13 +154,10 @@
       font-size: 1.85rem;
   }
 
-  #contact_me a {
-    margin-bottom: 4.5rem;
-  }
-
-  .contact_links {
-    margin-top: 8rem;
-  }
+  #contact_me .contact_card {
+    width: 70%;
+    height: 4.5rem;
+}
 
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -154,23 +176,41 @@
     font-size: 3rem; 
   }
 
-  #contact_me a {
-    margin-bottom: 5rem;
-    width: 20rem;
-    height: 5rem;
-    justify-content: start;
+  .contact_links {
+    align-items: start;
+    padding: 0 4rem;
   }
 
-  .link_logo {
-    margin-left: 0.5rem;
+  #contact_me .contact_card {
+    width: 80%;
+    height: 6rem;
   }
+
+  #contact_me  .contact_card:nth-child(odd){
+    align-self: flex-start;
+  }
+
+  #contact_me  .contact_card:nth-child(odd){
+    align-self: flex-end;
+  }
+
+  .contact_logo {
+    margin-left: 1.5rem;
+  }
+
+  .circle_background {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .contact_logo img {
+    width: 3.5rem;
+  }
+
 
   #contact_me h2 {
-    width: 11rem;
-    text-align: center;
-    margin-left: 1.3rem;
-    font-size: 1.8rem;
-    padding: 0.5rem 2rem;
+    margin-left: 2rem;
+    font-size: 3rem;
   }
 
 }
@@ -185,23 +225,19 @@
 
 @media (orientation: landscape) {
 
-  #contact_me h1 {
-    padding: 1rem;;
-  }
-
   .contact_links {
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     grid-column-gap: 10px;
     margin-top: 0;
   }
 
-  #contact_me a {
-    width: 70%;
-    height: 3.5rem;
-    margin: auto;
+  #contact_me .contact_card {
+    width: 80%;
   }
+
 
   #email_link {
     grid-column: 1;
@@ -224,6 +260,11 @@
     grid-row:  7 / 9;
   }
 
+  #contact_me h2 {
+    padding: 0;
+    font-size: 1.3rem;
+  }
+
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -236,21 +277,7 @@
 
 @media (orientation: landscape) and (min-width: 800px){
 
-  .contact_links {
-    margin-top: 2rem;;
-  }
-
-  #contact_me a {
-    width: 65%;
-  }
-
-  #contact_me a:nth-child(1), #contact_me a:nth-child(2) {
-    margin-left: 6.5rem;
-  }
-
-  #contact_me a:nth-child(3), #contact_me a:nth-child(4) {
-    margin-right: 6.5rem;
-  }
+  
 }
 
 
@@ -273,13 +300,24 @@
     margin: 0;
   }
 
-  .contact_links {
-    margin-top: 4rem;;
+  #contact_me .contact_card {
+    height: 4.5rem;
+    width: 70%;
   }
 
-  #contact_me a {
-    height: 5rem;
+  .contact_logo {
+    margin-left: 1rem;
   }
+
+  .circle_background {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .contact_logo img {
+    width: 2.5rem;
+  }
+
 
   #email_link {
     grid-column: 1;
@@ -294,20 +332,12 @@
 
   #linkedin_link {
     grid-column: 2;
-    grid-row: 2 / 4;
+    grid-row: 4 / 6;
   }
 
   #twitter_link {
     grid-column: 2;
-    grid-row: 6 / 8;
-  }
-
-  #contact_me a:nth-child(1), #contact_me a:nth-child(2) {
-    margin-left: 8rem;
-  }
-
-  #contact_me a:nth-child(3), #contact_me a:nth-child(4) {
-    margin-right: 8rem;
+    grid-row: 8 / 10;
   }
 
   #contact_me h2 {
@@ -325,9 +355,9 @@
 
 @media (orientation: landscape) and (min-width: 1200px) {
 
-  .contact_links {
+  /* .contact_links {
     margin-top: 8rem;
-  }
+  } */
 
 }
 

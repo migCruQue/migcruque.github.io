@@ -1,4 +1,6 @@
+
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-MAIN TAB-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
 
 #projects {
   background-color: #475cd1;
@@ -7,7 +9,10 @@
   align-items: center;
 }
 
+
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-HEADER-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+=======
+
 #projects header {
   background: rgb(50, 148, 149);
   background: linear-gradient(
@@ -46,6 +51,7 @@
   margin-bottom: 12vh;
 }
 
+
 .project-entry h2 {
   /* * ENTRY HEADER */
   font-family: "Montserrat", sans-serif;
@@ -58,6 +64,7 @@
 
 .project_entry_image {
   /* * ENTRY IMAGE */
+
   width: 95%;
   height: 37vh;
   align-self: center;
@@ -88,7 +95,8 @@
   box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
 }
 
-.technology_logos {
+
+.technologies {
   display: flex;
   justify-content: space-around;
 }
@@ -135,16 +143,24 @@
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
-.description p {
+
+.project-entry h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
   color: white;
-  font-size: 16px;
-  padding: 8px;
-  margin-top: 25px;
-  line-height: 23px;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
 }
 
-a {
-  /* * LINKS */
+.description p {
+  color: white;
+  font-size: 19px;
+  padding: 8px;
+  margin-top: 25px;
+}
+
+#projects a {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
@@ -195,6 +211,7 @@ a {
   border: 1px solid white;
 }
 
+
 .moreInfo {
   width: 6rem;
   height: 2.5rem;
@@ -210,7 +227,6 @@ a {
   width: 2rem;
   height: 2rem;
 }
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 375PX  <<<<<<<<<<<<<<( IPHONE X )<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
