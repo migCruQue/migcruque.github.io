@@ -1,4 +1,3 @@
-
 //Movement Animation to happen
 const cards = document.querySelectorAll('.contact_card');
 const circle_backgroun = document.querySelector('.circle_background');
