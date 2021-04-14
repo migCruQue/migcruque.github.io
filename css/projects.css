@@ -1,6 +1,4 @@
-
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-MAIN TAB-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-
 
 #projects {
   background-color: #475cd1;
@@ -9,9 +7,7 @@
   align-items: center;
 }
 
-
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-HEADER-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-=======
 
 #projects header {
   background: rgb(50, 148, 149);
@@ -50,7 +46,6 @@
 .project-entry:last-of-type {
   margin-bottom: 12vh;
 }
-
 
 .project-entry h2 {
   /* * ENTRY HEADER */
@@ -95,8 +90,7 @@
   box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
 }
 
-
-.technologies {
+.technology_logos {
   display: flex;
   justify-content: space-around;
 }
@@ -142,7 +136,6 @@
 }
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-
 
 .project-entry h2 {
   font-family: "Montserrat", sans-serif;
@@ -210,7 +203,6 @@
   color: white;
   border: 1px solid white;
 }
-
 
 .moreInfo {
   width: 6rem;
