@@ -22,7 +22,7 @@
   background-image: url("../img/nav/futuramaship.jpg");
 }
 
-.project-entry {
+.project_entry {
   display: flex;
   flex-direction: column;
   width: 95%;
@@ -39,15 +39,33 @@
   background: rgba(235, 9, 144, 1);
 }
 
-.project-entry:first-of-type {
+.project_entry:first-of-type {
   margin: 12vh 0;
 }
 
-.project-entry:last-of-type {
+.project_entry:last-of-type {
   margin-bottom: 12vh;
 }
 
-.project-entry h2 {
+.columnLeft,                            /* * DIV COLUMNS STYLE TO BE USE WITH PROJECT_ENTRY DISPLAY GRID */  
+.columnRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+.columnLeft {
+  grid-column: 1;
+}
+
+.columnRight {
+  grid-column: 2;
+}
+
+.project_entry h2 {
   /* * ENTRY HEADER */
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
@@ -84,11 +102,15 @@
 #london_quiz .project_entry_link {
   background-image: url("../img/projects/projects_snapshots/londonquiz_snapshot.png");
   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #currency_app .project_entry_link {
   background-image: url("../img/projects/projects_snapshots/currency_app_snapshot.png");
   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes box-shawow-increasing {
@@ -106,6 +128,14 @@
   55% {
     transform: scale(0.9);
   }
+}
+
+.project_entry_link:hover {
+  filter: invert(75%);
+}
+
+.project_entry_link:active {
+  filter: hue-rotate(270deg);
 }
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_TECHNOLOGY USED  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
@@ -144,13 +174,11 @@
   align-items: center;
 }
 
-.technology_icon {
+.technology_logo img {
   width: 7vh;
   height: 7vh;
   border: 1px solid white;
   border-radius: 3%;
-  background-position: center;
-  background-size: cover;
 }
 
 .technology_logo h4 {
@@ -162,29 +190,15 @@
   color: white;
 }
 
-#javascript_logo {
-  background-image: url("../img/projects/tecnologies_icons/javascript_logo.jpg");
-}
-
-#jquery_logo {
-  background-image: url("../img/projects/tecnologies_icons/jquery_logo.jpg");
-}
-
-#firebase_logo {
-  background-image: url("../img/projects/tecnologies_icons/firebase_logo.jpg");
-}
-
-#react_logo {
-  background-image: url("../img/projects/tecnologies_icons/react.jpg");
-}
-
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
 .description p {
+  text-align: center;
   color: white;
-  font-size: 19px;
-  padding: 8px;
-  margin-top: 25px;
+  font-size: 16px;
+  padding: 0.7rem;
+  font-weight: lighter;
+  line-height: 1.3rem;
 }
 
 #projects a {
@@ -193,49 +207,34 @@
   padding: 2px 1px 0;
 }
 
-.project_link:hover {
+.github_repo:hover {
   background-color: #f7feaa;
 }
 
-.project_link:active {
+.github_repo:active {
   background-color: #265301;
 }
 
-.project_links {
-  justify-content: space-evenly;
-}
-
-.project_links h3 {
-  margin-top: 0.3rem;
-  align-self: flex-start;
-  font-size: 0.55rem;
-  letter-spacing: 0.3em;
-}
-
-.project_link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12vh;
+.github_repo {
+  align-self: center;
+  margin-bottom: 2rem;
+  width: 22vh;
   height: 12vh;
-  background-position: 50% 70%;
-  background-size: 55% 55%;
+  background-position: 50% 80%;
+  background-size: 40% 55%;
   background-repeat: no-repeat;
   border-radius: 4%;
-}
-
-.github {
   background-image: url("../img/projects/links_icons/Octocat.jpg");
   background-color: rgba(143, 5, 150, 0.858);
-  color: white;
   border: 1px solid white;
 }
 
-.website {
-  background-image: url("../img/projects/links_icons/web.jpg");
-  background-color: black;
+.github_repo h3 {
   color: white;
-  border: 1px solid white;
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 0;
+  padding: 0.15rem;
 }
 
 .moreInfo {
@@ -262,11 +261,11 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 375px) {
-  .project-entry > img {
+  .project_entry_link {
     height: 35vh;
   }
 
-  .project-entry h2 {
+  .project_entry h2 {
     font-size: 2.7rem;
   }
 
@@ -274,13 +273,14 @@
     font-size: 2.4rem;
   }
 
-  .project_links h3 {
-    font-size: 0.7rem;
-    margin-top: 0.4rem;
+  .github_repo {
+    margin: 1.8rem 0;
+    width: 15vh;
+    height: 10vh;
   }
 
-  .project_link {
-    background-size: 60% 60%;
+  .github_repo h3 {
+    letter-spacing: 0.08rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -288,43 +288,82 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 768PX    <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY MIN-WIDTH: 768PX    <<<<<<<<<<<<<<<<<<<><<<<<<<<( IPAD )<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-@media (orientation: portrait) and (min-width: 768px) {
-  .project-entry {
-    max-width: 75%;
+@media (min-width: 768px) {
+  .project_entry:first-of-type {
+    margin: 20vh 0;
   }
 
-  .project-entry > img {
-    max-width: 80%;
+  .project_entry {
+    display: grid;
+    width: 70%;
+    height: 40vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
   }
 
-  .technology_logo h4 {
-    font-size: 1rem;
-  }
-
-  .project-entry h2 {
-    font-size: 4rem;
-  }
-
+  .project_entry h2,
   #currency_app h2 {
-    font-size: 3.7rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: normal;
+  }
+
+  .project_entry_link {
+    width: 80%;
+    height: 14vh;
+    margin: 0;
+  }
+
+  .fingerTouch {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .technology_title {
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+
+  .technology_logos {
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
+  .technology_logo img {
+    width: 4.5vh;
+    height: 4.5vh;
+  }
+  .technology_logo h4 {
+    font-size: 0.55rem;
+    font-weight: lighter;
+  }
+
+  .description {
+    margin: auto;
   }
 
   .description p {
-    padding: 12px;
-    font-size: 18px;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    padding: 0 1rem;
   }
 
-  .project_link {
-    width: 10vh;
-    height: 10vh;
+  .github_repo {
+    width: 12vh;
+    height: 8vh;
+    justify-self: center;
+    margin-top: 4rem;
+    background-position: 50% 76%;
+    background-size: 50% 60%;
   }
 
-  .project_links h3 {
+  .github_repo h3 {
     font-size: 0.75rem;
-    margin-top: 0.5rem;
+    padding: 0.15rem;
   }
 }
 
@@ -337,83 +376,93 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) {
-  .project-entry:first-of-type {
-    margin: 30vh 0;
+  .project_entry:first-of-type {
+    margin: 20vh 0;
   }
 
-  .project-entry h2 {
+  .project_entry {
+    display: grid;
+    width: 80%;
+    height: 75vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+  }
+
+  .project_entry.expand_extra_info {
+    width: 85%;
+    height: 85vh;
+  }
+
+  .project_entry h2 {
     font-size: 1.75rem;
-    grid-column: 1;
-    grid-row: 1/3;
-    margin-bottom: 1rem;
     letter-spacing: normal;
   }
 
-  .project-entry {
-    display: grid;
-    max-height: 90vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-column-gap: 10px;
-    justify-content: stretch;
-    align-items: stretch;
-    padding: 0 0 1rem 0;
+  .project_entry.expand_extra_info h2 {
+    padding: 0.7rem 0;
   }
 
-  .project_entry_image {
-    height: auto;
-    width: 70%;
-    margin: 0;
-    grid-column: 1;
-    grid-row: 4/10;
+  .project_entry_link {
+    width: 80%;
+    height: 35vh;
+    margin: 0.2rem 0 0 0;
   }
 
   .technology_title {
-    font-size: 0.7rem;
-    grid-column: 2;
-    grid-row: 2/4;
+    font-size: 0.85rem;
+    margin-top: 3rem;
   }
 
   .technology_logos {
+    margin-top: 0.5rem;
     justify-content: space-evenly;
     align-items: flex-end;
-    grid-column: 2;
-    grid-row: 4/8;
   }
 
-  .technology_icon {
-    width: 9vh;
-    height: 9vh;
+  .technology_logo img {
+    width: 10vh;
+    height: 10vh;
   }
-
   .technology_logo h4 {
     font-size: 0.55rem;
     font-weight: lighter;
   }
 
+  .moreInfo {
+    justify-self: center;
+    width: 4rem;
+    height: 2rem;
+    font-size: 14px;
+    margin: 1.75rem 0 0 0;
+  }
+
+  .lessInfo {
+    margin-top: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-self: flex-end;
+  }
+
   .description {
-    grid-column: 1;
-    grid-row: 10/13;
     margin: auto;
   }
 
   .description p {
     margin: 0;
-    font-size: 12px;
-    line-height: 18px;
-    padding: 18px;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    padding: 0 1rem;
   }
 
-  .project_links {
-    grid-column: 2;
-    grid-row: 10/13;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  .github_repo {
+    width: 24vh;
+    height: 18vh;
+    justify-self: center;
   }
 
-  .project_link {
-    width: 22vh;
-    height: 20vh;
+  .github_repo h3 {
+    font-size: 0.5rem;
+    padding: 0.15rem;
   }
 }
 
@@ -430,27 +479,36 @@
     font-size: 5rem;
   }
 
-  .project-entry h2 {
+  .project_entry h2 {
     font-size: 2.5rem;
     align-self: center;
-    margin-top: 3rem;
-  }
-
-  .project_entry_image {
-    grid-row: 5/10;
-  }
-
-  .description {
-    grid-row: 11/13;
+    margin: 0;
   }
 
   .technology_title {
-    margin-top: 28px;
-    grid-row: 3/5;
+    margin-top: 4rem;
   }
 
-  .project_links {
-    grid-row: 9/12;
+  .lessInfo {
+    margin: 1rem 3rem 0 0;
+  }
+
+  .description p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    padding: 0 2rem;
+  }
+
+  .github_repo {
+    margin-top: 1rem;
+    width: 26vh;
+    height: 20vh;
+    background-position: 50% 70%;
+    background-size: 55% 60%;
+  }
+
+  .github_repo h3 {
+    letter-spacing: 0.05rem;
   }
 }
 
@@ -466,43 +524,38 @@
     font-size: 6rem;
   }
 
-  .project-entry:first-of-type {
+  .project_entry:first-of-type {
     margin: 25vh 0;
   }
 
-  .project-entry {
+  .project_entry {
     max-width: 80%;
     max-height: 60vh;
   }
 
-  .project_entry_image {
+  .project_entry h2 {
+    font-size: 2.25rem;
+  }
+
+  .project_entry_link {
     height: 25vh;
     width: 80%;
-    grid-row: 4/10;
   }
 
   .technology_title {
-    margin-top: 48px;
-    grid-row: 3/5;
+    font-size: 1.15rem;
+    margin-top: 7rem;
   }
 
   .technology_logo h4 {
     font-size: 0.8rem;
   }
 
-  .technology_icon {
+  .technology_logo {
     width: 7vh;
-    height: 7vh;
+    height: 12vh;
   }
 
-  .project_links h3 {
-    margin-top: 0.4rem;
-    font-size: 0.85rem;
-  }
-
-  .description {
-    grid-row: 10/13;
-  }
   .description p {
     font-size: 16px;
     line-height: 20px;
@@ -512,18 +565,15 @@
     font-size: 2.5rem;
   }
 
-  .project-entry h2 {
-    font-size: 3rem;
+  .technology_logo img {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .github_repo {
     margin-top: 4rem;
-  }
-
-  .project_link {
-    width: 13vh;
-    height: 13vh;
-  }
-
-  .technologies {
-    align-items: center;
+    width: 16vh;
+    height: 12vh;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -539,30 +589,8 @@
     padding: 4rem 1rem;
   }
 
-  .project_entry_image {
-    height: 27vh;
-  }
-
-  .technology_title {
-    grid-row: 2/4;
-  }
-
-  .technology_logos {
-    grid-row: 3/7;
-  }
-
-  .technology_icon {
-    width: 8vh;
-    height: 8vh;
-  }
-
-  .project-entry h2 {
+  .project_entry h2 {
     font-size: 3.5rem;
-  }
-
-  .project_link {
-    width: 16vh;
-    height: 14vh;
   }
 }
 
@@ -605,7 +633,7 @@
     font-size: 10rem;
   }
 
-  .project-entry h2 {
+  .project_entry h2 {
     font-size: 8rem;
   }
 
