@@ -1,9 +1,10 @@
 
 
 let mouseCursor = document.querySelector("#cursor");
-let nav = document.querySelector("nav");
+let index = document.querySelector("#index");
 
 window.addEventListener("mousemove", cursor);
+
 
 function cursor (e){
     mouseCursor.style.top = e.pageY + "px";
@@ -11,6 +12,6 @@ function cursor (e){
 }
 
 
-nav.addEventListener("mouseover", () => {mouseCursor.classList.remove('cursor_index')});
+index.addEventListener("mouseover", () => {mouseCursor.classList.add('cursor_index')});
     
-nav.addEventListener("mouseleave", () => {mouseCursor.classList.add('cursor_index')});
+index.addEventListener("mouseleave", () => {mouseCursor.classList.remove('cursor_index')});
