@@ -185,8 +185,8 @@
       height: 2.25rem;
       border: 2px solid white;
       background: transparent;
-      // -webkit-backdrop-filter: invert();
-      //   backdrop-filter: invert();
+      -webkit-backdrop-filter: invert(100%);
+      backdrop-filter: invert(100%);
     }
   }
 
