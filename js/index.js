@@ -1,4 +1,4 @@
-
+// * INDEX.JS
 
 let mouseCursor = document.querySelector("#cursor");
 let index = document.querySelector("#index");
