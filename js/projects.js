@@ -1,4 +1,4 @@
-
+//  * PROJECTS.JS
 
 const $moreInfo= $('.moreInfo');
 const $lessInfo = $('.lessInfo');
