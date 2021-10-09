@@ -21,6 +21,11 @@
 
 body {
   overflow: scroll;
+  @include flex;
+}
+
+.div_tab {
+  flex: 1 1 100%;
 }
 
 .block {

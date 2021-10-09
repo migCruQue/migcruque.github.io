@@ -1,13 +1,25 @@
 nav {
+  border-radius: 2%;
+  z-index: 1;
+  background-color: rgba(231, 146, 238, 1);
+}
+
+nav.nav_portrait {
+  @include flex();
   position: fixed;
   height: 90vh;
   top: 5%;
   bottom: 5%;
   left: 5%;
   right: 5%;
-  border-radius: 2%;
-  z-index: 1;
-  background-color: rgba(231, 146, 238, 1);
+}
+
+nav.nav_landscape {
+  @include flex(columns, start);
+  height: 100vh;
+  position: static;
+  border-radius: 0;
+  flex: 1 1 30%;
 }
 
 .nav_buttons {
@@ -117,15 +129,6 @@ nav {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  nav {
-    grid-column: 1;
-    position: static;
-    height: auto;
-    flex-direction: column;
-    justify-content: start;
-    border-radius: 0;
-  }
-
   .nav_buttons {
     position: sticky;
     top: 7rem;
@@ -141,10 +144,6 @@ nav {
     border: none;
     border-bottom: 2px solid rgb(72, 10, 72);
     background-color: transparent;
-  }
-
-  #exit_menu {
-    display: none;
   }
 
   .div_tab {
