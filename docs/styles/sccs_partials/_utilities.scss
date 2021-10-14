@@ -24,10 +24,6 @@ body {
   @include flex;
 }
 
-.div_tab {
-  flex: 1 1 100%;
-}
-
 .block {
   display: block;
 }
@@ -47,7 +43,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* * / UTILITIES */
