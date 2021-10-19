@@ -1,21 +1,47 @@
 nav {
+  @include flex(column);
+  border-radius: 2%;
+  z-index: 1;
+  background-color: rgba(231, 146, 238, 1);
+  align-self: stretch;
+}
+
+nav.nav_portrait {
   position: fixed;
   height: 90vh;
   top: 5%;
   bottom: 5%;
   left: 5%;
   right: 5%;
-  border-radius: 2%;
-  z-index: 1;
-  background-color: rgba(231, 146, 238, 1);
 }
 
-.div_tabs {
+nav.nav_landscape {
+  position: relative;
+  border-radius: 0;
+  flex: 1 1 30%;
+}
+
+.nav_buttons {
+  @include flex(column, space-between);
+}
+
+.nav_portrait .nav_buttons {
+  padding: 2rem;
   width: 100%;
+  height: 100%;
   @include flex(column, space-evenly);
 }
+
+.nav_landscape .nav_buttons {
+  height: 50%;
+  width: fit-content;
+  position: fixed;
+  top: 40%;
+}
+
 .nav_button {
   width: 15rem;
+  height: 3.5rem;
   text-align: center;
   font-family: "Monoton", cursive;
   font-size: 1.5rem;
@@ -43,13 +69,16 @@ nav {
 }
 
 #exit_menu {
+  position: absolute;
+  top: 3px;
+  right: 3px;
   background-image: url("../img/nav/exit.svg");
   border-style: none;
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 8vh;
-  height: 8vh;
+  width: 5vh;
+  height: 5vh;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -73,6 +102,7 @@ nav {
 @media (orientation: portrait) and (min-width: 48em) {
   .nav_button {
     width: 20rem;
+    height: 5rem;
     font-size: 2rem;
   }
 }
@@ -86,8 +116,13 @@ nav {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) {
+  .nav_portrait .nav_buttons {
+    justify-content: space-between;
+  }
+
   .nav_button {
-    width: 12rem;
+    width: 13rem;
+    height: 2rem;
     font-size: 1.2rem;
   }
 }
@@ -104,6 +139,7 @@ nav {
   .nav_button {
     width: 15rem;
     font-size: 1.3rem;
+    height: 3rem;
     padding: 0.4rem 0.4rem;
   }
 }
@@ -116,38 +152,9 @@ nav {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  nav {
-    grid-column: 1;
-    position: static;
-    height: auto;
-    flex-direction: column;
-    justify-content: start;
-    border-radius: 0;
-  }
-
-  .div_tabs {
-    position: sticky;
-    top: 7rem;
-    width: 100%;
-    @include flex(column, center);
-    margin-top: 7rem;
-  }
-
   .nav_button {
-    width: 90%;
+    width: 13.5rem;
     font-size: 1.4rem;
-    margin-bottom: 4rem;
-    border: none;
-    border-bottom: 2px solid rgb(72, 10, 72);
-    background-color: transparent;
-  }
-
-  #exit_menu {
-    display: none;
-  }
-
-  .div_tab {
-    grid-column: 2;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -160,7 +167,9 @@ nav {
 
 @media (orientation: landscape) and (min-width: 75em) {
   .nav_button {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    width: 15rem;
   }
 }
 
@@ -174,7 +183,9 @@ nav {
 
 @media (orientation: landscape) and (min-width: 90em) {
   .nav_button {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    height: 4rem;
+    width: 17rem;
   }
 }
 
@@ -186,6 +197,11 @@ nav {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 160em) {
+  .nav_button {
+    font-size: 2.5rem;
+    height: 6rem;
+    width: 32rem;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

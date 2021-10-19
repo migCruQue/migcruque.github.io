@@ -21,6 +21,7 @@
 
 body {
   overflow: scroll;
+  @include flex;
 }
 
 .block {
@@ -42,7 +43,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* * / UTILITIES */

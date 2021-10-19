@@ -11,53 +11,20 @@ const $hamburger = $('.hamburger') // ! collection of buttons with class="hambur
 const $exit_menu = $('#exit_menu') 
 
 
+import {setSuitableNav, resizeNav, hamburgerFunctionality, exit_menuFunctionality, nav_buttonsFunctionality} from './modules/nav';
 
-$(window).on('load', function() {          //on loading set the nav with the class hidden or grid depending on the window viewport width
-    if ($(window).width() >= 1000) {
-        $nav.removeClass('hidden').addClass('flex');
-        $hamburger.addClass('hidden');
-    } 
-});
+window.onload = setSuitableNav();
 
-let currentWidth = $(window).width();  //initialize the variable currentWidth to use in the resize handler
+$(window).on('resize', () => {resizeNav()});
 
-$(window).on('resize', function() {   // when the window is resize check if the width is equal or greater than 1000 to remove class="hidden"
-    if ($(window).width() >= 1000) {
-        $nav.removeClass('hidden').addClass('flex');
-        $hamburger.addClass('hidden');
-    }
-    if ($(window).width() < 1000) {       // check if the window width was greater than 1000 if so it add the class="hidden" to the nav element.
-        if(currentWidth >= 1000){
-            $nav.addClass('hidden');
-            $hamburger.removeClass('hidden');
-        }
-    }
-    currentWidth = $(window).width();
-});
+$hamburger.click( () => {
+    hamburgerFunctionality()});
 
-$hamburger.click(function(){
-    $(this).addClass("hidden");
-    $('nav').removeClass('hidden').addClass('flex');
+$exit_menu.click(() => {
+    exit_menuFunctionality()});
 
-});
-
-$exit_menu.click(function(){
-    $('.hamburger').removeClass('hidden');
-    $('nav').removeClass('flex').addClass('hidden');
-});
-
-
-$nav_button.not($exit_menu).click(function(){
-    if($(window).width() < 1000){
-        $nav.addClass('hidden').removeClass('flex');// * Check if the the viewport width is less than 1000 and set up the nav to display none.
-    }  
-    $nav_button.removeClass('hidden'); // * Remove 'hidden' class from the button whose tab was previously selected
-    $(`#${this.id}`).addClass('hidden'); // * Add class "hidden" to the currently selected button
-    
-    const tab_id = this.id.replace('_button', ''); // * extract the string id from id_button 
-    $div_tab.addClass('hidden').removeClass('flex'); // * add the class "hidden" to all the tabs
-    $(`#${tab_id}`).removeClass('hidden').addClass('flex'); //* remove class "hidden" and add the class "flex" to the current selected tab.
-});
+$nav_button.not($exit_menu).click((e) => {
+    nav_buttonsFunctionality(e)});
 
 
 
@@ -235,60 +202,7 @@ function isTouchDevice(Device) {
 
 // * TYPEWRITER.JS 
 
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
+import {typewritePlaying} from './modules/typewriter';
 
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
+window.onload = typewritePlaying();
 
