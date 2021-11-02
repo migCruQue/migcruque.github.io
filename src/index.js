@@ -1,14 +1,12 @@
- /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV FUNCTIONALITY >>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+
 // JQUERY CONSTANTS
 
-const $nav = $('nav');
-const $nav_button = $('.nav_button');     //* colection of button with class="nav_button"
+const $nav = $('nav');//* colection of button with class="nav_button"
 const $div_tab = $('.div_tab');   // *collection of divs with class="div_tab
-const $hamburger = $('.hamburger') // ! collection of buttons with class="hamburger", should I leave a unique hamburger button
-const $exit_menu = $('#exit_menu') 
 
 
 import {setSuitableNav, resizeNav, hamburgerFunctionality, exit_menuFunctionality, nav_buttonsFunctionality} from './modules/nav';
@@ -16,12 +14,6 @@ import {setSuitableNav, resizeNav, hamburgerFunctionality, exit_menuFunctionalit
 window.onload = setSuitableNav();
 
 $(window).on('resize', () => {resizeNav()});
-
-$hamburger.click( () => {
-    hamburgerFunctionality()});
-
-$exit_menu.click(() => {
-    exit_menuFunctionality()});
 
 $nav_button.not($exit_menu).click((e) => {
     nav_buttonsFunctionality(e)});
