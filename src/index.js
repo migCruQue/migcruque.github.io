@@ -1,22 +1,40 @@
+
+
+// import 'bootstrap';
+import * as bootstrap from 'bootstrap';
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV FUNCTIONALITY >>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+const $nav = $('nav');
 
-// JQUERY CONSTANTS
+// when hamburger toggles add or remove .overlapping (adding background-color to nav, ovelapping the body) 
+$(".navbar-toggler").on("click", function() {
+   $nav.hasClass("ovelapping") ? $nav.removeClass("ovelapping") : $nav.addClass("ovelapping");
+  });
 
-const $nav = $('nav');//* colection of button with class="nav_button"
-const $div_tab = $('.div_tab');   // *collection of divs with class="div_tab
+
+let isCurrentWidthSmall = ($(window).width()) <= 992 ;  // check the window screen size and assing True or False whether the screen size is smaller than 992px
+
+$(window).on('resize', () => {
+    if( $(window).width() > 992  && $nav.hasClass("ovelapping")){  // Remove .overlapping from the nav when resize to a big screen.
+        $nav.removeClass("ovelapping")}
+
+    isCurrentWidthSmall = ($(window).width()) <= 992; 
+});
 
 
-import {setSuitableNav, resizeNav, hamburgerFunctionality, exit_menuFunctionality, nav_buttonsFunctionality} from './modules/nav';
+const $navLinks = $('.nav-item');
+const menuToggle = document.getElementById('navbarSupportedContent');
+const bsCollapse = new bootstrap.Collapse(menuToggle);
 
-window.onload = setSuitableNav();
+$navLinks.on("click", () => {    // Use the toggle method in a new boostrap.Collapse(menuToggle)  
+    console.log('bsCollapse.toggle()');  //to collapse the navbar-collapse when any button from the menu is click
+    bsCollapse.toggle();
+});
 
-$(window).on('resize', () => {resizeNav()});
-
-$nav_button.not($exit_menu).click((e) => {
-    nav_buttonsFunctionality(e)});
 
 
 
@@ -29,21 +47,21 @@ $nav_button.not($exit_menu).click((e) => {
 
 // * INDEX.JS
 
-let mouseCursor = document.querySelector("#cursor");
-let index = document.querySelector("#index");
+// let mouseCursor = document.querySelector("#cursor");
+// let index = document.querySelector("#index");
 
-window.addEventListener("mousemove", cursor);
-
-
-function cursor (e){
-    mouseCursor.style.top = e.pageY + "px";
-    mouseCursor.style.left = e.pageX + "px";
-}
+// window.addEventListener("mousemove", cursor);
 
 
-index.addEventListener("mouseover", () => {mouseCursor.classList.add('cursor_index')});
+// function cursor (e){
+//     mouseCursor.style.top = e.pageY + "px";
+//     mouseCursor.style.left = e.pageX + "px";
+// }
+
+
+// index.addEventListener("mouseover", () => {mouseCursor.classList.add('cursor_index')});
     
-index.addEventListener("mouseleave", () => {mouseCursor.classList.remove('cursor_index')});
+// index.addEventListener("mouseleave", () => {mouseCursor.classList.remove('cursor_index')});
 
 
 // * CONTACT_ME.JS

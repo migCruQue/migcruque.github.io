@@ -12429,7 +12429,7 @@ ul.navbar-nav {
           align-items: center;
 }
 
-.navbar-nav a {
+button.nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12457,17 +12457,17 @@ ul.navbar-nav {
   cursor: pointer;
 }
 
-.navbar-nav a:focus {
+button.nav-link :focus {
   border-bottom: 1px solid;
   background: #bae498;
 }
 
-.navbar-nav a:hover {
+button.nav-link :hover {
   border-bottom: 1px solid;
   background: #d06f2f;
 }
 
-.navbar-nav a:active {
+button.nav-link :active {
   background: #265301;
   color: #cdfeaa;
 }
@@ -12476,7 +12476,7 @@ ul.navbar-nav {
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 24em) {
-  .navbar-nav a {
+  button.nav-link {
     width: 16rem;
     height: 4rem;
     font-size: 1.7rem;
@@ -12527,7 +12527,7 @@ ul.navbar-nav {
     width: 40%;
     height: 95%;
   }
-  .navbar-nav a {
+  button.nav-link {
     width: 12rem;
     height: 2rem;
     font-size: 1rem;
@@ -12590,7 +12590,7 @@ ul.navbar-nav {
   .nav-item {
     width: 90%;
   }
-  .navbar-nav a {
+  button.nav-link {
     font-size: 1rem;
   }
   .navbar-brand {
@@ -12612,7 +12612,7 @@ ul.navbar-nav {
   .nav-item {
     width: 90%;
   }
-  .navbar-nav a {
+  button.nav-link {
     height: 4rem;
     font-size: 1.3rem;
     -webkit-box-flex: 1;
@@ -12642,7 +12642,7 @@ ul.navbar-nav {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 75em  <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<>>><<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 75em) {
-  .navbar-nav a {
+  button.nav-link {
     font-size: 1.4rem;
     height: 4rem;
     width: 15rem;
@@ -12656,7 +12656,7 @@ ul.navbar-nav {
 /* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 90em) {
-  .navbar-nav a {
+  button.nav-link {
     font-size: 1.7rem;
   }
 }
@@ -12668,7 +12668,7 @@ ul.navbar-nav {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 160em) {
-  .navbar-nav a {
+  button.nav-link {
     font-size: 5rem;
     height: 12rem;
     width: 40rem;
