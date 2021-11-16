@@ -1,5 +1,6 @@
-.div_tab {
+.tab-pane.active {
   @include flex;
+  width: 100vw;
   flex: 1 1 100%;
 }
 

@@ -27,13 +27,19 @@ $(window).on('resize', () => {
 
 
 const $navLinks = $('.nav-item');
-const menuToggle = document.getElementById('navbarSupportedContent');
-const bsCollapse = new bootstrap.Collapse(menuToggle);
+const navbarCollapse  = document.getElementById('navbarSupportedContent');
+
+function menuToggle() {
+    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+    bsCollapse.toggle();
+}
 
 $navLinks.on("click", () => {    // Use the toggle method in a new boostrap.Collapse(menuToggle)  
-    console.log('bsCollapse.toggle()');  //to collapse the navbar-collapse when any button from the menu is click
-    bsCollapse.toggle();
+    $nav.hasClass("ovelapping") ? $nav.removeClass("ovelapping") : $nav.addClass("ovelapping");
+    menuToggle();//to collapse the navbar-collapse when any button from the menu is click
+    
 });
+
 
 
 
@@ -43,25 +49,6 @@ $navLinks.on("click", () => {    // Use the toggle method in a new boostrap.Coll
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV FUNCTIONALITY >>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
-// * INDEX.JS
-
-// let mouseCursor = document.querySelector("#cursor");
-// let index = document.querySelector("#index");
-
-// window.addEventListener("mousemove", cursor);
-
-
-// function cursor (e){
-//     mouseCursor.style.top = e.pageY + "px";
-//     mouseCursor.style.left = e.pageX + "px";
-// }
-
-
-// index.addEventListener("mouseover", () => {mouseCursor.classList.add('cursor_index')});
-    
-// index.addEventListener("mouseleave", () => {mouseCursor.classList.remove('cursor_index')});
 
 
 // * CONTACT_ME.JS

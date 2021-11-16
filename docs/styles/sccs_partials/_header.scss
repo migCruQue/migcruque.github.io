@@ -8,50 +8,10 @@ header h1 {
   font-family: "Crushed", sans-serif;
   text-align: center;
   color: white;
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-
-.hamburger {
-  background-image: url("../img/nav/hamburger.svg");
-  border-style: none;
-  background-position: 0px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 6vh;
-  height: 6vh;
+  font-size: 3rem;
   margin-left: 1rem;
+  padding: 2rem;
 }
-
-/* CIRCLE DIV */
-.circle {
-  width: 8vh;
-  height: 8vh;
-  border-style: none;
-  background-position: 0px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  margin-left: 1rem;
-}
-/* / CIRCLE DIV */
-
-/* ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
-.circle {
-  animation-name: spinLogo;
-  animation-duration: 3.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-/* / ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
-
-/* KEYFRAMES ANIMATION SPINLOGO */
-@keyframes spinLogo {
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* / KEYFRAMES ANIMATION SPINLOGO */
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -62,16 +22,8 @@ header h1 {
     padding: 1rem;
   }
 
-  .hamburger {
-    margin-left: 0;
-  }
-
   header h1 {
     margin-left: 3rem;
-  }
-
-  .circle {
-    margin-left: 2rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -86,12 +38,6 @@ header h1 {
   header h1 {
     margin-left: 12rem;
     font-size: 3rem;
-  }
-
-  .circle {
-    margin-left: 4rem;
-    width: 7vh;
-    height: 7vh;
   }
 }
 
@@ -131,12 +77,6 @@ header h1 {
 
   header h1 {
     font-size: 4rem;
-  }
-
-  .circle {
-    width: 10vh;
-    height: 10vh;
-    margin-left: 2rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

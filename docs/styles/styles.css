@@ -11965,9 +11965,9 @@ fieldset:disabled .btn {
 
 body {
   overflow: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -11985,9 +11985,9 @@ body {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12058,10 +12058,10 @@ body {
   font-style: normal;
 }
 
-.div_tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.tab-pane.active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12072,6 +12072,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
@@ -12137,9 +12138,9 @@ body {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 header {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12157,62 +12158,11 @@ header h1, header .h1 {
   font-family: "Crushed", sans-serif;
   text-align: center;
   color: white;
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-
-.hamburger {
-  background-image: url("../img/nav/hamburger.svg");
-  border-style: none;
-  background-position: 0px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 6vh;
-  height: 6vh;
+  font-size: 3rem;
   margin-left: 1rem;
+  padding: 2rem;
 }
 
-/* CIRCLE DIV */
-.circle {
-  width: 8vh;
-  height: 8vh;
-  border-style: none;
-  background-position: 0px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  margin-left: 1rem;
-}
-
-/* / CIRCLE DIV */
-/* ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
-.circle {
-  -webkit-animation-name: spinLogo;
-          animation-name: spinLogo;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-/* / ANIMATION SPINLOGO FOR DIVS CIRCLE AND SQUARE */
-/* KEYFRAMES ANIMATION SPINLOGO */
-@-webkit-keyframes spinLogo {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spinLogo {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-/* / KEYFRAMES ANIMATION SPINLOGO */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -12220,14 +12170,8 @@ header h1, header .h1 {
   header {
     padding: 1rem;
   }
-  .hamburger {
-    margin-left: 0;
-  }
   header h1, header .h1 {
     margin-left: 3rem;
-  }
-  .circle {
-    margin-left: 2rem;
   }
 }
 
@@ -12241,11 +12185,6 @@ header h1, header .h1 {
   header h1, header .h1 {
     margin-left: 12rem;
     font-size: 3rem;
-  }
-  .circle {
-    margin-left: 4rem;
-    width: 7vh;
-    height: 7vh;
   }
 }
 
@@ -12275,11 +12214,6 @@ header h1, header .h1 {
   }
   header h1, header .h1 {
     font-size: 4rem;
-  }
-  .circle {
-    width: 10vh;
-    height: 10vh;
-    margin-left: 2rem;
   }
 }
 
@@ -12311,9 +12245,9 @@ header h1, header .h1 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12337,30 +12271,16 @@ nav.ovelapping {
   background-color: aquamarine;
 }
 
-.nav-container {
+.navbar > div {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.navbar-brand {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 2.5rem;
-  left: 2.5rem;
-}
-
-.navbar-brand img {
-  width: 10vh;
-  height: 10vh;
-  border-radius: 50%;
-}
-
 .navbar-toggler {
   position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
+  top: 2rem;
+  right: 1.5rem;
   background-image: url("../img/nav/navbar-toggler.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -12369,8 +12289,8 @@ nav.ovelapping {
   -webkit-box-flex: 0 !important;
       -ms-flex: none !important;
           flex: none !important;
-  width: 7vh;
-  height: 7vh;
+  width: 6vh;
+  height: 6vh;
 }
 
 .navbar-collapse {
@@ -12391,10 +12311,10 @@ nav.ovelapping {
   transition: all 0s ease-out;
 }
 
-ul.navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+ul.nav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12406,17 +12326,18 @@ ul.navbar-nav {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 80%;
   height: 90%;
-  background-color: blue;
+  border: none;
 }
 
 .nav-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12430,9 +12351,9 @@ ul.navbar-nav {
 }
 
 button.nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12443,8 +12364,8 @@ button.nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 12rem;
-  height: 3rem;
+  width: 15rem;
+  height: 3.5rem;
   padding: 0 !important;
   text-align: center;
   font-family: "Monoton", cursive;
@@ -12511,12 +12432,6 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) {
-  .navbar-brand img {
-    top: 1.5rem;
-    left: 1.5rem;
-    width: 17vh;
-    height: 17vh;
-  }
   .navbar-toggler {
     top: 1.5rem;
     right: 1.5rem;
@@ -12556,36 +12471,14 @@ button.nav-link :active {
   nav {
     position: relative !important;
     background-color: #e792ee;
-    width: 33vw;
+    width: 25%;
     height: auto;
   }
-  .nav-container {
+  .navbar > div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .nav-container > a {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 !important;
-  }
-  .navbar-brand img {
-    position: static;
   }
   .nav-item {
     width: 90%;
@@ -12593,20 +12486,16 @@ button.nav-link :active {
   button.nav-link {
     font-size: 1rem;
   }
-  .navbar-brand {
-    position: static;
-  }
   .navbar-collapse {
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
   }
-  ul.navbar-nav {
+  ul.nav {
     width: 90%;
-    height: 80%;
-    -ms-flex-item-align: self-end;
-        -ms-grid-row-align: self-end;
-        align-self: self-end;
+    height: 60%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     margin-bottom: 2rem;
   }
   .nav-item {
@@ -12632,6 +12521,12 @@ button.nav-link :active {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 !important;
+  }
+  .tab-content {
+    width: 75%;
+  }
+  .tab-pane.active {
+    width: auto;
   }
 }
 
@@ -12699,10 +12594,6 @@ button.nav-link :active {
   background: #3771ee;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3771ee), color-stop(85%, transparent));
   background: linear-gradient(to right, #3771ee 50%, transparent 85%);
-}
-
-#about_me .circle {
-  background-image: url("../img/nav/littleme.jpg");
 }
 
 #about_me p {
@@ -12824,6 +12715,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 #contact_me {
+  height: 100vh;
   background-image: url("../img/contact_me/typewriter2.jpg");
   background-size: cover;
   -webkit-box-orient: vertical;
@@ -12868,9 +12760,9 @@ button.nav-link :active {
 }
 
 #contact_me .contact_card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12888,9 +12780,9 @@ button.nav-link :active {
 }
 
 #contact_me a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -12939,9 +12831,9 @@ button.nav-link :active {
 }
 
 .contact_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -13218,7 +13110,7 @@ button.nav-link :active {
 }
 
 .card_image {
-  max-width: 100%;
+  width: 100%;
   height: 25vh;
   background-position: center;
   background-size: cover;
@@ -13252,9 +13144,9 @@ button.nav-link :active {
 }
 
 #education .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13423,27 +13315,23 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-#index {
-  background-image: url("../img/index/fontana_phone.jpg");
-  background-size: cover;
+#home {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 100vh;
-}
-
-#index .hamburger {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  margin-left: 0;
+  background-image: url("../img/index/fontana_phone.jpg");
+  background-size: cover;
 }
 
 #box {
   width: 85%;
   padding: 2px;
+  margin-bottom: 3rem;
   background: #fff;
   border-radius: 5px;
   -webkit-box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
@@ -13455,14 +13343,13 @@ button.nav-link :active {
           align-items: center;
   opacity: 0.8;
   filter: alpha(opacity=50);
-  position: relative;
-  top: 35%;
 }
 
 .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 12vh;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -13484,7 +13371,7 @@ button.nav-link :active {
 }
 
 .item a {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: "Crushed", cursive;
   margin-left: 0.3rem;
   text-decoration: none;
@@ -13499,14 +13386,8 @@ button.nav-link :active {
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 24em) {
-  #index header {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    padding: 0;
-  }
   .item a {
-    font-size: 27px;
+    font-size: 1.8rem;
   }
 }
 
@@ -13517,15 +13398,15 @@ button.nav-link :active {
 /* >>>   TABLET  >>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 48em) {
-  .hamburger {
-    width: 6vh;
-    height: 6vh;
-  }
   #box {
-    width: 60%;
+    width: 80%;
+    margin-bottom: 5rem;
+  }
+  .item {
+    height: 14vh;
   }
   .item a {
-    font-size: 40px;
+    font-size: 3rem;
   }
 }
 
@@ -13536,16 +13417,15 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) {
-  #index {
-    /* background-image: url('../img/index/fontanacutBW.jpg'); */
+  #home {
     background-image: url("../img/index/fontana_desktop.jpg");
   }
-  .hamburger {
-    width: 10vh;
-    height: 10vh;
-  }
   #box {
-    width: 60%;
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+  .item {
+    height: 18vh;
   }
   .item a {
     font-size: 25px;
@@ -13560,7 +13440,7 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 50em) {
   #box {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -13571,9 +13451,14 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  .hamburger {
-    width: 7vh;
-    height: 7vh;
+  #box {
+    margin-bottom: 4rem;
+  }
+  .item {
+    height: 14vh;
+  }
+  .item a {
+    font-size: 2.3rem;
   }
 }
 
@@ -13584,45 +13469,11 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 75em  <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<>>><<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 75em) {
-  #index .cursor_index {
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    pointer-events: none;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-transition-property: background, -webkit-transform;
-    transition-property: background, -webkit-transform;
-    transition-property: background, transform;
-    transition-property: background, transform, -webkit-transform;
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-    z-index: 3;
-    background: rgba(244, 26, 255, 0.7);
-    /*       BACKDROP FILTER FALLBACK FOR FIREFOX */
-  }
-  @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-    #index .cursor_index {
-      width: 2.25rem;
-      height: 2.25rem;
-      border: 2px solid white;
-      background: transparent;
-      -webkit-backdrop-filter: invert(100%);
-      backdrop-filter: invert(100%);
-    }
-  }
-  .hamburger {
-    width: 5vh;
-    height: 5vh;
-  }
   #box {
     width: 50%;
   }
   .item a {
-    font-size: 42px;
+    font-size: 2.5rem;
   }
 }
 
@@ -13632,21 +13483,21 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
-@media (orientation: landscape) and (min-width: 90em) {
-  #box {
-    width: 40%;
-  }
-  .item a {
-    font-size: 45px;
-  }
-}
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 160em) {
+  #box {
+    margin-bottom: 10rem;
+  }
+  .item a {
+    font-size: 7rem;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -13671,9 +13522,9 @@ button.nav-link :active {
 }
 
 .project_entry {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13708,9 +13559,9 @@ button.nav-link :active {
 
 .columnLeft,
 .columnRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -13847,9 +13698,9 @@ button.nav-link :active {
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_TECHNOLOGY USED  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 .technology_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -13885,9 +13736,9 @@ button.nav-link :active {
 }
 
 .technology_logos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -13900,9 +13751,9 @@ button.nav-link :active {
 }
 
 .technology_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
