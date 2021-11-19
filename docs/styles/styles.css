@@ -12066,9 +12066,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -12076,16 +12076,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
-}
-
-.div_tab.height100 {
-  height: 100vh;
-}
-
-.div_tab.alignself {
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -12241,6 +12231,13 @@ header h1, header .h1 {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 160em) {
+  header h1, header .h1 {
+    font-size: 12rem;
+    padding: 4rem;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -12492,7 +12489,9 @@ button.nav-link :active {
             flex: 3;
   }
   ul.nav {
-    width: 90%;
+    position: fixed;
+    top: 15rem;
+    width: 25%;
     height: 60%;
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -12554,6 +12553,9 @@ button.nav-link :active {
   button.nav-link {
     font-size: 1.7rem;
   }
+  ul.nav {
+    top: 20rem;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -12567,6 +12569,9 @@ button.nav-link :active {
     font-size: 5rem;
     height: 12rem;
     width: 40rem;
+  }
+  ul.nav {
+    top: 50rem;
   }
 }
 
@@ -12586,7 +12591,6 @@ button.nav-link :active {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: auto;
   padding-bottom: 2rem;
 }
 
@@ -12602,8 +12606,8 @@ button.nav-link :active {
   letter-spacing: 1px;
   word-spacing: 2px;
   padding: 2rem 1rem;
-  margin: 4rem 1rem 3rem 1rem;
-  font-size: 16px;
+  margin: 4rem 0.5rem 3rem 0.5rem;
+  font-size: 1rem;
   font-weight: 400;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
@@ -12620,7 +12624,7 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 24em) {
   #about_me p {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -12639,7 +12643,6 @@ button.nav-link :active {
     max-width: 38rem;
     margin: 7rem auto 0;
     padding: 3rem 3rem;
-    font-size: 18px;
     line-height: 2rem;
   }
 }
@@ -12670,11 +12673,11 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
   #about_me p {
-    font-size: 18px;
-    margin: 5rem auto 0;
-    line-height: 2.5rem;
-    max-width: 37rem;
-    padding: 2rem;
+    font-size: 1rem;
+    margin: 6rem 0 0;
+    line-height: 1.75rem;
+    max-width: 44rem;
+    padding: 2.5rem;
   }
 }
 
@@ -12684,15 +12687,6 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 75em  <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<>>><<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-@media (orientation: landscape) and (min-width: 75em) {
-  #about_me p {
-    margin-top: 6rem;
-  }
-  #about_me p {
-    max-width: 60rem;
-  }
-}
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 75em  <<<<<<<<<<<<<<<<<( LAPTOP MDPI SCREEN)<<<<<<<<>>><<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -12701,7 +12695,8 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 90em) {
   #about_me p {
-    margin-top: 8rem;
+    max-width: 55rem;
+    margin-top: 10rem;
   }
 }
 
@@ -12711,6 +12706,16 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 160em) {
+  #about_me p {
+    font-size: 2.5rem;
+    margin-top: 30rem;
+    line-height: 5rem;
+    max-width: 130rem;
+    padding: 5rem;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -13105,44 +13110,6 @@ button.nav-link :active {
   background: linear-gradient(108deg, #d20eed 11%, #0939eb 66%);
 }
 
-#education .circle {
-  background-image: url("../img/nav/schooldesk.jpeg");
-}
-
-.card_image {
-  width: 100%;
-  height: 25vh;
-  background-position: center;
-  background-size: cover;
-}
-
-#open-university .card_image {
-  background-image: url("../img/education/open_university.jpg");
-}
-
-#selflearning .card_image {
-  background-image: url("../img/education/matrix_effect.jpg");
-}
-
-#education h2, #education .h2 {
-  margin: 0 auto;
-  padding: 1.2rem 0.5rem;
-  background-color: #1d4997;
-  color: #fff;
-  font-family: "Roboto", serif;
-  font-size: 22px;
-  border-top: solid 4px goldenrod;
-  border-bottom: solid 4px goldenrod;
-}
-
-#education p {
-  padding: 1rem 1.2rem;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
-  line-height: 1.8rem;
-  text-align: left;
-}
-
 #education .card {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -13157,17 +13124,49 @@ button.nav-link :active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 4rem 0.5rem 2rem;
   border-radius: 3px;
   text-align: center;
   border: solid 4px goldenrod;
 }
 
-#education .card {
-  margin-bottom: 12vh;
+.card-image {
+  width: 100%;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
 }
 
-#education .card:first-of-type {
-  margin-top: 12vh;
+#open-university .card-image {
+  background-image: url("../img/education/open_university.jpg");
+}
+
+#selflearning .card-image {
+  background-image: url("../img/education/matrix_effect.jpg");
+}
+
+#education .card-body {
+  padding: 0;
+}
+
+#education h2, #education .h2 {
+  margin: 0;
+  width: 100%;
+  padding: 1.2rem 0.5rem;
+  background-color: #1d4997;
+  color: #fff;
+  font-family: "Roboto", serif;
+  font-size: 1.375rem;
+  border-top: solid 4px goldenrod;
+  border-bottom: solid 4px goldenrod;
+}
+
+#education p {
+  padding: 1rem 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: left;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -13176,12 +13175,6 @@ button.nav-link :active {
 @media (orientation: portrait) and (min-width: 24em) {
   #education img {
     height: 30vh;
-  }
-  #education .card {
-    margin-bottom: 12vh;
-  }
-  #education .card:first-of-type {
-    margin-top: 12vh;
   }
 }
 
@@ -13195,10 +13188,10 @@ button.nav-link :active {
   #education .card {
     max-width: 85%;
   }
-  #education .card_image {
+  #education .card-image {
     height: 15vh;
   }
-  #open-university .card_image {
+  #open-university .card-image {
     background-repeat: no-repeat;
     background-size: 60%;
   }
@@ -13214,10 +13207,10 @@ button.nav-link :active {
   #education .card {
     max-width: 90%;
   }
-  .card_image {
+  .card-image {
     height: 35vh;
   }
-  #open-university .card_image {
+  #open-university .card-image {
     background-repeat: no-repeat;
     background-size: 60%;
   }
@@ -13230,7 +13223,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 50em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 50em) {
-  #open-university .card_image {
+  #open-university .card-image {
     background-size: 45%;
   }
 }
@@ -13246,29 +13239,23 @@ button.nav-link :active {
     font-size: 4rem;
   }
   #education .card {
-    margin-bottom: 12vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 20rem;
   }
-  #education .card:first-of-type {
-    margin-top: 12vh;
-  }
-  #education .card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
-  }
-  #education .card_image {
-    -ms-grid-column: 1;
-    grid-column: 1;
+  #open-university .card-image,
+  #selflearning .card-image {
     height: 100%;
-    background-size: cover;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    background-size: 18rem;
+    border-right: solid 4px goldenrod;
   }
-  .education-card-text {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    border-left: solid 4px goldenrod;
+  #education .card-body {
+    height: 100%;
+  }
+  #education h2, #education .h2 {
+    border-top: none;
   }
 }
 
@@ -13280,7 +13267,11 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 75em) {
   #education .card {
-    max-width: 65%;
+    max-width: 70%;
+  }
+  #open-university .card-image,
+  #selflearning .card-image {
+    background-size: 16rem;
   }
 }
 
@@ -13290,12 +13281,6 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
-@media (orientation: landscape) and (min-width: 90em) {
-  #education .card {
-    max-width: 55%;
-  }
-}
-
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
@@ -13308,7 +13293,17 @@ button.nav-link :active {
     padding: 5rem 2rem;
   }
   #education .card {
-    max-width: 50%;
+    max-width: 70%;
+    height: 35rem;
+    margin: 14rem 0.5rem 6rem;
+  }
+  #education h2, #education .h2 {
+    font-size: 3rem;
+  }
+  #education p {
+    padding: 3rem 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
   }
 }
 
@@ -13517,107 +13512,26 @@ button.nav-link :active {
   background: linear-gradient(to right, #329495 56%, #eeb22f 100%);
 }
 
-#projects .circle {
-  background-image: url("../img/nav/futuramaship.jpg");
-}
-
-.project_entry {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 95%;
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+#projects .card {
+  width: 18rem;
   padding: 0.5rem;
+  color: white;
   border: 2px solid white;
   border-radius: 1%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
-#london_quiz {
+#london-quiz {
   background: #155bf0;
 }
 
-#currency_app {
+#currency-app {
   background: #eb0990;
 }
 
-.project_entry:first-of-type {
-  margin: 12vh 0;
-}
-
-.project_entry:last-of-type {
-  margin-bottom: 12vh;
-}
-
-.columnLeft,
-.columnRight {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-.columnLeft {
-  -ms-grid-column: 1;
-  grid-column: 1;
-}
-
-.columnRight {
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
-.project_entry h2, .project_entry .h2 {
-  /* * ENTRY HEADER */
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 1.4rem 0;
-  letter-spacing: 0.1rem;
-}
-
-.project_entry_link {
-  /* * ENTRY IMAGE */
-  position: relative;
-  width: 90%;
-  height: 35vh;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-bottom: 2rem;
-  -webkit-box-shadow: 3px 2px 2px 4px #ccc;
-  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  /* *BOX SHADOW 3D EFFECT */
-  /* Firefox 3.5 - 3.6 */
-  box-shadow: 3px 3px 3px 4px #ccc;
-  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  -webkit-animation: box-shawow-increasing 10s infinite;
-          animation: box-shawow-increasing 10s infinite;
-}
-
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD IMAGE/ LINK-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 .fingerTouch {
   position: absolute;
   bottom: 0.5rem;
@@ -13626,20 +13540,6 @@ button.nav-link :active {
   height: 12vh;
   -webkit-animation: handTransform 8s infinite;
           animation: handTransform 8s infinite;
-}
-
-#london_quiz .project_entry_link {
-  background-image: url("../img/projects/projects_snapshots/londonquiz_snapshot.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#currency_app .project_entry_link {
-  background-image: url("../img/projects/projects_snapshots/currency_app_snapshot.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @-webkit-keyframes box-shawow-increasing {
@@ -13696,8 +13596,90 @@ button.nav-link :active {
           filter: hue-rotate(270deg);
 }
 
+.project_entry_link {
+  /* * ENTRY IMAGE */
+  position: relative;
+  width: 90%;
+  height: 35vh;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 3px 2px 2px 4px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  /* *BOX SHADOW 3D EFFECT */
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px 4px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  -webkit-animation: box-shawow-increasing 10s infinite;
+          animation: box-shawow-increasing 10s infinite;
+}
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD BODY(TITLE AND DESCRIPTION)-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+#projects h2, #projects .h2 {
+  /* * ENTRY HEADER */
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 1.4rem 0;
+  letter-spacing: 0.1rem;
+}
+
+#projects p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  line-height: 1.75rem;
+}
+
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_TECHNOLOGY USED  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-.technology_title {
+h3.card-title, .card-title.h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2.5rem 0;
+  letter-spacing: 2px;
+}
+
+h3.card-title, .card-title.h3 {
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 2.5rem 0;
+  letter-spacing: 2px;
+}
+
+h3.card-title > span, .card-title.h3 > span {
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  position: relative;
+}
+
+h3.card-title > span:before, .card-title.h3 > span:before,
+h3.card-title > span:after,
+.card-title.h3 > span:after {
+  border-bottom: 2px solid #fff;
+  content: "";
+  margin: 0 3px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+h3.card-title > span:before, .card-title.h3 > span:before {
+  right: 100%;
+}
+
+
+h3.card-title > span:after,
+.card-title.h3 > span:after {
+  left: 100%;
+}
+
+.technology-list {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -13711,46 +13693,11 @@ button.nav-link :active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-size: 1rem;
-  margin-top: 20px;
-  letter-spacing: 2px;
+  list-style: none;
+  padding: 0;
 }
 
-.technology_title:before,
-.technology_title:after {
-  color: white;
-  content: "";
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  border-bottom: solid 2px;
-  margin: auto 0.7em;
-  -webkit-box-shadow: 0 -1px;
-          box-shadow: 0 -1px;
-  /* ou 0 1px si border-style:ridge */
-}
-
-.technology_logos {
-  border-bottom: solid 3px white;
-}
-
-.technology_logos {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.technology_logo {
+.tech-logo {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -13764,16 +13711,17 @@ button.nav-link :active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 5rem;
 }
 
-.technology_logo img {
+.tech-logo img {
   width: 7vh;
   height: 7vh;
   border: 1px solid white;
   border-radius: 3%;
 }
 
-.technology_logo h4, .technology_logo .h4 {
+.tech-logo h4, .tech-logo .h4 {
   font-family: "Roboto", serif;
   font-size: 0.75rem;
   font-weight: lighter;
@@ -13782,74 +13730,33 @@ button.nav-link :active {
   color: white;
 }
 
-/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
-.description p {
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  padding: 0.7rem;
-  font-weight: lighter;
-  line-height: 1.3rem;
-}
-
-#projects a {
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_GITHUB REPO LINK BUTTON -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+.github-repo {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
 }
 
-.github_repo:hover {
+.github-repo:hover {
   background-color: #f7feaa;
 }
 
-.github_repo:active {
+.github-repo:active {
   background-color: #265301;
 }
 
-.github_repo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-bottom: 2rem;
-  width: 22vh;
-  height: 12vh;
-  background-position: 50% 80%;
-  background-size: 40% 55%;
-  background-repeat: no-repeat;
-  border-radius: 4%;
-  background-image: url("../img/projects/links_icons/Octocat.jpg");
+.github-repo {
+  margin: 3rem 0 1rem;
+  padding: 0.5rem;
   background-color: rgba(143, 5, 150, 0.858);
   border: 1px solid white;
-}
-
-.github_repo h3, .github_repo .h3 {
   color: white;
-  font-size: 0.75rem;
-  text-align: center;
-  margin: 0;
-  padding: 0.15rem;
+  font-size: 1rem;
 }
 
-.moreInfo {
-  width: 5.5rem;
-  height: 2.5rem;
-  font-size: 16px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 1.5rem;
-  margin: 3rem 0 2rem 0;
-  color: white;
-  background-color: black;
-  border-radius: 5%;
-}
-
-.lessInfo {
-  margin-top: 2rem;
-  background-image: url("../img/nav/exit.svg");
-  background-repeat: no-repeat;
-  width: 2rem;
-  height: 2rem;
+.github-image {
+  width: 3rem;
+  margin-left: 1.5rem;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -13862,7 +13769,7 @@ button.nav-link :active {
   .project_entry h2, .project_entry .h2 {
     font-size: 2.7rem;
   }
-  #currency_app h2, #currency_app .h2 {
+  #currency-app h2, #currency-app .h2 {
     font-size: 2.4rem;
   }
   .github_repo {
@@ -13894,7 +13801,7 @@ button.nav-link :active {
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
   }
-  .project_entry h2, .project_entry .h2, #currency_app h2, #currency_app .h2 {
+  .project_entry h2, .project_entry .h2, #currency-app h2, #currency-app .h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: normal;
@@ -13912,7 +13819,7 @@ button.nav-link :active {
     font-size: 1rem;
     margin-top: 5rem;
   }
-  .technology_logos {
+  .tech-logos {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -13920,11 +13827,11 @@ button.nav-link :active {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .technology_logo img {
+  .tech-logo img {
     width: 4.5vh;
     height: 4.5vh;
   }
-  .technology_logo h4, .technology_logo .h4 {
+  .tech-logo h4, .tech-logo .h4 {
     font-size: 0.55rem;
     font-weight: lighter;
   }
@@ -13991,7 +13898,7 @@ button.nav-link :active {
     font-size: 0.85rem;
     margin-top: 3rem;
   }
-  .technology_logos {
+  .tech-logos {
     margin-top: 0.5rem;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -14000,11 +13907,11 @@ button.nav-link :active {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .technology_logo img {
+  .tech-logo img {
     width: 10vh;
     height: 10vh;
   }
-  .technology_logo h4, .technology_logo .h4 {
+  .tech-logo h4, .tech-logo .h4 {
     font-size: 0.55rem;
     font-weight: lighter;
   }
@@ -14112,10 +14019,10 @@ button.nav-link :active {
     font-size: 1.15rem;
     margin-top: 7rem;
   }
-  .technology_logo h4, .technology_logo .h4 {
+  .tech-logo h4, .tech-logo .h4 {
     font-size: 0.8rem;
   }
-  .technology_logo {
+  .tech-logo {
     width: 7vh;
     height: 12vh;
   }
@@ -14123,10 +14030,10 @@ button.nav-link :active {
     font-size: 16px;
     line-height: 20px;
   }
-  #currency_app h2, #currency_app .h2 {
+  #currency-app h2, #currency-app .h2 {
     font-size: 2.5rem;
   }
-  .technology_logo img {
+  .tech-logo img {
     width: 6vh;
     height: 6vh;
   }
@@ -14188,7 +14095,7 @@ button.nav-link :active {
   .project_entry h2, .project_entry .h2 {
     font-size: 8rem;
   }
-  #currency_app h2, #currency_app .h2 {
+  #currency-app h2, #currency-app .h2 {
     font-size: 7.5rem;
   }
 }

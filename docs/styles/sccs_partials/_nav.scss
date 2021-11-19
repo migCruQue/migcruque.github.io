@@ -206,7 +206,9 @@ button.nav-link :active {
   }
 
   ul.nav {
-    width: 90%;
+    position: fixed;
+    top: 15rem;
+    width: 25%;
     height: 60%;
     align-self: flex-end;
     margin-bottom: 2rem;
@@ -263,6 +265,10 @@ button.nav-link :active {
   button.nav-link {
     font-size: 1.7rem;
   }
+
+  ul.nav {
+    top: 20rem;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -277,6 +283,10 @@ button.nav-link :active {
     font-size: 5rem;
     height: 12rem;
     width: 40rem;
+  }
+
+  ul.nav {
+    top: 50rem;
   }
 }
 

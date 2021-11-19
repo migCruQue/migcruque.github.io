@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -73,7 +73,7 @@
 <!-- *>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 *>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ABOUT_ME TAB >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<
 *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-              <div class="tab-pane fade show active" id="about_me" role="tabpanel" aria-labelledby="about_me-tab">                
+              <div class="tab-pane fade" id="about_me" role="tabpanel" aria-labelledby="about_me-tab">                
                     <header>
                       <h1>About Me</h1>
                     </header>           
@@ -100,33 +100,29 @@
                         <h1>Education</h1>          
                     </header>   
 
-                    <div id="open-university" class="card">
-                        
-                        <div class="card_image"></div>
-                        
-                        <div class="card_text">
-                          <h2>Foundation Degree in Computing and IT Practice</h2>
-                          <p><span id="university_date">OPEN UNIVERSITY 2015-2018</span><br>
-                            This vocationally-based qualification recognises achievement in the broad field of Computing and IT. 
-                            Graduates gain knowledge and understanding of the fundamental technologies of information and communication systems, 
-                            and develop numeracy, literacy, communication, team working, presentation, cognitive, organisational and practical 
-                            skills appropriate to the discipline, and demonstrate the ability to learn in the workplace.
-                          </p>
-                        </div>
+                    <div class="card" id="open-university">
+                      <div class="card-image"></div>
+                      <div class="card-body">
+                        <h2>Foundation Degree in Computing and IT Practice</h2>
+                        <p><span id="university_date">OPEN UNIVERSITY 2015-2018</span><br>
+                          This vocationally-based qualification recognises achievement in the broad field of Computing and IT. 
+                          Graduates gain knowledge and understanding of the fundamental technologies of information and communication systems, 
+                          and develop numeracy, literacy, communication, team working, presentation, cognitive, organisational and practical 
+                          skills appropriate to the discipline, and demonstrate the ability to learn in the workplace.
+                        </p>
+                      </div>
                     </div>
       
-                    <div id="selflearning" class="card">
-                      
-                      <div class="card_image"></div>
-                        
-                        <div class="card_text">
-                          <h2>Self Learning</h2>
-                          <p id="selflearning-paragraph">I’ve always been a keen learner, so I took advantage of the endless knowledge that the internet offers. 
-                            I’ve completed many programming courses with <i>treehouse.com</i> and I’m an active member of internet communities like 
-                            <i>github.com</i> and <i>stackoverflow.com</i>. At the same time as studying I worked in the hospitality business which apart from 
-                            helping me develop a problem-solving approach improved my communication and teamwork skills.
-                          </p>
-                        </div>
+                    <div class="card" id="selflearning">
+                      <div class="card-image"></div>
+                      <div class="card-body">
+                        <h2>Self Learning</h2>
+                        <p id="selflearning-paragraph">I’ve always been a keen learner, so I took advantage of the endless knowledge that the internet offers. 
+                          I’ve completed many programming courses with <i>treehouse.com</i> and I’m an active member of internet communities like 
+                          <i>github.com</i> and <i>stackoverflow.com</i>. At the same time as studying I worked in the hospitality business which apart from 
+                          helping me develop a problem-solving approach improved my communication and teamwork skills.
+                        </p>
+                      </div>
                     </div>
   
               </div>
@@ -138,13 +134,98 @@
 <!-- *>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 *>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  PROJECTS TAB >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<
 *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-<div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+<div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
 
         <header>
           <h1>Projects</h1>          
         </header> 
 
-         <div id="london_quiz" class="project_entry">       <!-- * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   LONDON QUIZ -->
+        <div class="card" id="london-quiz">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./img/projects/projects_snapshots/londonquiz_snapshot.png" class="card-img-top" alt="londonquiz snapshot">
+              <div class="card-body">
+                <h2 class="card-title">London Quiz</h2>
+                <p class="card-text">This is a quiz game with 10 questions related to the city of London. 
+                  I want to add a table with the score of the players.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="card-title"><span>Technology</span></h3>
+              <ul class="technology-list">
+                <li>
+                  <div class="tech-logo">
+                    <img src="./img/projects/tecnologies_icons/javascript_logo.jpg" alt="javascript logo">
+                    <h4>JavaScript</h4>
+                  </div>  
+                </li>
+                <li>
+                  <div class="tech-logo">
+                    <img src="./img/projects/tecnologies_icons/jquery_logo.jpg" alt="jquery logo">
+                    <h4>jQuery</h4>
+                  </div>  
+                </li>
+                <li>
+                  <div class="tech-logo">
+                    <img src="./img/projects/tecnologies_icons/firebase_logo.jpg" alt="firebase logo">
+                    <h4>Firebase</h4>
+                  </div>  
+                </li>
+              </ul>
+              <a class="github-repo btn" href="https://migcruque.github.io/LondonQuiz">GitHub Repository<img class="github-image" src="./img/projects/links_icons/Octocat.jpg" alt="github logo"></a>
+            </div>
+          </div>
+  
+          
+        </div>
+
+        <div class="card" id="currency-app">
+          <img src="./img/projects/projects_snapshots/currency_app_snapshot.png" class="card-img-top" alt="currency app snapshot">
+          <div class="card-body">
+            <h2 class="card-title">Currency App</h2>
+            <p class="card-text">This web app displays the value of the main international currencies. It also links the latest financial news.</p>
+          </div>
+          <h3 class="card-title"><span>Technology</span></h3>
+          <ul class="technology-list">
+            <li>
+              <div class="tech-logo">
+                <img src="./img/projects/tecnologies_icons/javascript_logo.jpg" alt="javascript logo">
+                <h4>JavaScript</h4>
+              </div>  
+            </li>
+            <li>
+              <div class="tech-logo">
+                <img src="./img/projects/tecnologies_icons/react.jpg" alt="jquery logo">
+                <h4>React</h4>
+              </div>  
+            </li>
+            <li>
+              <div class="tech-logo">
+                <img src="./img/projects/tecnologies_icons/firebase_logo.jpg" alt="firebase logo">
+                <h4>Firebase</h4>
+              </div>  
+            </li>
+          </ul>
+          <a class="github-repo btn" href="https://github.com/migCruQue/currencyApp">GitHub Repository<img class="github-image" src="./img/projects/links_icons/Octocat.jpg" alt="github logo"></a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         <!-- <div class="project_entry" id="london_quiz">       
 
               <h2 class="columnLeft_element">London Quiz</h2>  
               
@@ -154,16 +235,16 @@
 
               <h3 class="technology_title columnRight_element">TECHNOLOGY</h3>
 
-              <div class="technology_logos columnRight_element">
-                <div class="technology_logo">
+              <div class="tech-logos columnRight_element">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/javascript_logo.jpg" alt="javascript logo">
                   <h4>JavaScript</h4>
                 </div>  
-                <div class="technology_logo">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/jquery_logo.jpg" alt="jquery logo">
                   <h4>jQuery</h4>
                 </div>      
-                <div class="technology_logo">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/firebase_logo.jpg" alt="firebase logo">
                   <h4>Firebase</h4>
                 </div>           
@@ -179,9 +260,9 @@
               
               <a class="github_repo hidden extraInfo columnRight_element" href="https://github.com/migCruQue/LondonQuiz"><h3>GITHUB REPO</h3></a>
 
-        </div>                                                                  <!-- * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  LONDON QUIZ -->
+        </div>                                                                  -->
 
-        <div id="currency_app" class="project_entry">                           <!-- * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  CURRENCY APP -->
+        <!-- <div class="project_entry" id="currency_app">                          
 
             <h2 class="columnLeft_element">Currency App</h2>    
 
@@ -191,16 +272,16 @@
 
             <h3 class="technology_title columnRight_element">TECHNOLOGY</h3>
               
-              <div class="technology_logos columnRight_element">
-                <div class="technology_logo">
+              <div class="tech-logos columnRight_element">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/javascript_logo.jpg" alt="javascript logo">
                   <h4>JavaScript</h4>
                 </div>  
-                <div class="technology_logo">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/react.jpg" alt="jquery logo">
                   <h4>React</h4>
                 </div>      
-                <div class="technology_logo">
+                <div class="tech-logo">
                   <img src="./img/projects/tecnologies_icons/firebase_logo.jpg" alt="firebase logo">
                   <h4>Firebase</h4>
                 </div>           
@@ -215,7 +296,7 @@
 
             <a class="github_repo hidden extraInfo columnRight_element" href="https://github.com/migCruQue/currencyApp"><h3>GITHUB REPO</h3></a>
 
-        </div>                                                                  <!-- * >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> /  CURRENCY APP -->
+        </div>                                                                 -->
   
  </div>
 

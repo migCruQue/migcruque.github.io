@@ -16,73 +16,27 @@
   );
 }
 
-#projects .circle {
-  background-image: url("../img/nav/futuramaship.jpg");
-}
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
-.project_entry {
-  @include flex(column);
-  width: 95%;
+#projects .card {
+  width: 18rem;
   padding: 0.5rem;
+  color: white;
   border: 2px solid white;
   border-radius: 1%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
-#london_quiz {
+#london-quiz {
   background: rgb(21, 91, 240);
 }
 
-#currency_app {
+#currency-app {
   background: rgba(235, 9, 144, 1);
 }
 
-.project_entry:first-of-type {
-  margin: 12vh 0;
-}
-
-.project_entry:last-of-type {
-  margin-bottom: 12vh;
-}
-
-.columnLeft,                            /* * DIV COLUMNS STYLE TO BE USE WITH PROJECT_ENTRY DISPLAY GRID */  
-  .columnRight {
-  @include flex(column, flex-start);
-  height: 100%;
-  width: 100%;
-}
-
-.columnLeft {
-  grid-column: 1;
-}
-
-.columnRight {
-  grid-column: 2;
-}
-
-.project_entry h2 {
-  /* * ENTRY HEADER */
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding: 1.4rem 0;
-  letter-spacing: 0.1rem;
-}
-
-.project_entry_link {
-  /* * ENTRY IMAGE */
-  position: relative;
-  width: 90%;
-  height: 35vh;
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 2rem;
-  -webkit-box-shadow: 3px 2px 2px 4px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* *BOX SHADOW 3D EFFECT */
-  -moz-box-shadow: 3px 3px 3px 4px #ccc; /* Firefox 3.5 - 3.6 */
-  box-shadow: 3px 3px 3px 4px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  animation: box-shawow-increasing 10s infinite;
-}
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD IMAGE/ LINK-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
 .fingerTouch {
   position: absolute;
@@ -91,20 +45,6 @@
   width: 12vh;
   height: 12vh;
   animation: handTransform 8s infinite;
-}
-
-#london_quiz .project_entry_link {
-  background-image: url("../img/projects/projects_snapshots/londonquiz_snapshot.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#currency_app .project_entry_link {
-  background-image: url("../img/projects/projects_snapshots/currency_app_snapshot.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @keyframes box-shawow-increasing {
@@ -132,46 +72,97 @@
   filter: hue-rotate(270deg);
 }
 
+.project_entry_link {
+  /* * ENTRY IMAGE */
+  position: relative;
+  width: 90%;
+  height: 35vh;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 3px 2px 2px 4px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* *BOX SHADOW 3D EFFECT */
+  -moz-box-shadow: 3px 3px 3px 4px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px 4px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  animation: box-shawow-increasing 10s infinite;
+}
+
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD BODY(TITLE AND DESCRIPTION)-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+#projects h2 {
+  /* * ENTRY HEADER */
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 1.4rem 0;
+  letter-spacing: 0.1rem;
+}
+
+#projects p {
+  font-size: 1rem;
+  padding: 0.5rem;
+  line-height: 1.75rem;
+}
+
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_TECHNOLOGY USED  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
-.technology_title {
-  @include flex;
-  color: white;
-  font-size: 1rem;
-  margin-top: 20px;
+h3.card-title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2.5rem 0;
   letter-spacing: 2px;
 }
 
-.technology_title:before,
-.technology_title:after {
-  color: white;
-  content: "";
-  flex: 1;
-  border-bottom: solid 2px;
-  margin: auto 0.7em;
-  box-shadow: 0 -1px; /* ou 0 1px si border-style:ridge */
+// *DIVIDER/SEPARATOR
+
+h3.card-title {
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 2.5rem 0;
+  letter-spacing: 2px;
+  > span {
+    border: 2px solid #fff;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    position: relative;
+  }
+  > span:before,
+  > span:after {
+    border-bottom: 2px solid #fff;
+    content: "";
+    margin: 0 3px;
+    position: absolute;
+    top: 50%;
+    width: 100%; // Line-length. 100% width is equal to width of boxed-area.
+  }
+  > span:before {
+    right: 100%;
+  }
+  > span:after {
+    left: 100%;
+  }
 }
 
-.technology_logos {
-  border-bottom: solid 3px white;
+.technology-list {
+  @include flex();
+  list-style: none;
+  padding: 0;
 }
 
-.technology_logos {
-  @include flex(row, space-around);
-}
-
-.technology_logo {
+.tech-logo {
   @include flex(column);
+  width: 5rem;
 }
 
-.technology_logo img {
+.tech-logo img {
   width: 7vh;
   height: 7vh;
   border: 1px solid white;
   border-radius: 3%;
 }
 
-.technology_logo h4 {
+.tech-logo h4 {
   font-family: "Roboto", serif;
   font-size: 0.75rem;
   font-weight: lighter;
@@ -180,71 +171,34 @@
   color: white;
 }
 
-/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_EXTRA INFO  -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_GITHUB REPO LINK BUTTON -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
-.description p {
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  padding: 0.7rem;
-  font-weight: lighter;
-  line-height: 1.3rem;
-}
-
-#projects a {
+.github-repo {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
 }
 
-.github_repo:hover {
+.github-repo:hover {
   background-color: #f7feaa;
 }
 
-.github_repo:active {
+.github-repo:active {
   background-color: #265301;
 }
 
-.github_repo {
-  align-self: center;
-  margin-bottom: 2rem;
-  width: 22vh;
-  height: 12vh;
-  background-position: 50% 80%;
-  background-size: 40% 55%;
-  background-repeat: no-repeat;
-  border-radius: 4%;
-  background-image: url("../img/projects/links_icons/Octocat.jpg");
+.github-repo {
+  margin: 3rem 0 1rem;
+  padding: 0.5rem;
   background-color: rgba(143, 5, 150, 0.858);
   border: 1px solid white;
-}
-
-.github_repo h3 {
   color: white;
-  font-size: 0.75rem;
-  text-align: center;
-  margin: 0;
-  padding: 0.15rem;
+  font-size: 1rem;
 }
 
-.moreInfo {
-  width: 5.5rem;
-  height: 2.5rem;
-  font-size: 16px;
-  align-self: center;
-  margin-top: 1.5rem;
-  margin: 3rem 0 2rem 0;
-  color: white;
-  background-color: black;
-  border-radius: 5%;
-}
-
-.lessInfo {
-  margin-top: 2rem;
-  background-image: url("../img/nav/exit.svg");
-  background-repeat: no-repeat;
-  width: 2rem;
-  height: 2rem;
+.github-image {
+  width: 3rem;
+  margin-left: 1.5rem;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -260,7 +214,7 @@
     font-size: 2.7rem;
   }
 
-  #currency_app h2 {
+  #currency-app h2 {
     font-size: 2.4rem;
   }
 
@@ -296,7 +250,7 @@
   }
 
   .project_entry h2,
-  #currency_app h2 {
+  #currency-app h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     letter-spacing: normal;
@@ -318,16 +272,16 @@
     margin-top: 5rem;
   }
 
-  .technology_logos {
+  .tech-logos {
     justify-content: space-evenly;
     align-items: flex-end;
   }
 
-  .technology_logo img {
+  .tech-logo img {
     width: 4.5vh;
     height: 4.5vh;
   }
-  .technology_logo h4 {
+  .tech-logo h4 {
     font-size: 0.55rem;
     font-weight: lighter;
   }
@@ -404,17 +358,17 @@
     margin-top: 3rem;
   }
 
-  .technology_logos {
+  .tech-logos {
     margin-top: 0.5rem;
     justify-content: space-evenly;
     align-items: flex-end;
   }
 
-  .technology_logo img {
+  .tech-logo img {
     width: 10vh;
     height: 10vh;
   }
-  .technology_logo h4 {
+  .tech-logo h4 {
     font-size: 0.55rem;
     font-weight: lighter;
   }
@@ -538,11 +492,11 @@
     margin-top: 7rem;
   }
 
-  .technology_logo h4 {
+  .tech-logo h4 {
     font-size: 0.8rem;
   }
 
-  .technology_logo {
+  .tech-logo {
     width: 7vh;
     height: 12vh;
   }
@@ -552,11 +506,11 @@
     line-height: 20px;
   }
 
-  #currency_app h2 {
+  #currency-app h2 {
     font-size: 2.5rem;
   }
 
-  .technology_logo img {
+  .tech-logo img {
     width: 6vh;
     height: 6vh;
   }
@@ -628,7 +582,7 @@
     font-size: 8rem;
   }
 
-  #currency_app h2 {
+  #currency-app h2 {
     font-size: 7.5rem;
   }
 }
