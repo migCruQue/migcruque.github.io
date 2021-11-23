@@ -28,15 +28,55 @@
   margin-bottom: 3rem;
 }
 
+#portfolio {
+  background-color: rgb(13, 152, 48);
+}
+
 #london-quiz {
-  background: rgb(21, 91, 240);
+  background-color: rgb(21, 91, 240);
 }
 
 #currency-app {
-  background: rgba(235, 9, 144, 1);
+  background-color: rgba(235, 9, 144, 1);
+}
+
+#miricyl {
+  background-color: rgb(242, 115, 18);
 }
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD IMAGE/ LINK-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+.project-link {
+  /* * ENTRY IMAGE */
+  display: inline-block;
+  width: 90%;
+  height: 12rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 3px 2px 2px 4px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* *BOX SHADOW 3D EFFECT */
+  -moz-box-shadow: 3px 3px 3px 4px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px 4px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  animation: box-shawow-increasing 10s infinite;
+}
+
+#portfolio .project-link {
+  background-image: url("../img/projects/projects_snapshots/portfolio_snapshot.jpeg");
+}
+
+#london-quiz .project-link {
+  background-image: url("../img/projects/projects_snapshots/londonquiz_snapshot.png");
+}
+
+#currency-app .project-link {
+  background-image: url("../img/projects/projects_snapshots/currency_app_snapshot.png");
+}
+
+#miricyl .project-link {
+  background-image: url("../img/projects/projects_snapshots/miricyl_snapshot.png");
+  background-size: 40% 90%;
+  background-position: center;
+  background-color: #7dd832;
+}
 
 .fingerTouch {
   position: absolute;
@@ -64,33 +104,19 @@
   }
 }
 
-.project_entry_link:hover {
+.project-link:hover {
   filter: invert(75%);
 }
 
-.project_entry_link:active {
+.project-link:active {
   filter: hue-rotate(270deg);
-}
-
-.project_entry_link {
-  /* * ENTRY IMAGE */
-  position: relative;
-  width: 90%;
-  height: 35vh;
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 2rem;
-  -webkit-box-shadow: 3px 2px 2px 4px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ /* *BOX SHADOW 3D EFFECT */
-  -moz-box-shadow: 3px 3px 3px 4px #ccc; /* Firefox 3.5 - 3.6 */
-  box-shadow: 3px 3px 3px 4px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  animation: box-shawow-increasing 10s infinite;
 }
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD BODY(TITLE AND DESCRIPTION)-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 #projects h2 {
   /* * ENTRY HEADER */
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin: 0;
   padding: 1.4rem 0;
@@ -206,7 +232,7 @@ h3.card-title {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 24em) {
-  .project_entry_link {
+  .project-link {
     height: 35vh;
   }
 
@@ -270,7 +296,7 @@ h3.card-title {
     letter-spacing: normal;
   }
 
-  .project_entry_link {
+  .project-link {
     width: 80%;
     height: 14vh;
     margin: 0;
@@ -356,7 +382,7 @@ h3.card-title {
     padding: 0.7rem 0;
   }
 
-  .project_entry_link {
+  .project-link {
     width: 80%;
     height: 35vh;
     margin: 0.2rem 0 0 0;
@@ -491,7 +517,7 @@ h3.card-title {
     font-size: 2.25rem;
   }
 
-  .project_entry_link {
+  .project-link {
     height: 25vh;
     width: 80%;
   }
@@ -583,16 +609,39 @@ h3.card-title {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 160em) {
   #projects header {
-    padding: 10rem 1rem;
+    padding: 6rem 1rem;
     font-size: 10rem;
   }
 
-  .project_entry h2 {
-    font-size: 8rem;
+  #projects .card {
+    width: 90rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+  }
+
+  #projects h2 {
+    font-size: 6rem;
   }
 
   #currency-app h2 {
-    font-size: 7.5rem;
+    font-size: 5.5rem;
+  }
+
+  #projects p {
+    font-size: 1.5rem;
+  }
+
+  h3.card-title {
+    font-size: 2rem;
+  }
+
+  .tech-logo h4 {
+    font-size: 1.2rem;
+  }
+
+  .github-repo {
+    padding: 1.2rem;
+    font-size: 2rem;
   }
 }
 
