@@ -1,6 +1,7 @@
-#contact_me {
+#contact-me {
   height: 100vh;
-  background-image: url("../img/contact_me/typewriter2.jpg");
+  overflow: auto;
+  background-image: url("../img/contact-me/typewriter2.jpg");
   background-size: cover;
   flex-direction: column;
   font-family: "Space Mono", monospace;
@@ -8,7 +9,7 @@
   align-self: stretch;
 }
 /* HEADER */
-#contact_me header {
+#contact-me header {
   background: rgb(58, 200, 206);
   background: linear-gradient(
     to right,
@@ -17,14 +18,11 @@
   );
 }
 
-#contact_me .circle {
-  background-image: url("../img/nav/mailbox.jpg");
-}
-
 /* / HEADER */
 
-.contact_links {
-  /* links' container */
+#contact-me ul {
+  padding: 0;
+  margin: 0;
   flex-direction: column;
   height: 100%;
   width: 100%;
@@ -32,111 +30,70 @@
   align-items: center;
 }
 
-#contact_me .contact_card {
-  @include flex;
-  width: 65%;
-  height: 3rem;
-  border-radius: 30px;
-  opacity: 0.85;
-}
-
-#contact_me a {
+#contact-me a {
   @include flex(row, start);
-  width: 100%;
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
   outline: none;
   text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  border-radius: 5%;
 }
 
-#contact_me a:visited {
-  background: #e1fe2a;
+#contact-me #email-link:link {
+  background-color: rgb(254, 141, 42);
 }
 
-#contact_me a:focus {
-  background: #42790b;
+#contact-me #github-link:link {
+  background-color: rgb(255, 255, 255);
 }
 
-/* #contact_me a:hover {
-    background: #edb72e;
-  } */
-
-#contact_me a:active {
-  background: #ba0909;
+#contact-me #linkedin-link:link {
+  background-color: rgb(9, 102, 194);
 }
 
-/* * LINKS' BACKGROUNDS  */
-#email_link {
-  background: rgba(157, 11, 91, 1);
+#contact-me #twitter-link:link {
+  background-color: rgb(255, 255, 255);
 }
 
-#github_link {
-  background: rgba(113, 16, 128, 1);
+#contact-me a:visited {
+  background-color: #e1fe2a;
 }
 
-#linkedin_link {
-  background: rgba(6, 76, 114, 1);
+#contact-me a:focus {
+  background-color: #42790b;
 }
 
-#twitter_link {
-  background: rgba(21, 112, 155, 1);
-}
-.contact_logo {
-  @include flex;
-  margin-left: 0.5rem;
+#contact-me a:hover {
+  opacity: 0.7;
 }
 
-.circle_background {
-  width: 2.5rem;
-  height: 2.5rem;
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
+#contact-me a:active {
+  background-color: #ba0909;
 }
 
-#email_link .circle_background {
-  background: linear-gradient(
-    to right,
-    rgba(237, 229, 9, 0.75),
-    rgba(221, 35, 3, 0.75)
-  );
+svg {
+  width: 90%;
+  height: 90%;
 }
 
-#github_link .circle_background {
-  background: linear-gradient(
-    to right,
-    rgba(9, 233, 237, 0.75),
-    rgba(195, 228, 30, 0.75)
-  );
+#email-link svg {
+  fill: rgb(212, 230, 122);
 }
 
-#linkedin_link .circle_background {
-  background: linear-gradient(
-    to right,
-    rgba(230, 138, 26, 0.75),
-    rgba(3, 221, 119, 0.75)
-  );
+#github-link svg {
+  fill: rgb(0, 0, 0);
 }
 
-#twitter_link .circle_background {
-  background: linear-gradient(
-    to right,
-    rgba(87, 14, 191, 0.75),
-    rgba(221, 35, 3, 0.75)
-  );
+#linkedin-link svg {
+  fill: rgb(255, 255, 255);
 }
 
-.contact_logo img {
-  width: 1.75rem;
-  z-index: 2;
-  transition: all 0.75s ease-out;
-}
-
-#contact_me h2 {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  padding: 0.3rem 0.5rem;
-  margin-left: 1rem;
-  font-size: 1.8rem;
-  transition: all 0.75s ease-out;
+#twitter-link svg {
+  fill: rgb(29, 155, 240);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -144,61 +101,27 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 24em) {
-  #contact_me h1 {
+  #contact-me h1 {
     font-size: 1.85rem;
-  }
-
-  #contact_me .contact_card {
-    width: 70%;
-    height: 4.5rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+@media (min-width: 48em) {
+  #contact-me a {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>   TABLET  >>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 48em) {
-  #contact_me h1 {
-    font-size: 3rem;
-  }
-
-  .contact_links {
-    align-items: start;
-    padding: 0 4rem;
-  }
-
-  #contact_me .contact_card {
-    width: 80%;
-    height: 6rem;
-  }
-
-  #contact_me .contact_card:nth-child(odd) {
-    align-self: flex-start;
-  }
-
-  #contact_me .contact_card:nth-child(odd) {
-    align-self: flex-end;
-  }
-
-  .contact_logo {
-    margin-left: 1.5rem;
-  }
-
-  .circle_background {
-    width: 5rem;
-    height: 5rem;
-  }
-
-  .contact_logo img {
-    width: 3.5rem;
-  }
-
-  #contact_me h2 {
-    margin-left: 2rem;
+  #contact-me h1 {
     font-size: 3rem;
   }
 }
@@ -212,43 +135,6 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) {
-  .contact_links {
-    display: grid;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    grid-column-gap: 10px;
-    margin-top: 0;
-  }
-
-  #contact_me .contact_card {
-    width: 80%;
-  }
-
-  #email_link {
-    grid-column: 1;
-    grid-row: 3 / 5;
-  }
-
-  #github_link {
-    grid-column: 1;
-    grid-row: 7 / 9;
-  }
-
-  #linkedin_link {
-    grid-column: 2;
-    grid-row: 3 / 5;
-  }
-
-  #twitter_link {
-    grid-column: 2;
-    grid-row: 7 / 9;
-  }
-
-  #contact_me h2 {
-    padding: 0;
-    font-size: 1.3rem;
-  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -270,56 +156,14 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  #contact_me header {
+  #contact-me header {
     margin: 0;
   }
 
-  #contact_me h1 {
+  #contact-me h1 {
     font-size: 4rem;
     padding: 2rem;
     margin: 0;
-  }
-
-  #contact_me .contact_card {
-    height: 4.5rem;
-    width: 70%;
-  }
-
-  .contact_logo {
-    margin-left: 1rem;
-  }
-
-  .circle_background {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  .contact_logo img {
-    width: 2.5rem;
-  }
-
-  #email_link {
-    grid-column: 1;
-    grid-row: 2 / 4;
-  }
-
-  #github_link {
-    grid-column: 1;
-    grid-row: 6 / 8;
-  }
-
-  #linkedin_link {
-    grid-column: 2;
-    grid-row: 4 / 6;
-  }
-
-  #twitter_link {
-    grid-column: 2;
-    grid-row: 8 / 10;
-  }
-
-  #contact_me h2 {
-    font-size: 2rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
