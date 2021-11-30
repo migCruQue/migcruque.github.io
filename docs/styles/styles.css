@@ -8006,8 +8006,80 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-5 {
+  top: 5% !important;
+}
+
+.top-10 {
+  top: 10% !important;
+}
+
+.top-15 {
+  top: 15% !important;
+}
+
+.top-20 {
+  top: 20% !important;
+}
+
+.top-25 {
+  top: 25% !important;
+}
+
+.top-30 {
+  top: 30% !important;
+}
+
+.top-35 {
+  top: 35% !important;
+}
+
+.top-40 {
+  top: 40% !important;
+}
+
+.top-45 {
+  top: 45% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-55 {
+  top: 55% !important;
+}
+
+.top-60 {
+  top: 60% !important;
+}
+
+.top-65 {
+  top: 65% !important;
+}
+
+.top-70 {
+  top: 70 !important;
+}
+
+.top-75 {
+  top: 75% !important;
+}
+
+.top-80 {
+  top: 80% !important;
+}
+
+.top-85 {
+  top: 85% !important;
+}
+
+.top-90 {
+  top: 90% !important;
+}
+
+.top-95 {
+  top: 95% !important;
 }
 
 .top-100 {
@@ -8018,8 +8090,80 @@ fieldset:disabled .btn {
   bottom: 0 !important;
 }
 
+.bottom-5 {
+  bottom: 5% !important;
+}
+
+.bottom-10 {
+  bottom: 10% !important;
+}
+
+.bottom-15 {
+  bottom: 15% !important;
+}
+
+.bottom-20 {
+  bottom: 20% !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
+}
+
+.bottom-30 {
+  bottom: 30% !important;
+}
+
+.bottom-35 {
+  bottom: 35% !important;
+}
+
+.bottom-40 {
+  bottom: 40% !important;
+}
+
+.bottom-45 {
+  bottom: 45% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-55 {
+  bottom: 55% !important;
+}
+
+.bottom-60 {
+  bottom: 60% !important;
+}
+
+.bottom-65 {
+  bottom: 65% !important;
+}
+
+.bottom-70 {
+  bottom: 70 !important;
+}
+
+.bottom-75 {
+  bottom: 75% !important;
+}
+
+.bottom-80 {
+  bottom: 80% !important;
+}
+
+.bottom-85 {
+  bottom: 85% !important;
+}
+
+.bottom-90 {
+  bottom: 90% !important;
+}
+
+.bottom-95 {
+  bottom: 95% !important;
 }
 
 .bottom-100 {
@@ -8030,8 +8174,80 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-5 {
+  left: 5% !important;
+}
+
+.start-10 {
+  left: 10% !important;
+}
+
+.start-15 {
+  left: 15% !important;
+}
+
+.start-20 {
+  left: 20% !important;
+}
+
+.start-25 {
+  left: 25% !important;
+}
+
+.start-30 {
+  left: 30% !important;
+}
+
+.start-35 {
+  left: 35% !important;
+}
+
+.start-40 {
+  left: 40% !important;
+}
+
+.start-45 {
+  left: 45% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-55 {
+  left: 55% !important;
+}
+
+.start-60 {
+  left: 60% !important;
+}
+
+.start-65 {
+  left: 65% !important;
+}
+
+.start-70 {
+  left: 70 !important;
+}
+
+.start-75 {
+  left: 75% !important;
+}
+
+.start-80 {
+  left: 80% !important;
+}
+
+.start-85 {
+  left: 85% !important;
+}
+
+.start-90 {
+  left: 90% !important;
+}
+
+.start-95 {
+  left: 95% !important;
 }
 
 .start-100 {
@@ -8042,8 +8258,80 @@ fieldset:disabled .btn {
   right: 0 !important;
 }
 
+.end-5 {
+  right: 5% !important;
+}
+
+.end-10 {
+  right: 10% !important;
+}
+
+.end-15 {
+  right: 15% !important;
+}
+
+.end-20 {
+  right: 20% !important;
+}
+
+.end-25 {
+  right: 25% !important;
+}
+
+.end-30 {
+  right: 30% !important;
+}
+
+.end-35 {
+  right: 35% !important;
+}
+
+.end-40 {
+  right: 40% !important;
+}
+
+.end-45 {
+  right: 45% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-55 {
+  right: 55% !important;
+}
+
+.end-60 {
+  right: 60% !important;
+}
+
+.end-65 {
+  right: 65% !important;
+}
+
+.end-70 {
+  right: 70 !important;
+}
+
+.end-75 {
+  right: 75% !important;
+}
+
+.end-80 {
+  right: 80% !important;
+}
+
+.end-85 {
+  right: 85% !important;
+}
+
+.end-90 {
+  right: 90% !important;
+}
+
+.end-95 {
+  right: 95% !important;
 }
 
 .end-100 {
@@ -14059,8 +14347,9 @@ nav {
   z-index: 1;
 }
 
-nav.ovelapping {
-  background-color: aquamarine;
+nav.overlapping {
+  background-color: #e792ee;
+  opacity: 0.9;
 }
 
 .navbar > div {
@@ -14103,6 +14392,41 @@ nav.ovelapping {
   transition: all 0s ease-out;
 }
 
+.tab-reference {
+  position: fixed;
+  width: 14vh;
+  height: 14vh;
+  border-radius: 25%;
+}
+
+/* ANIMATION SPINLOGO FOR .tab-reference IMG */
+.tab-reference {
+  -webkit-animation-name: spinLogo;
+          animation-name: spinLogo;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/* / ANIMATION SPINLOGO FOR .tab-reference IMG */
+/* KEYFRAMES ANIMATION SPINLOGO */
+@-webkit-keyframes spinLogo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinLogo {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* / KEYFRAMES ANIMATION SPINLOGO */
 ul.nav {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -14199,6 +14523,12 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media (min-width: 48em) {
+  nav {
+    background-color: #e792ee;
+  }
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>   TABLET  >>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -14262,7 +14592,6 @@ button.nav-link :active {
 @media (orientation: landscape) and (min-width: 62em) {
   nav {
     position: relative !important;
-    background-color: #e792ee;
     width: 25%;
     height: auto;
   }
@@ -14373,12 +14702,13 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-#about_me {
+#about-me {
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("../img/about_me/london_bridge.jpg");
+  background-image: url("../img/about-me/london_bridge.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -14389,13 +14719,13 @@ button.nav-link :active {
   padding-bottom: 2rem;
 }
 
-#about_me header {
+#about-me header {
   background: #3771ee;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #3771ee), color-stop(85%, transparent));
   background: linear-gradient(to right, #3771ee 50%, transparent 85%);
 }
 
-#about_me p {
+#about-me p {
   line-height: 1.7rem;
   text-align: left;
   letter-spacing: 1px;
@@ -14418,7 +14748,7 @@ button.nav-link :active {
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 24em) {
-  #about_me p {
+  #about-me p {
     font-size: 1.125rem;
   }
 }
@@ -14430,11 +14760,11 @@ button.nav-link :active {
 /* >>>   TABLET  >>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: portrait) and (min-width: 48em) {
-  #about_me {
+  #about-me {
     height: 100vh;
     /** DISPLAY ALL THE CONTENT IN THE VIEWPORT */
   }
-  #about_me p {
+  #about-me p {
     max-width: 38rem;
     margin: 7rem auto 0;
     padding: 3rem 3rem;
@@ -14449,7 +14779,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) {
-  #about_me p {
+  #about-me p {
     margin-top: 4rem;
   }
 }
@@ -14467,7 +14797,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  #about_me p {
+  #about-me p {
     font-size: 1rem;
     margin: 6rem 0 0;
     line-height: 1.75rem;
@@ -14489,7 +14819,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 90em  <<<<<<<<<<<<<<<<<<( LAPTOP HiDPI SCREEN)<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 90em) {
-  #about_me p {
+  #about-me p {
     max-width: 55rem;
     margin-top: 10rem;
   }
@@ -14502,7 +14832,7 @@ button.nav-link :active {
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 160em) {
-  #about_me p {
+  #about-me p {
     font-size: 2.5rem;
     margin-top: 30rem;
     line-height: 5rem;
@@ -14516,7 +14846,6 @@ button.nav-link :active {
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 #contact-me {
   height: 100vh;
-  overflow: auto;
   background-image: url("../img/contact-me/typewriter2.jpg");
   background-size: cover;
   -webkit-box-orient: vertical;

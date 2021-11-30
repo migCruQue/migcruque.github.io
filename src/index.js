@@ -10,9 +10,38 @@ import * as bootstrap from 'bootstrap';
 
 const $nav = $('nav');
 
+let tabReference = document.querySelector('.tab-reference');
+let tabPaneActive = document.querySelector('.tab-pane.active');
+let tabPaneID = tabPaneActive.getAttribute("id");
+
+console.log(tabPaneID);
+
+const imageTabData = {
+    "home": {
+        "src": "./img/nav/vangogh.png",
+        "alt": "vangogh painting"
+    },
+    "about-me": {   
+        "src": "./img/nav/littleme.jpg",
+        "alt": "myself when I was a child"
+    },
+    "education": {
+        "src": "./img/nav/schooldesk.jpeg",
+        "alt": "schooldesk"
+    },
+    "projects": {
+        "src": "./img/nav/futuramaship.jpg",
+        "alt": "futurama spaceship"
+    },
+    "contact-me": {
+        "src": "./img/nav/mailbox.jpg",
+        "alt": "red mailbox"
+    },
+};
+
 // when hamburger toggles add or remove .overlapping (adding background-color to nav, ovelapping the body) 
 $(".navbar-toggler").on("click", function() {
-   $nav.hasClass("ovelapping") ? $nav.removeClass("ovelapping") : $nav.addClass("ovelapping");
+   $nav.hasClass("overlapping") ? $nav.removeClass("overlapping") : $nav.addClass("overlapping");
   });
 
 
@@ -34,7 +63,14 @@ function menuToggle() {
     bsCollapse.toggle();
 }
 
-$navLinks.on("click", () => {    // Use the toggle method in a new boostrap.Collapse(menuToggle)  
+$navLinks.on("click", (e) => {    // Use the toggle method in a new boostrap.Collapse(menuToggle)  
+    let buttonACAttr = e.target.getAttribute("aria-controls");
+    if(buttonACAttr !== tabPaneID){
+        tabReference.setAttribute("src", imageTabData[buttonACAttr].src);
+        tabReference.setAttribute("alt", imageTabData[buttonACAttr].alt);
+        tabPaneID = buttonACAttr;
+        console.log(tabPaneID, buttonACAttr);
+    }
     $nav.hasClass("ovelapping") ? $nav.removeClass("ovelapping") : $nav.addClass("ovelapping");
     menuToggle();//to collapse the navbar-collapse when any button from the menu is click
     
@@ -99,103 +135,7 @@ cards.forEach(card => {
 //   contact_logo.style.transform = "translateZ(0px) rotateZ( 0deg)";
 // });
 
-//  * PROJECTS.JS
 
-const $moreInfo= $('.moreInfo');
-const $lessInfo = $('.lessInfo');
-const $github_repo = $('.github_repo');
-const $description = $('.description');
-const $fingerTouch = $('.fingerTouch');
-const $project_entry = $('.project_entry');
-
-const project_entry = document.querySelector('.project_entry');
-
-
-
-
-
-
-// * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- more info button functionaliy-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- 
-$moreInfo.click(function(){
-    $(this).addClass('hidden');
-    if( $project_entry.find('.columnLeft').length === 0 ){ 
-        console.log($(this).parent().find('.extraInfo'));               // check if has to go one or two levels up to target the parent
-        $(this).parent().find('.extraInfo').removeClass('hidden');    
-    } else { 
-        $(this).parent().parent().find('.extraInfo').removeClass('hidden');
-        $(this).parent().parent().addClass('expand_extra_info');
-    }
-   
-});
-
-
-// * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- less info button functionaliy-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- 
-$lessInfo.click(function(){
-    $(this).siblings('.moreInfo').removeClass('hidden');
-    if( $project_entry.find('.columnLeft').length === 0 ){            // check if has to go one or two levels up to target the parent
-        $(this).parent().find('.extraInfo').addClass('hidden');    
-    } else { 
-        $(this).parent().parent().find('.extraInfo').addClass('hidden');
-        $(this).parent().parent().removeClass('expand_extra_info');
-    }
-});
-
-
-// * on loading and resize check the viewport orientation and if it is landscape show Extra information in the project card._-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-$(window).on('load resize' , function() {       
-    if  (($(window).width() < $(window).height() && $(window).width() < 700 )
-    || ($(window).width() > $(window).height() && $(window).width() < 860 ))
-    {   
-                $moreInfo.removeClass('hidden');
-                $description.addClass('hidden');
-                $github_repo.addClass('hidden');
-                
-    } else {
-                $moreInfo.addClass('hidden');
-                $description.removeClass('hidden');
-                $github_repo.removeClass('hidden');
-    }
-});
-
-// * on loading and resize 
-// * if the screen if big enough:
-// * check if there is not any .columnLeft and then 
-// * add two .columnLeft divs to project_entry div and insert .columnLeft_element to .columnLeft div
-// * otherwise detach .columnLeft_element from .columnLeft and remove .columnLeft.
-
-// * otherwise detach .columnLeft_element from .columnLeft and remove .columnLeft
-
-$(window).on('load resize' , function() {       
-    if ( $(window).width() >= 700 || ($(window).width() > $(window).height()) ) {
-        if( $project_entry.find('.columnLeft').length === 0 ){
-            $project_entry.prepend('<div class="columnLeft"></div>','<div class="columnRight"></div>');
-            $project_entry.each(function(index) {
-                $(this).children().filter('.columnLeft').prepend($(this).children().filter('.columnLeft_element'));
-                $(this).children().filter('.columnRight').prepend($(this).children().filter('.columnRight_element'));
-            });
-        } 
-    }
-    else {
-        if($project_entry.find('.columnLeft').length !== 0){
-            $('.columnLeft_element').unwrap();
-            $('.columnRight_element').unwrap();
-        }
-    }
-});
-
-
-// * on loading and resize check whether the device is touchable adding or removing the fingerTouch icon._-_-_-_-_-_-_-_-_-_-_-_-_-_
-function isTouchDevice(Device) {
-    return (('ontouchstart' in window) ||
-       (navigator.maxTouchPoints > 0) ||
-       (navigator.msMaxTouchPoints > 0));
-  }
-
-  $(window).on('load resize' , function() {       
-    if( isTouchDevice($(window))) { $fingerTouch.removeClass('hidden')} 
-    else {$fingerTouch.addClass('hidden')}
-});
 
 // * TYPEWRITER.JS 
 

@@ -8,8 +8,9 @@ nav {
   z-index: 1;
 }
 
-nav.ovelapping {
-  background-color: aquamarine;
+nav.overlapping {
+  background-color: #e792ee;
+  opacity: 0.9;
 }
 
 .navbar > div {
@@ -46,6 +47,30 @@ nav.ovelapping {
   -o-transition: all 0s ease-out;
   transition: all 0s ease-out;
 }
+
+.tab-reference {
+  position: fixed;
+  width: 14vh;
+  height: 14vh;
+  border-radius: 25%;
+}
+
+/* ANIMATION SPINLOGO FOR .tab-reference IMG */
+.tab-reference {
+  animation-name: spinLogo;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* / ANIMATION SPINLOGO FOR .tab-reference IMG */
+
+/* KEYFRAMES ANIMATION SPINLOGO */
+@keyframes spinLogo {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* / KEYFRAMES ANIMATION SPINLOGO */
 
 ul.nav {
   @include flex;
@@ -106,6 +131,11 @@ button.nav-link :active {
 /* >>>>  SMARTPHONE   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> / MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 24em   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+@media (min-width: 48em) {
+  nav {
+    background-color: #e792ee;
+  }
+}
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* >>>   TABLET  >>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION PORTRAIT AND MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -184,7 +214,6 @@ button.nav-link :active {
 @media (orientation: landscape) and (min-width: 62em) {
   nav {
     position: relative !important;
-    background-color: rgba(231, 146, 238, 1);
     width: 25%;
     height: auto;
   }
