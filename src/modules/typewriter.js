@@ -54,4 +54,4 @@ function typewritePlaying() {
     new TxtType(element, JSON.parse(arrayOfStrings), time);
 };
 
-export { typewritePlaying}
+export { typewritePlaying }
