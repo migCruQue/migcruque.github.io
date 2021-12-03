@@ -48,6 +48,7 @@
 
 .project-link {
   /* * ENTRY IMAGE */
+  @include flex();
   width: 95%;
   height: 12rem;
   background-repeat: no-repeat;
@@ -111,6 +112,11 @@
 }
 
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-CARD BODY(TITLE AND DESCRIPTION)-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+
+#projects .col-md-6 {
+  @include flex(column); // selecting the first column in the projectcard
+}
+
 #projects h2 {
   /* * ENTRY HEADER */
   font-family: "Montserrat", sans-serif;
@@ -169,7 +175,7 @@ h3.card-title {
 }
 
 .technology-list {
-  @include flex();
+  @include flex($justify: space-evenly);
   align-items: baseline;
   list-style: none;
   padding: 0;
@@ -265,6 +271,14 @@ h3.card-title {
     span:after {
       width: 50%; // Line-length. 50% width to decrease the line from the edges.
     }
+  }
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>    MIN-WIDTH: 48em      <<<<<<<<<<<<<<<<<<<><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+@media (min-width: 48em) {
+  #projects .col-md-5 {
+    @include flex(column); // selecting the second column in the projectcard
   }
 }
 

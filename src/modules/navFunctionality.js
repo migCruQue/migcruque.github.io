@@ -34,7 +34,6 @@ function togglerOverlapping() {
 let isCurrentWidthSmall = window.innerWidth <= 992 ;  // check the window screen size and assing True or False whether the screen size is smaller than 992px
 
 function resizeOverlapping(){
-    console.log("resizeOverlapping");
     if( window.innerWidth > 992  && nav.classList.contains("overlapping")){  // Remove .overlapping from the nav when resize to a big screen.
         nav.classList.remove("overlapping")}
     isCurrentWidthSmall = window.innerWidth <= 992; 
