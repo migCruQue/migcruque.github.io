@@ -1,45 +1,21 @@
+// **************
+// ! UTILITIES
+// **************
+
 // MIXINS
 
 @mixin flex($direction: row, $justify: center, $align: center) {
-  display: flex;
+  display: flex !important;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
 }
 
-@mixin grid($justify: center, $align: center) {
-  display: grid;
-  justify-items: $justify;
-  align-items: $align;
-}
-
 /* * UTILITIES */
-
-* {
-  box-sizing: border-box;
-}
 
 body {
   overflow: scroll;
   @include flex;
-}
-
-.block {
-  display: block;
-}
-
-.flex {
-  @include flex;
-}
-
-.container > * {
-  width: 100%;
-}
-
-.grid {
-  display: grid;
-  justify-items: center;
-  align-items: center;
 }
 
 .hidden {

@@ -1,21 +1,20 @@
-#index {
+// *****************
+// ! INDEX TAB
+// *****************
+
+#home {
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
   background-image: url("../img/index/fontana_phone.jpg");
   background-size: cover;
-  flex-direction: column;
-  cursor: none;
-  height: 100vh;
 }
 
-#index .hamburger {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  margin-left: 0;
-}
-
+// * Display the text as a typewritter
 #box {
   width: 85%;
   padding: 2px;
+  margin-bottom: 3rem;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
@@ -23,11 +22,10 @@
   align-items: center;
   opacity: 0.8;
   filter: alpha(opacity=50);
-  position: relative;
-  top: 35%;
 }
 
 .item {
+  height: 12vh;
   @include flex;
   border-radius: 3px;
   background: #000000; /* fallback for old browsers */
@@ -45,7 +43,7 @@
 }
 
 .item a {
-  font-size: 20px;
+  font-size: 1.5rem;
   font-family: "Crushed", cursive;
   margin-left: 0.3rem;
   text-decoration: none;
@@ -61,15 +59,8 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 24em) {
-  #index header {
-    position: absolute;
-    top: 1.5rem;
-    left: 1.5rem;
-    padding: 0;
-  }
-
   .item a {
-    font-size: 27px;
+    font-size: 1.8rem;
   }
 }
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -81,17 +72,17 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: portrait) and (min-width: 48em) {
-  .hamburger {
-    width: 6vh;
-    height: 6vh;
+  #box {
+    width: 80%;
+    margin-bottom: 5rem;
   }
 
-  #box {
-    width: 60%;
+  .item {
+    height: 14vh;
   }
 
   .item a {
-    font-size: 40px;
+    font-size: 3rem;
   }
 }
 
@@ -104,18 +95,17 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) {
-  #index {
-    /* background-image: url('../img/index/fontanacutBW.jpg'); */
+  #home {
     background-image: url("../img/index/fontana_desktop.jpg");
   }
 
-  .hamburger {
-    width: 10vh;
-    height: 10vh;
+  #box {
+    width: 75%;
+    margin-bottom: 2rem;
   }
 
-  #box {
-    width: 60%;
+  .item {
+    height: 18vh;
   }
 
   .item a {
@@ -133,7 +123,7 @@
 
 @media (orientation: landscape) and (min-width: 50em) {
   #box {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -145,9 +135,16 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MEDIA QUERY ORIENTATION LANDSCAPE AND MIN-WIDTH: 63em  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (orientation: landscape) and (min-width: 63em) {
-  .hamburger {
-    width: 7vh;
-    height: 7vh;
+  #box {
+    margin-bottom: 4rem;
+  }
+
+  .item {
+    height: 14vh;
+  }
+
+  .item a {
+    font-size: 2.3rem;
   }
 }
 
@@ -160,47 +157,12 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 75em) {
-  #index .cursor_index {
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: all 0.3s ease;
-    transition-property: background, transform;
-    transform-origin: 100% 100%;
-    z-index: 3;
-    background: rgba(
-      244,
-      26,
-      255,
-      0.7
-    ); /*       BACKDROP FILTER FALLBACK FOR FIREFOX */
-  }
-
-  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    #index .cursor_index {
-      width: 2.25rem;
-      height: 2.25rem;
-      border: 2px solid white;
-      background: transparent;
-      -webkit-backdrop-filter: invert(100%);
-      backdrop-filter: invert(100%);
-    }
-  }
-
-  .hamburger {
-    width: 5vh;
-    height: 5vh;
-  }
-
   #box {
     width: 50%;
   }
 
   .item a {
-    font-size: 42px;
+    font-size: 2.5rem;
   }
 }
 
@@ -213,13 +175,6 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>><<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 90em) {
-  #box {
-    width: 40%;
-  }
-
-  .item a {
-    font-size: 45px;
-  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -230,6 +185,13 @@
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  MEDIA QUERY MIN-WIDTH: 160em <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 160em) {
+  #box {
+    margin-bottom: 10rem;
+  }
+
+  .item a {
+    font-size: 7rem;
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

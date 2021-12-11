@@ -1,3 +1,6 @@
+// NAV BOOTSTRAP 5
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 //UTILITIES
 
 @import "./sccs_partials/utilities";
@@ -19,8 +22,8 @@
 @import "./sccs_partials/nav";
 // DIVS
 
-@import "./sccs_partials/divs/about_me";
-@import "./sccs_partials/divs/contact_me";
+@import "./sccs_partials/divs/about-me";
+@import "./sccs_partials/divs/contact-me";
 @import "./sccs_partials/divs/education";
 @import "./sccs_partials/divs/index";
 @import "./sccs_partials/divs/projects";

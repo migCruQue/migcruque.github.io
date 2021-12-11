@@ -1,5 +1,14 @@
 // * TYPEWRITER.JS 
 
+
+const element = document.querySelector('.typewrite');
+
+const arrayOfStrings = `["${String.fromCodePoint('👋'.codePointAt(0))} Hello, I&#39m Miguel Cruz ${String.fromCodePoint('😺'.codePointAt(0))}", "${String.fromCodePoint('💻 '.codePointAt(0))} I&#39m a Front End Developer", "I live in London ${String.fromCodePoint('💂🏼'.codePointAt(0))} (uk)", "I LOVE THIS GAME ${String.fromCodePoint('🏀"'.codePointAt(0))}"]`;
+// const arrayOfStrings = `["Hello, I&#39m Miguel Cruz😺", "💻 I&#39m a Front End Developer", "I live in London💂🏼(uk)", "I LOVE THIS GAME 🏀"]`;
+
+const time = 1000;
+
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -42,19 +51,7 @@ TxtType.prototype.tick = function() {
 };
 
 function typewritePlaying() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
+    new TxtType(element, JSON.parse(arrayOfStrings), time);
 };
 
-export { typewritePlaying}
+export { typewritePlaying }
