@@ -1,3 +1,7 @@
+// *****************
+//! PROJECTS TAB
+// *****************
+
 /* * _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-MAIN TAB-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
 
 #projects {
@@ -297,16 +301,6 @@ h3.card-title {
     height: 6vh;
   }
 
-  .technology_title {
-    font-size: 1rem;
-    margin-top: 5rem;
-  }
-
-  .tech-logos {
-    justify-content: space-evenly;
-    align-items: flex-end;
-  }
-
   .tech-logo img {
     width: 4.5vh;
     height: 4.5vh;
@@ -314,17 +308,6 @@ h3.card-title {
   .tech-logo h4 {
     font-size: 0.55rem;
     font-weight: lighter;
-  }
-
-  .description {
-    margin: auto;
-  }
-
-  .description p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    padding: 0 1rem;
   }
 
   .github_repo {
@@ -357,17 +340,6 @@ h3.card-title {
     margin: 0.2rem 0 0 0;
   }
 
-  .technology_title {
-    font-size: 0.85rem;
-    margin-top: 3rem;
-  }
-
-  .tech-logos {
-    margin-top: 0.5rem;
-    justify-content: space-evenly;
-    align-items: flex-end;
-  }
-
   .tech-logo img {
     width: 10vh;
     height: 10vh;
@@ -375,32 +347,6 @@ h3.card-title {
   .tech-logo h4 {
     font-size: 0.55rem;
     font-weight: lighter;
-  }
-
-  .moreInfo {
-    justify-self: center;
-    width: 4rem;
-    height: 2rem;
-    font-size: 14px;
-    margin: 1.75rem 0 0 0;
-  }
-
-  .lessInfo {
-    margin-top: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    align-self: flex-end;
-  }
-
-  .description {
-    margin: auto;
-  }
-
-  .description p {
-    margin: 0;
-    font-size: 0.7rem;
-    line-height: 1rem;
-    padding: 0 1rem;
   }
 
   .github_repo {
@@ -426,20 +372,6 @@ h3.card-title {
 @media (orientation: landscape) and (min-width: 50em) {
   #projects header {
     font-size: 5rem;
-  }
-
-  .technology_title {
-    margin-top: 4rem;
-  }
-
-  .lessInfo {
-    margin: 1rem 3rem 0 0;
-  }
-
-  .description p {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
-    padding: 0 2rem;
   }
 
   .github_repo {
@@ -472,11 +404,6 @@ h3.card-title {
     width: 93%;
   }
 
-  .technology_title {
-    font-size: 1.15rem;
-    margin-top: 7rem;
-  }
-
   .tech-logo h4 {
     font-size: 0.8rem;
   }
@@ -484,11 +411,6 @@ h3.card-title {
   .tech-logo {
     width: 7vh;
     height: 12vh;
-  }
-
-  .description p {
-    font-size: 16px;
-    line-height: 20px;
   }
 
   #currency-app h2 {
@@ -540,17 +462,6 @@ h3.card-title {
   #projects header {
     padding: 5rem 1rem;
     font-size: 7rem;
-  }
-
-  .technology_title {
-    font-size: 1.2rem;
-    margin-top: 42;
-  }
-
-  .description p {
-    font-size: 20px;
-    padding: 40px;
-    line-height: 25px;
   }
 }
 

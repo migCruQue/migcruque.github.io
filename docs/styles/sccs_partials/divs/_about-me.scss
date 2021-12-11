@@ -1,5 +1,8 @@
+// *****************
+// ! ABOUT-ME TAB
+// *****************
+
 #about-me {
-  height: 100vh;
   flex-direction: column;
   background-image: url("../img/about-me/london_bridge.jpg");
   background-attachment: fixed;
@@ -87,6 +90,9 @@
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 @media (orientation: landscape) and (min-width: 50em) {
+  #about-me {
+    height: 100vh; /** DISPLAY ALL THE CONTENT IN THE VIEWPORT */
+  }
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

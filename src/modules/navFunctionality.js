@@ -1,6 +1,7 @@
 // import 'bootstrap';
 import * as bootstrap from 'bootstrap';
 
+
 const imageTabData = {
     "home": {
         "src": "./img/nav/vangogh.png",
